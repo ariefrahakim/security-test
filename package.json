@@ -12,6 +12,7 @@
     "report:list": "ls -1 reports | grep -v _agent-log"
   },
   "dependencies": {
+    "jspdf": "^4.2.1",
     "playwright": "^1.62.1"
   }
 }
