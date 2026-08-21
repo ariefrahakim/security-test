@@ -677,133 +677,196 @@ function exportXLS(){const xesc=v=>String(v??'').replace(/&/g,'&amp;').replace(/
 function exportMD(){const lines=['# Security Assessment Report','','**Target:** '+D.meta.target,'**Date:** '+D.meta.date,'**Overall risk:** '+D.risk.level+' — '+D.risk.label,''];for(const m of D.modules){lines.push('## '+m.name+' ('+m.slug+')');for(const fid of (m.findings||[])){const f=findingById[fid];if(!f)continue;lines.push('### ['+f.sev+'] '+f.title);lines.push('- Owner: '+f._owner);lines.push('- Impact: '+f._impact);lines.push('- Effort: '+f._effort);lines.push('- Evidence: '+(f.evidence_path||''));lines.push('- Fix: '+(f.recommendation||''));lines.push('');}}dl('report.md','text/markdown;charset=utf-8',lines.join('\\n'));}
 
 function exportPDF(){
-  const jspdfNS = (window.jspdf||window.jsPDF||{});
-  const JsPDFCtor = jspdfNS.jsPDF || window.jsPDF;
+  const jspdfNS=(window.jspdf||window.jsPDF||{});
+  const JsPDFCtor=jspdfNS.jsPDF||window.jsPDF;
   if(!JsPDFCtor){alert('PDF library not available; falling back to browser print.');window.print();return;}
-  const doc = new JsPDFCtor({unit:'pt', format:'a4'});
-  const pw = doc.internal.pageSize.getWidth();
-  const ph = doc.internal.pageSize.getHeight();
-  const M = 40; // margin
-  let y = M;
-  const SEV_COLOR = {CRITICAL:[185,28,28],HIGH:[239,68,68],MEDIUM:[249,115,22],LOW:[234,179,8],INFO:[59,130,246],OK:[34,197,94]};
-  function ensure(h){if(y+h>ph-M){doc.addPage();y=M;}}
-  function h1(t){ensure(28);doc.setFont('helvetica','bold');doc.setFontSize(18);doc.setTextColor(20,20,30);doc.text(String(t),M,y);y+=22;}
-  function h2(t){ensure(24);doc.setFont('helvetica','bold');doc.setFontSize(13);doc.setTextColor(30,30,60);doc.text(String(t),M,y);y+=16;doc.setDrawColor(200);doc.line(M,y-4,pw-M,y-4);}
-  function h3(t){ensure(20);doc.setFont('helvetica','bold');doc.setFontSize(11.5);doc.setTextColor(50,50,80);doc.text(String(t),M,y);y+=14;}
-  function p(t,opts){opts=opts||{};doc.setFont('helvetica',opts.bold?'bold':'normal');doc.setFontSize(opts.size||10);doc.setTextColor(...(opts.color||[40,40,50]));const lines=doc.splitTextToSize(String(t||''),pw-2*M);for(const ln of lines){ensure(13);doc.text(ln,M+(opts.indent||0),y);y+=12;}}
-  function kv(k,v){ensure(13);doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(60,60,90);doc.text(String(k)+':',M,y);doc.setFont('helvetica','normal');doc.setTextColor(30,30,40);const lines=doc.splitTextToSize(String(v||'—'),pw-2*M-70);doc.text(lines[0]||'',M+70,y);y+=12;for(let i=1;i<lines.length;i++){ensure(13);doc.text(lines[i],M+70,y);y+=12;}}
-  function sevBadge(x,yy,sev){const w=52,h=13;const c=SEV_COLOR[sev]||[100,100,120];doc.setFillColor(...c);doc.roundedRect(x,yy-10,w,h,3,3,'F');doc.setFont('helvetica','bold');doc.setFontSize(8);doc.setTextColor(255,255,255);doc.text(String(sev||''),x+w/2,yy-1,{align:'center'});doc.setTextColor(30,30,40);}
-  function sp(px){y+=px;}
+  const doc=new JsPDFCtor({unit:'pt',format:'a4'});
+  const pw=doc.internal.pageSize.getWidth();
+  const ph=doc.internal.pageSize.getHeight();
+  const M=48;                           // page margin
+  const CW=pw-2*M;                      // content width
+  const LH=13;                          // base line height
+  let y=M;
+  const SEV_COLOR={CRITICAL:[185,28,28],HIGH:[239,68,68],MEDIUM:[249,115,22],LOW:[202,138,4],INFO:[59,130,246],OK:[22,163,74]};
 
-  // Cover
+  function nl(px){y+=px;}
+  function newPage(){doc.addPage();y=M;}
+  function room(h){if(y+h>ph-M-24){newPage();}}
+
+  // A guaranteed-safe writer: measures wrapped height first, ensures room, then draws.
+  // Every text write goes through this so nothing ever overlaps.
+  function writeText(text,opts){
+    opts=opts||{};
+    const size=opts.size||10;
+    const lh=opts.lh||(size+3);
+    const x0=M+(opts.indent||0);
+    const maxW=CW-(opts.indent||0)-(opts.rightPad||0);
+    doc.setFont('helvetica',opts.bold?'bold':'normal');
+    doc.setFontSize(size);
+    doc.setTextColor(...(opts.color||[35,35,50]));
+    const lines=doc.splitTextToSize(String(text==null?'':text),maxW);
+    for(const ln of lines){
+      room(lh);
+      doc.text(ln,x0,y+size);           // baseline offset by size
+      y+=lh;
+    }
+    return lines.length;
+  }
+  function writeKV(k,v){
+    if(v==null||v==='') return;
+    const size=9.5,lh=12,keyW=88;
+    doc.setFont('helvetica','bold');doc.setFontSize(size);
+    const kw=Math.min(doc.getTextWidth(String(k)+':')+8,keyW);
+    doc.setFont('helvetica','normal');doc.setFontSize(size);
+    const lines=doc.splitTextToSize(String(v),CW-kw-4);
+    room(Math.max(lh,lines.length*lh));
+    // key
+    doc.setFont('helvetica','bold');doc.setTextColor(80,80,110);doc.text(String(k)+':',M,y+size);
+    // value
+    doc.setFont('helvetica','normal');doc.setTextColor(30,30,45);
+    for(let i=0;i<lines.length;i++){
+      if(i>0)room(lh);
+      doc.text(lines[i],M+kw,y+size);
+      y+=lh;
+    }
+  }
+  function h1(t){room(28);writeText(t,{size:20,bold:true,color:[15,20,40]});nl(4);}
+  function h2(t){nl(8);room(28);writeText(t,{size:13,bold:true,color:[25,30,70]});doc.setDrawColor(210);doc.line(M,y+2,pw-M,y+2);nl(6);}
+  function h3(t){nl(6);room(22);writeText(t,{size:11.5,bold:true,color:[45,50,90]});nl(2);}
+  function rule(){room(6);doc.setDrawColor(230);doc.line(M,y,pw-M,y);nl(6);}
+  function sevTagInline(sev){return '['+String(sev||'').toUpperCase()+']';}
+  function coloredTag(sev){
+    // Draw a small colored badge on its own line to avoid overlap with wrapped text.
+    room(16);
+    const c=SEV_COLOR[sev]||[110,110,130];
+    const w=54,h=13;
+    doc.setFillColor(...c);
+    doc.roundedRect(M,y,w,h,3,3,'F');
+    doc.setFont('helvetica','bold');doc.setFontSize(8);doc.setTextColor(255,255,255);
+    doc.text(String(sev||''),M+w/2,y+h-4,{align:'center'});
+    doc.setTextColor(35,35,50);
+    y+=h+4;
+  }
+
+  // -------- Cover / metadata --------
   h1('Security Assessment Report');
-  doc.setFont('helvetica','normal');doc.setFontSize(10);doc.setTextColor(90,90,110);
-  kv('Target', D.meta.target);
-  kv('Date', D.meta.date);
-  kv('Tester', D.meta.tester);
-  kv('Authorization', D.meta.authorization);
-  kv('Run', D.meta.run||'');
-  sp(6);
-  // Risk banner
-  const RC = {crit:[185,28,28],high:[239,68,68],med:[249,115,22],low:[234,179,8],ok:[34,197,94]}[D.risk.color]||[100,100,120];
-  ensure(50);doc.setFillColor(...RC);doc.roundedRect(M,y,pw-2*M,42,6,6,'F');
-  doc.setFont('helvetica','bold');doc.setFontSize(13);doc.setTextColor(255,255,255);doc.text('Overall risk: '+D.risk.level, M+14, y+18);
-  doc.setFont('helvetica','normal');doc.setFontSize(10);doc.text(D.risk.label, M+14, y+34);
-  doc.setTextColor(40,40,50);y+=54;
+  writeText('An authorized web application security assessment.',{size:10,color:[100,100,130]});
+  nl(6);
+  writeKV('Target',D.meta.target);
+  writeKV('Date',D.meta.date);
+  writeKV('Tester',D.meta.tester);
+  writeKV('Authorization',D.meta.authorization);
+  if(D.meta.run) writeKV('Run',D.meta.run);
+  nl(10);
 
+  // -------- Risk banner (own block, generous padding) --------
+  const RC={crit:[185,28,28],high:[239,68,68],med:[249,115,22],low:[202,138,4],ok:[22,163,74]}[D.risk.color]||[110,110,130];
+  const bannerH=54;
+  room(bannerH+6);
+  doc.setFillColor(...RC);
+  doc.roundedRect(M,y,CW,bannerH,8,8,'F');
+  doc.setFont('helvetica','bold');doc.setFontSize(13);doc.setTextColor(255,255,255);
+  doc.text('Overall risk: '+D.risk.level,M+16,y+22);
+  doc.setFont('helvetica','normal');doc.setFontSize(10);
+  const bLines=doc.splitTextToSize(D.risk.label,CW-32);
+  doc.text(bLines[0],M+16,y+40);
+  doc.setTextColor(35,35,50);
+  y+=bannerH+10;
+
+  // -------- At a glance --------
   h2('At a glance');
-  const sevs=['CRITICAL','HIGH','MEDIUM','LOW','INFO','OK'];
-  for(const k of sevs) if(D.counts[k]) kv(k, String(D.counts[k]));
-  kv('Modules', String(D.modules.length));
-  kv('Scenarios', String(D.modules.reduce((a,m)=>a+(m.scenarios||[]).length,0)));
-  kv('Findings', String(D.findings.length));
-  sp(6);
+  for(const k of ['CRITICAL','HIGH','MEDIUM','LOW','INFO','OK']) if(D.counts[k]) writeKV(k,String(D.counts[k]));
+  writeKV('Modules',String(D.modules.length));
+  writeKV('Scenarios',String(D.modules.reduce((a,m)=>a+(m.scenarios||[]).length,0)));
+  writeKV('Findings',String(D.findings.length));
 
-  // Top actions
+  // -------- Top actions --------
   const topIds=D.top_recommendations||[];
   if(topIds.length){
     h2('Top actions this sprint');
     let i=1;
-    for(const id of topIds){const f=findingById[id];if(!f)continue;
-      ensure(20);doc.setFont('helvetica','bold');doc.setFontSize(11);doc.setTextColor(20,20,30);doc.text(i+'. '+(f.title||''), M, y);y+=14;
-      sevBadge(M, y, f.sev);
-      doc.setFont('helvetica','normal');doc.setFontSize(9.5);doc.setTextColor(70,70,90);doc.text('Owner: '+(f._owner||'—')+' · Effort: '+(f._effort||'—'), M+60, y-1);y+=10;
-      p(f.recommendation||f._impact||'', {size:10, color:[40,40,50]});
-      sp(4);
+    for(const id of topIds){
+      const f=findingById[id];if(!f)continue;
+      // Each item on its own vertical stack: number+title line, then sev tag line, then owner/effort, then recommendation.
+      writeText(i+'. '+(f.title||''),{size:11,bold:true,color:[20,25,45]});
+      coloredTag(f.sev);
+      writeText('Owner: '+(f._owner||'—')+'   ·   Effort: '+(f._effort||'—'),{size:9,color:[90,90,120]});
+      writeText(f.recommendation||f._impact||'',{size:10});
+      nl(6);
       i++;
     }
   }
 
-  // Per module
+  // -------- Per module --------
   h2('By module');
   for(const m of D.modules){
-    if((m.findings||[]).length===0 && (m.scenarios||[]).length===0 && (m.routes||[]).length===0) continue;
-    ensure(28);
+    const hasContent=(m.findings||[]).length||(m.scenarios||[]).length||(m.routes||[]).length;
+    if(!hasContent) continue;
     h3(m.name+'  ('+(m.slug||'')+')');
-    if(m.routes && m.routes.length){p('Routes: '+m.routes.join('   '), {size:9, color:[100,100,130]});}
-    if(m.features && m.features.length){p('Features: '+m.features.join(' · '), {size:9, color:[100,100,130]});}
-    // Scenarios
+    if(m.routes&&m.routes.length) writeText('Routes: '+m.routes.join('   '),{size:9,color:[100,100,130]});
+    if(m.features&&m.features.length) writeText('Features: '+m.features.join(' · '),{size:9,color:[100,100,130]});
+
     if((m.scenarios||[]).length){
-      sp(3);doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(50,50,80);ensure(13);doc.text('Test scenarios ('+m.scenarios.length+')', M, y);y+=13;
-      doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(40,40,50);
+      nl(4);
+      writeText('Test scenarios ('+m.scenarios.length+')',{size:10,bold:true,color:[45,50,90]});
       for(const s of m.scenarios){
-        ensure(12);const line='['+(s.result||'note').toUpperCase()+'] '+(s.id?s.id+' — ':'')+(s.desc||'');
-        const wrapped=doc.splitTextToSize(line, pw-2*M);
-        for(const ln of wrapped){ensure(12);doc.text(ln,M,y);y+=11;}
+        writeText('• '+sevTagInline(s.result||'note')+' '+(s.id?s.id+' — ':'')+(s.desc||''),{size:9,indent:4});
       }
     }
-    // Findings
+
     const mfindings=(m.findings||[]).map(id=>findingById[id]).filter(Boolean);
     if(mfindings.length){
-      sp(3);doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(50,50,80);ensure(13);doc.text('Findings ('+mfindings.length+')', M, y);y+=13;
+      nl(4);
+      writeText('Findings ('+mfindings.length+')',{size:10,bold:true,color:[45,50,90]});
       for(const f of mfindings){
-        ensure(22);
-        sevBadge(M, y+8, f.sev);
-        doc.setFont('helvetica','bold');doc.setFontSize(10.5);doc.setTextColor(20,20,30);
-        const title=f.id+' — '+(f.title||'');
-        const tw=doc.splitTextToSize(title, pw-2*M-60);
-        doc.text(tw[0]||'', M+60, y+6);y+=14;
-        for(let i=1;i<tw.length;i++){ensure(12);doc.text(tw[i],M+60,y);y+=12;}
-        kv('What it means', f._impact||'—');
-        kv('Effort', f._effort||'—');
-        kv('Owner', f._owner||'—');
-        if(f.category||f.owasp) kv('Category', (f.category||f.owasp||'')+(f.cwe?' · '+f.cwe:''));
-        if(f.confidence) kv('Confidence', f.confidence);
-        if(f.evidence) kv('Observation', f.evidence);
-        if(f.recommendation) kv('Fix', f.recommendation);
-        if(f.evidence_path) kv('Evidence', f.evidence_path);
-        if(f.cvss4 && f.cvss4.vector) kv('CVSS 4.0', f.cvss4.score+'  '+f.cvss4.vector);
-        sp(4);
+        rule();
+        writeText((f.id?f.id+' — ':'')+(f.title||''),{size:11,bold:true,color:[20,25,45]});
+        coloredTag(f.sev);
+        writeKV('What it means',f._impact);
+        writeKV('Effort',f._effort);
+        writeKV('Owner',f._owner);
+        if(f.category||f.owasp) writeKV('Category',(f.category||f.owasp||'')+(f.cwe?' · '+f.cwe:''));
+        if(f.confidence) writeKV('Confidence',f.confidence);
+        if(f.evidence) writeKV('Observation',f.evidence);
+        if(f.recommendation) writeKV('Fix',f.recommendation);
+        if(f.evidence_path) writeKV('Evidence',f.evidence_path);
+        if(f.cvss4&&f.cvss4.vector) writeKV('CVSS 4.0',f.cvss4.score+'   '+f.cvss4.vector);
+        nl(4);
       }
     } else if((m.scenarios||[]).length){
-      p('No findings for this module.', {size:9, color:[120,120,140]});
+      writeText('No findings for this module.',{size:9,color:[120,120,140]});
     }
-    if(m.coverage) p('Coverage: '+m.coverage, {size:9, color:[100,100,130]});
-    sp(6);
+    if(m.coverage) writeText('Coverage: '+m.coverage,{size:9,color:[100,100,130]});
+    nl(8);
   }
 
-  // Hypotheses
+  // -------- Deferred hypotheses --------
   if((D.hypotheses||[]).length){
     h2('Deferred — need approval to test');
     for(const h of D.hypotheses){
-      ensure(14);doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(30,30,60);doc.text(h.id+' — '+(h.title||''), M, y);y+=12;
-      if(h.based_on) p('Based on: '+(h.based_on||[]).join(', '), {size:9, color:[100,100,130]});
-      if(h.test_plan) p('Test plan: '+h.test_plan, {size:9});
-      sp(4);
+      rule();
+      writeText((h.id?h.id+' — ':'')+(h.title||''),{size:10.5,bold:true,color:[30,35,70]});
+      if(h.based_on&&h.based_on.length) writeKV('Based on',(h.based_on||[]).join(', '));
+      if(h.test_plan) writeKV('Test plan',h.test_plan);
     }
   }
 
   h2('What was not tested');
-  p('• Third-party CDNs and analytics origins.', {size:9.5});
-  p('• Backend host OS and database.', {size:9.5});
-  p('• Password reset, 2FA, delete, and checkout flows (state-changing — held for HITL).', {size:9.5});
-  p('• Cross-tenant access (requires a second authorized account).', {size:9.5});
+  writeText('• Third-party CDNs and analytics origins.',{size:10});
+  writeText('• Backend host OS and database.',{size:10});
+  writeText('• Password reset, 2FA, delete, and checkout flows (state-changing — held for HITL).',{size:10});
+  writeText('• Cross-tenant access (requires a second authorized account).',{size:10});
 
-  // Page footers
+  // -------- Footer on every page --------
   const total=doc.internal.getNumberOfPages();
-  for(let i=1;i<=total;i++){doc.setPage(i);doc.setFont('helvetica','normal');doc.setFontSize(8);doc.setTextColor(140,140,160);doc.text('Security Assessment · '+D.meta.target+' · '+D.meta.date,M,ph-20);doc.text('Page '+i+' of '+total, pw-M, ph-20, {align:'right'});}
+  for(let i=1;i<=total;i++){
+    doc.setPage(i);
+    doc.setFont('helvetica','normal');doc.setFontSize(8);doc.setTextColor(140,140,160);
+    doc.text('Security Assessment · '+D.meta.target+' · '+D.meta.date,M,ph-20);
+    doc.text('Page '+i+' / '+total,pw-M,ph-20,{align:'right'});
+  }
 
-  const fname = 'security-report-'+String(D.meta.target||'').replace(/^https?:\\/\\//,'').replace(/[^a-z0-9]+/gi,'-')+'-'+D.meta.date+'.pdf';
+  const fname='security-report-'+String(D.meta.target||'').replace(/^https?:\\/\\//,'').replace(/[^a-z0-9]+/gi,'-')+'-'+D.meta.date+'.pdf';
   doc.save(fname);
 }
 
