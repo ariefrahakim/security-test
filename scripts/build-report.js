@@ -33,6 +33,33 @@ const merged = new Map();
 for (const a of artifacts) for (const f of (a.findings || [])) merged.set(f.id, { ...(merged.get(f.id) || {}), ...f });
 const findings = [...merged.values()];
 
+// Normalize any absolute or CWD-prefixed evidence paths down to the run-dir-relative form.
+// Report artifacts are self-contained; local machine paths must not leak.
+const cwd = process.cwd();
+const runDirAbs = path.resolve(dir);
+const runDirName = path.basename(runDirAbs);
+function relPath(p) {
+  if (!p) return p;
+  let s = String(p).replace(/\\/g, "/");
+  s = s.replace(new RegExp("^" + cwd.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "/?"), "");
+  s = s.replace(new RegExp("^" + runDirAbs.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "/?"), "");
+  s = s.replace(/^\.\//, "");
+  // If the path still contains the run dir name, trim to that.
+  const idx = s.indexOf("reports/" + runDirName + "/");
+  if (idx >= 0) s = s.slice(idx + ("reports/" + runDirName + "/").length);
+  return s;
+}
+function scrubBlob(s) {
+  if (!s) return s;
+  const cwdRe = new RegExp(cwd.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "/?", "g");
+  return String(s).replace(cwdRe, "");
+}
+for (const f of findings) {
+  if (f.evidence_path) f.evidence_path = relPath(f.evidence_path);
+  if (f.evidence) f.evidence = scrubBlob(f.evidence);
+  if (f.recommendation) f.recommendation = scrubBlob(f.recommendation);
+}
+
 function readEnv(file) {
   if (!fs.existsSync(file)) return {};
   const env = {};
@@ -48,7 +75,7 @@ const meta = {
   tester: process.env.USER || "unknown",
   date: new Date().toISOString().slice(0, 10),
   authorization: env.AUTHORIZATION_TYPE || "unknown",
-  run_dir: dir,
+  run: path.basename(path.resolve(dir)),
 };
 
 const sevRank = { CRITICAL: 0, HIGH: 1, MEDIUM: 2, LOW: 3, INFO: 4, OK: 5 };
@@ -61,7 +88,14 @@ if (!modBySlug.has('infrastructure')) {
   modBySlug.set('infrastructure', { slug:'infrastructure', name:'Infrastructure / Transport', routes:[], features:['TLS + edge headers observed on public origin'], scenarios:[], findings:[], coverage:'Passive header + TLS probe.' });
   modules.push(modBySlug.get('infrastructure'));
 }
-for (const m of modules) if (!Array.isArray(m.findings)) m.findings = [];
+for (const m of modules) {
+  if (!Array.isArray(m.findings)) m.findings = [];
+  for (const s of (m.scenarios || [])) {
+    if (s.evidence && typeof s.evidence === 'object') {
+      for (const k of Object.keys(s.evidence)) s.evidence[k] = relPath(s.evidence[k]);
+    }
+  }
+}
 for (const f of findings) {
   const mSlug = f.module && modBySlug.has(f.module) ? f.module : 'infrastructure';
   const m = modBySlug.get(mSlug);
@@ -186,7 +220,7 @@ md.push(`**Target:** ${meta.target}  `);
 md.push(`**Date:** ${meta.date}  `);
 md.push(`**Tester:** ${meta.tester}  `);
 md.push(`**Authorization:** ${meta.authorization}  `);
-md.push(`**Run:** \`${meta.run_dir}\``);
+md.push(`**Run:** \`${meta.run}\``);
 md.push('');
 md.push(`## Overall risk: ${risk.level}`);
 md.push('');
@@ -298,11 +332,8 @@ h1{margin:0 0 4px;font-size:20px;letter-spacing:.2px}
 .chip{display:inline-block;background:var(--pill-bg);border:1px solid var(--border);padding:3px 10px;border-radius:999px;font-size:11.5px;color:var(--sub)}
 .chip b{color:var(--text)}
 
-/* Persona toggle + export */
+/* Export controls */
 .controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.persona{display:inline-flex;background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:3px}
-.persona button{background:transparent;color:var(--sub);border:0;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:12.5px;font-weight:500}
-.persona button.active{background:var(--accent);color:#001824;font-weight:700}
 .btn{background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:7px 12px;border-radius:8px;cursor:pointer;font-size:12.5px}
 .btn:hover{background:#242c50}
 .btn.primary{background:var(--accent);color:#001824;border-color:var(--accent);font-weight:700}
@@ -409,13 +440,6 @@ section h3{margin:14px 0 8px;font-size:14px;color:#cfe1ff}
 .hyp-table th,.hyp-table td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
 .hyp-table th{color:var(--muted);background:var(--panel2);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
 
-/* Persona-scoped visibility */
-body[data-persona="pm"] .persona-sec,body[data-persona="pm"] .persona-qa{display:none}
-body[data-persona="qa"] .persona-sec,body[data-persona="qa"] .persona-pm-only{display:none}
-body[data-persona="sec"] .persona-pm-only{display:none}
-body[data-persona="pm"] .finding .cvss,body[data-persona="pm"] .finding .conf,body[data-persona="pm"] .cell.tech{display:none}
-body[data-persona="qa"] .finding .cvss{display:none}
-
 /* Toast */
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--accent);color:#001824;padding:8px 18px;border-radius:999px;font-weight:600;font-size:12.5px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:100}
 .toast.show{opacity:1}
@@ -436,7 +460,7 @@ body[data-persona="qa"] .finding .cvss{display:none}
 }
 </style>
 </head>
-<body data-persona="sec">
+<body>
 
 <header>
 <div class="hrow">
@@ -450,11 +474,6 @@ body[data-persona="qa"] .finding .cvss{display:none}
     </div>
   </div>
   <div class="controls">
-    <div class="persona" role="tablist" title="View as…">
-      <button data-p="pm" title="Product / stakeholder view">PM</button>
-      <button data-p="qa" title="QA view — scenarios + repro">QA</button>
-      <button data-p="sec" class="active" title="Security engineer view">Security</button>
-    </div>
     <select id="fmt" class="btn">
       <option value="pdf">Export: PDF (print)</option>
       <option value="json">Export: JSON</option>
@@ -507,7 +526,7 @@ ${topRecs.length ? `<section>
   <div id="modarea"></div>
 </section>
 
-<section class="persona-pm-only" style="display:block">
+<section>
   <h2>All findings</h2>
   <div class="filters">
     <input id="q" placeholder="Search findings (title / evidence / owner)…" />
@@ -525,13 +544,13 @@ ${topRecs.length ? `<section>
   <div id="allFindings"></div>
 </section>
 
-${(hypothesesDoc && hypothesesDoc.hypotheses && hypothesesDoc.hypotheses.length) ? `<section class="persona-sec">
+${(hypothesesDoc && hypothesesDoc.hypotheses && hypothesesDoc.hypotheses.length) ? `<section>
   <h2>Deferred — need approval to test</h2>
   <p class="sub">State-changing PoCs held back pending human-in-the-loop approval.</p>
   <table class="hyp-table"><thead><tr><th>ID</th><th>Hypothesis</th><th>Based on</th><th>Test plan</th></tr></thead><tbody id="hbody"></tbody></table>
 </section>` : ''}
 
-<section class="persona-pm-only" style="display:block">
+<section>
   <h2>What was not tested</h2>
   <ul class="sub">
     <li>Third-party CDNs and analytics origins.</li>
@@ -588,8 +607,8 @@ function renderModule(m){
   const routeHtml=routes.length?'<div class="routes"><div class="lbl sub" style="margin-bottom:4px">Routes</div>'+routes.map(r=>'<code>'+esc(r)+'</code>').join(' ')+'</div>':'';
   const featHtml=features.length?'<div class="features"><div class="lbl sub" style="margin-bottom:4px">Features observed</div><ul style="margin:4px 0 0 20px;color:var(--sub)">'+features.map(f=>'<li>'+esc(f)+'</li>').join('')+'</ul></div>':'';
   const scTable=scenarios.length?
-    '<h3 class="persona-qa persona-sec">Test scenarios ('+scenarios.length+')</h3>'+
-    '<table class="scenario-table persona-qa persona-sec"><thead><tr><th style="width:70px">ID</th><th>Scenario</th><th style="width:110px">Result</th><th>Evidence</th></tr></thead><tbody>'+
+    '<h3>Test scenarios ('+scenarios.length+')</h3>'+
+    '<table class="scenario-table"><thead><tr><th style="width:70px">ID</th><th>Scenario</th><th style="width:110px">Result</th><th>Evidence</th></tr></thead><tbody>'+
     scenarios.map(s=>{
       const ev=s.evidence&&(s.evidence.screenshot||s.evidence.dom||s.evidence.headers)||'';
       const rk=(s.result||'note').toLowerCase();
@@ -639,13 +658,6 @@ applyFilters();
 // Hypotheses
 const hbody=document.getElementById('hbody');
 if(hbody) hbody.innerHTML=(D.hypotheses||[]).map(h=>'<tr><td><code>'+esc(h.id)+'</code></td><td>'+esc(h.title)+'</td><td>'+esc((h.based_on||[]).join('; '))+'</td><td>'+esc(h.test_plan||'')+'</td></tr>').join('');
-
-// Persona toggle
-document.querySelectorAll('.persona button').forEach(b=>b.addEventListener('click',()=>{
-  document.querySelectorAll('.persona button').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active');
-  document.body.dataset.persona=b.dataset.p;
-}));
 
 // Export
 function dl(name,mime,body){const b=new Blob([body],{type:mime}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500);}

@@ -4,7 +4,7 @@
     "tester": "ariefrahman",
     "date": "2026-08-21",
     "authorization": "owner",
-    "run_dir": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full"
+    "run": "2026-08-21-testforge-emha-space-full"
   },
   "counts": {
     "MEDIUM": 4,
@@ -33,9 +33,9 @@
           "desc": "Load landing, capture headers",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+            "screenshot": "evidence/landing/home.png",
+            "dom": "evidence/landing/home.html",
+            "headers": "evidence/landing/home.headers.json",
             "url": "https://testforge.emha.space/"
           }
         }
@@ -80,9 +80,9 @@
           "desc": "Locate email/password inputs",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-page.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-page.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-page.headers.json",
+            "screenshot": "evidence/auth/login-page.png",
+            "dom": "evidence/auth/login-page.html",
+            "headers": "evidence/auth/login-page.headers.json",
             "url": "https://testforge.emha.space/login"
           }
         },
@@ -91,9 +91,9 @@
           "desc": "Submit valid email + wrong password; observe error message for user-enumeration",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-wrong-password.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-wrong-password.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-wrong-password.headers.json",
+            "screenshot": "evidence/auth/login-wrong-password.png",
+            "dom": "evidence/auth/login-wrong-password.html",
+            "headers": "evidence/auth/login-wrong-password.headers.json",
             "url": "https://testforge.emha.space/login"
           },
           "observed": "Generic error / no user-enumeration hint detected"
@@ -103,9 +103,9 @@
           "desc": "Login with correct credentials",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/post-login.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/post-login.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/post-login.headers.json",
+            "screenshot": "evidence/auth/post-login.png",
+            "dom": "evidence/auth/post-login.html",
+            "headers": "evidence/auth/post-login.headers.json",
             "url": "https://testforge.emha.space/dashboard"
           },
           "observed": "Redirected to https://testforge.emha.space/dashboard"
@@ -115,7 +115,7 @@
           "desc": "Inspect session cookie flags",
           "result": "pass",
           "evidence": {
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/cookies.json"
+            "headers": "evidence/auth/cookies.json"
           }
         }
       ],
@@ -141,9 +141,9 @@
           "desc": "Navigate https://testforge.emha.space/my-work (nav text: \"My Work\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/my-work/route-1.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/my-work/route-1.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/my-work/route-1.headers.json",
+            "screenshot": "evidence/my-work/route-1.png",
+            "dom": "evidence/my-work/route-1.html",
+            "headers": "evidence/my-work/route-1.headers.json",
             "url": "https://testforge.emha.space/my-work"
           }
         }
@@ -172,9 +172,9 @@
           "desc": "Navigate https://testforge.emha.space/projects (nav text: \"Projects\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.headers.json",
+            "screenshot": "evidence/projects/route-1.png",
+            "dom": "evidence/projects/route-1.html",
+            "headers": "evidence/projects/route-1.headers.json",
             "url": "https://testforge.emha.space/projects"
           }
         },
@@ -183,9 +183,9 @@
           "desc": "Form action= method=POST lacks visible CSRF token",
           "result": "finding",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.headers.json",
+            "screenshot": "evidence/projects/route-1.png",
+            "dom": "evidence/projects/route-1.html",
+            "headers": "evidence/projects/route-1.headers.json",
             "url": "https://testforge.emha.space/projects"
           }
         },
@@ -194,9 +194,9 @@
           "desc": "Form action= method=POST lacks visible CSRF token",
           "result": "finding",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.headers.json",
+            "screenshot": "evidence/projects/route-1.png",
+            "dom": "evidence/projects/route-1.html",
+            "headers": "evidence/projects/route-1.headers.json",
             "url": "https://testforge.emha.space/projects"
           }
         },
@@ -205,9 +205,9 @@
           "desc": "Navigate https://testforge.emha.space/projects/testis (nav text: \"Testis\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.headers.json",
+            "screenshot": "evidence/projects/route-2.png",
+            "dom": "evidence/projects/route-2.html",
+            "headers": "evidence/projects/route-2.headers.json",
             "url": "https://testforge.emha.space/projects/testis"
           }
         },
@@ -216,9 +216,9 @@
           "desc": "Form action= method=POST lacks visible CSRF token",
           "result": "finding",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.headers.json",
+            "screenshot": "evidence/projects/route-2.png",
+            "dom": "evidence/projects/route-2.html",
+            "headers": "evidence/projects/route-2.headers.json",
             "url": "https://testforge.emha.space/projects/testis"
           }
         }
@@ -264,9 +264,9 @@
           "desc": "Navigate https://testforge.emha.space/settings/team (nav text: \"Team\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.headers.json",
+            "screenshot": "evidence/settings/route-1.png",
+            "dom": "evidence/settings/route-1.html",
+            "headers": "evidence/settings/route-1.headers.json",
             "url": "https://testforge.emha.space/settings/team"
           }
         },
@@ -275,9 +275,9 @@
           "desc": "Form action= method=POST lacks visible CSRF token",
           "result": "finding",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.headers.json",
+            "screenshot": "evidence/settings/route-1.png",
+            "dom": "evidence/settings/route-1.html",
+            "headers": "evidence/settings/route-1.headers.json",
             "url": "https://testforge.emha.space/settings/team"
           }
         },
@@ -286,9 +286,9 @@
           "desc": "Navigate https://testforge.emha.space/settings/api-keys (nav text: \"API Keys\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.headers.json",
+            "screenshot": "evidence/settings/route-2.png",
+            "dom": "evidence/settings/route-2.html",
+            "headers": "evidence/settings/route-2.headers.json",
             "url": "https://testforge.emha.space/settings/api-keys"
           }
         },
@@ -297,9 +297,9 @@
           "desc": "Form action= method=POST lacks visible CSRF token",
           "result": "finding",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.headers.json",
+            "screenshot": "evidence/settings/route-2.png",
+            "dom": "evidence/settings/route-2.html",
+            "headers": "evidence/settings/route-2.headers.json",
             "url": "https://testforge.emha.space/settings/api-keys"
           }
         },
@@ -308,9 +308,9 @@
           "desc": "Form action= method=POST lacks visible CSRF token",
           "result": "finding",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.headers.json",
+            "screenshot": "evidence/settings/route-2.png",
+            "dom": "evidence/settings/route-2.html",
+            "headers": "evidence/settings/route-2.headers.json",
             "url": "https://testforge.emha.space/settings/api-keys"
           }
         },
@@ -319,9 +319,9 @@
           "desc": "Navigate https://testforge.emha.space/settings/ai (nav text: \"AI Assist\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.headers.json",
+            "screenshot": "evidence/settings/route-3.png",
+            "dom": "evidence/settings/route-3.html",
+            "headers": "evidence/settings/route-3.headers.json",
             "url": "https://testforge.emha.space/settings/ai"
           }
         },
@@ -330,9 +330,9 @@
           "desc": "Form action= method=POST lacks visible CSRF token",
           "result": "finding",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.headers.json",
+            "screenshot": "evidence/settings/route-3.png",
+            "dom": "evidence/settings/route-3.html",
+            "headers": "evidence/settings/route-3.headers.json",
             "url": "https://testforge.emha.space/settings/ai"
           }
         },
@@ -341,9 +341,9 @@
           "desc": "Navigate https://testforge.emha.space/settings/audit-log (nav text: \"Audit Log\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-4.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-4.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-4.headers.json",
+            "screenshot": "evidence/settings/route-4.png",
+            "dom": "evidence/settings/route-4.html",
+            "headers": "evidence/settings/route-4.headers.json",
             "url": "https://testforge.emha.space/settings/audit-log"
           }
         },
@@ -352,9 +352,9 @@
           "desc": "Navigate https://testforge.emha.space/settings/backup (nav text: \"Backup\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-5.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-5.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-5.headers.json",
+            "screenshot": "evidence/settings/route-5.png",
+            "dom": "evidence/settings/route-5.html",
+            "headers": "evidence/settings/route-5.headers.json",
             "url": "https://testforge.emha.space/settings/backup"
           }
         },
@@ -363,9 +363,9 @@
           "desc": "Navigate https://testforge.emha.space/settings/account (nav text: \"Account\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.headers.json",
+            "screenshot": "evidence/settings/route-6.png",
+            "dom": "evidence/settings/route-6.html",
+            "headers": "evidence/settings/route-6.headers.json",
             "url": "https://testforge.emha.space/settings/account"
           }
         },
@@ -374,9 +374,9 @@
           "desc": "Form action= method=POST lacks visible CSRF token",
           "result": "finding",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.headers.json",
+            "screenshot": "evidence/settings/route-6.png",
+            "dom": "evidence/settings/route-6.html",
+            "headers": "evidence/settings/route-6.headers.json",
             "url": "https://testforge.emha.space/settings/account"
           }
         }
@@ -420,9 +420,9 @@
           "desc": "Navigate https://testforge.emha.space/academy (nav text: \"AcademyBeta\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-1.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-1.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-1.headers.json",
+            "screenshot": "evidence/academy/route-1.png",
+            "dom": "evidence/academy/route-1.html",
+            "headers": "evidence/academy/route-1.headers.json",
             "url": "https://testforge.emha.space/academy"
           }
         },
@@ -431,9 +431,9 @@
           "desc": "Navigate https://testforge.emha.space/academy/me (nav text: \"My progress\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-2.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-2.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-2.headers.json",
+            "screenshot": "evidence/academy/route-2.png",
+            "dom": "evidence/academy/route-2.html",
+            "headers": "evidence/academy/route-2.headers.json",
             "url": "https://testforge.emha.space/academy/me"
           }
         },
@@ -442,9 +442,9 @@
           "desc": "Navigate https://testforge.emha.space/academy/fundamentals/what-qa-does (nav text: \"Start QA Fundamentals\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-3.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-3.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-3.headers.json",
+            "screenshot": "evidence/academy/route-3.png",
+            "dom": "evidence/academy/route-3.html",
+            "headers": "evidence/academy/route-3.headers.json",
             "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does"
           }
         }
@@ -471,9 +471,9 @@
           "desc": "Navigate https://testforge.emha.space/docs/help (nav text: \"Help\")",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/docs/route-1.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/docs/route-1.html",
-            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/docs/route-1.headers.json",
+            "screenshot": "evidence/docs/route-1.png",
+            "dom": "evidence/docs/route-1.html",
+            "headers": "evidence/docs/route-1.headers.json",
             "url": "https://testforge.emha.space/docs/help"
           }
         }
@@ -500,8 +500,8 @@
           "desc": "Navigate /dashboard",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/03-dashboard-initial.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/03-dashboard-initial.html",
+            "screenshot": "evidence/dashboard/03-dashboard-initial.png",
+            "dom": "evidence/dashboard/03-dashboard-initial.html",
             "url": "https://testforge.emha.space/dashboard"
           },
           "observed": ""
@@ -511,8 +511,8 @@
           "desc": "Click \"TestForge\"",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-001-TestForge.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-001-TestForge.html",
+            "screenshot": "evidence/dashboard/click-I-001-TestForge.png",
+            "dom": "evidence/dashboard/click-I-001-TestForge.html",
             "url": "https://testforge.emha.space/dashboard"
           },
           "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
@@ -522,8 +522,8 @@
           "desc": "Click \"Search⌘K\"",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-002-Search_K.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-002-Search_K.html",
+            "screenshot": "evidence/dashboard/click-I-002-Search_K.png",
+            "dom": "evidence/dashboard/click-I-002-Search_K.html",
             "url": "https://testforge.emha.space/dashboard"
           },
           "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
@@ -533,8 +533,8 @@
           "desc": "Click \"Dashboard\"",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-003-Dashboard.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-003-Dashboard.html",
+            "screenshot": "evidence/dashboard/click-I-003-Dashboard.png",
+            "dom": "evidence/dashboard/click-I-003-Dashboard.html",
             "url": "https://testforge.emha.space/dashboard"
           },
           "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
@@ -544,8 +544,8 @@
           "desc": "Click \"Log out →\"",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-004-Log_out_.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-004-Log_out_.html",
+            "screenshot": "evidence/dashboard/click-I-004-Log_out_.png",
+            "dom": "evidence/dashboard/click-I-004-Log_out_.html",
             "url": "https://testforge.emha.space/dashboard"
           },
           "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
@@ -555,8 +555,8 @@
           "desc": "Click \"Light\"",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-005-Light.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-005-Light.html",
+            "screenshot": "evidence/dashboard/click-I-005-Light.png",
+            "dom": "evidence/dashboard/click-I-005-Light.html",
             "url": "https://testforge.emha.space/dashboard"
           },
           "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-light\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"Light\" aria-label=\"Light\" aria-pressed=\"false\" data-testid=\"theme-light\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-"
@@ -566,8 +566,8 @@
           "desc": "Click \"System\"",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-006-System.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-006-System.html",
+            "screenshot": "evidence/dashboard/click-I-006-System.png",
+            "dom": "evidence/dashboard/click-I-006-System.html",
             "url": "https://testforge.emha.space/dashboard"
           },
           "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-system\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"System\" aria-pressed=\"true\" aria-label=\"System\" data-testid=\"theme-system\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ri"
@@ -577,8 +577,8 @@
           "desc": "Click \"Dark\"",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-007-Dark.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-007-Dark.html",
+            "screenshot": "evidence/dashboard/click-I-007-Dark.png",
+            "dom": "evidence/dashboard/click-I-007-Dark.html",
             "url": "https://testforge.emha.space/dashboard"
           },
           "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-dark\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button title=\"Dark\" type=\"button\" aria-label=\"Dark\" aria-pressed=\"false\" data-testid=\"theme-dark\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-offs"
@@ -588,8 +588,8 @@
           "desc": "Click \"Continue learningMy progress →QA Fundamentals — 0 of 13 lessons doneStart QA Fun\"",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.html",
+            "screenshot": "evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.png",
+            "dom": "evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.html",
             "url": "https://testforge.emha.space/dashboard"
           },
           "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"dashboard-academy-widget\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <section data-testid=\"dashboard-academy-widget\" class=\"rounded-xl border border-hairline bg-surface p-6\">…</section>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m "
@@ -599,8 +599,8 @@
           "desc": "Reflected probe param=q",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html",
+            "screenshot": "evidence/dashboard/reflect-q.png",
+            "dom": "evidence/dashboard/reflect-q.html",
             "url": "https://testforge.emha.space/dashboard?q=zzqmt35h1y4xx"
           },
           "observed": "reflected=true"
@@ -610,8 +610,8 @@
           "desc": "Reflected probe param=search",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html",
+            "screenshot": "evidence/dashboard/reflect-search.png",
+            "dom": "evidence/dashboard/reflect-search.html",
             "url": "https://testforge.emha.space/dashboard?search=zzqmt35h1y4xx"
           },
           "observed": "reflected=true"
@@ -621,8 +621,8 @@
           "desc": "Reflected probe param=filter",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html",
+            "screenshot": "evidence/dashboard/reflect-filter.png",
+            "dom": "evidence/dashboard/reflect-filter.html",
             "url": "https://testforge.emha.space/dashboard?filter=zzqmt35h1y4xx"
           },
           "observed": "reflected=true"
@@ -632,8 +632,8 @@
           "desc": "Reflected probe param=project",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html",
+            "screenshot": "evidence/dashboard/reflect-project.png",
+            "dom": "evidence/dashboard/reflect-project.html",
             "url": "https://testforge.emha.space/dashboard?project=zzqmt35h1y4xx"
           },
           "observed": "reflected=true"
@@ -643,8 +643,8 @@
           "desc": "Reflected probe param=view",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html",
+            "screenshot": "evidence/dashboard/reflect-view.png",
+            "dom": "evidence/dashboard/reflect-view.html",
             "url": "https://testforge.emha.space/dashboard?view=zzqmt35h1y4xx"
           },
           "observed": "reflected=true"
@@ -654,8 +654,8 @@
           "desc": "Reflected probe param=tab",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html",
+            "screenshot": "evidence/dashboard/reflect-tab.png",
+            "dom": "evidence/dashboard/reflect-tab.html",
             "url": "https://testforge.emha.space/dashboard?tab=zzqmt35h1y4xx"
           },
           "observed": "reflected=true"
@@ -665,8 +665,8 @@
           "desc": "Reflected probe param=ref",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html",
+            "screenshot": "evidence/dashboard/reflect-ref.png",
+            "dom": "evidence/dashboard/reflect-ref.html",
             "url": "https://testforge.emha.space/dashboard?ref=zzqmt35h1y4xx"
           },
           "observed": "reflected=true"
@@ -676,8 +676,8 @@
           "desc": "Reflected probe param=id",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html",
+            "screenshot": "evidence/dashboard/reflect-id.png",
+            "dom": "evidence/dashboard/reflect-id.html",
             "url": "https://testforge.emha.space/dashboard?id=zzqmt35h1y4xx"
           },
           "observed": "reflected=true"
@@ -687,8 +687,8 @@
           "desc": "Reflected probe param=name",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html",
+            "screenshot": "evidence/dashboard/reflect-name.png",
+            "dom": "evidence/dashboard/reflect-name.html",
             "url": "https://testforge.emha.space/dashboard?name=zzqmt35h1y4xx"
           },
           "observed": "reflected=true"
@@ -698,8 +698,8 @@
           "desc": "Reflected probe param=sort",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html",
+            "screenshot": "evidence/dashboard/reflect-sort.png",
+            "dom": "evidence/dashboard/reflect-sort.html",
             "url": "https://testforge.emha.space/dashboard?sort=zzqmt35h1y4xx"
           },
           "observed": "reflected=true"
@@ -709,8 +709,8 @@
           "desc": "Reflected probe param=page",
           "result": "pass",
           "evidence": {
-            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.png",
-            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html",
+            "screenshot": "evidence/dashboard/reflect-page.png",
+            "dom": "evidence/dashboard/reflect-page.html",
             "url": "https://testforge.emha.space/dashboard?page=zzqmt35h1y4xx"
           },
           "observed": "reflected=true"
@@ -779,12 +779,12 @@
       "sev": "MEDIUM",
       "category": "A05:2021 Security Misconfiguration",
       "title": "Missing security header: strict-transport-security",
-      "evidence": "Header `strict-transport-security` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "Header `strict-transport-security` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
       "recommendation": "Add `strict-transport-security` at edge (Caddy/Next config).",
       "module": "landing",
       "confidence": "verified",
       "cwe": "CWE-693",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
@@ -798,12 +798,12 @@
       "sev": "MEDIUM",
       "category": "A05:2021 Security Misconfiguration",
       "title": "Missing security header: content-security-policy",
-      "evidence": "Header `content-security-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "Header `content-security-policy` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
       "recommendation": "Add `content-security-policy` at edge (Caddy/Next config).",
       "module": "landing",
       "confidence": "verified",
       "cwe": "CWE-693",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
@@ -820,8 +820,8 @@
       "category": "A05:2021 Security Misconfiguration",
       "cwe": "CWE-693",
       "title": "Missing security header: strict-transport-security",
-      "evidence": "Header `strict-transport-security` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "Header `strict-transport-security` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
@@ -839,8 +839,8 @@
       "category": "A05:2021 Security Misconfiguration",
       "cwe": "CWE-693",
       "title": "Missing security header: content-security-policy",
-      "evidence": "Header `content-security-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "Header `content-security-policy` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
@@ -855,12 +855,12 @@
       "sev": "LOW",
       "category": "A05:2021 Security Misconfiguration",
       "title": "Missing security header: x-frame-options",
-      "evidence": "Header `x-frame-options` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "Header `x-frame-options` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
       "recommendation": "Add `x-frame-options` at edge (Caddy/Next config).",
       "module": "landing",
       "confidence": "verified",
       "cwe": "CWE-693",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
@@ -874,12 +874,12 @@
       "sev": "LOW",
       "category": "A05:2021 Security Misconfiguration",
       "title": "Missing security header: x-content-type-options",
-      "evidence": "Header `x-content-type-options` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "Header `x-content-type-options` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
       "recommendation": "Add `x-content-type-options` at edge (Caddy/Next config).",
       "module": "landing",
       "confidence": "verified",
       "cwe": "CWE-693",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
@@ -893,12 +893,12 @@
       "sev": "LOW",
       "category": "A05:2021 Security Misconfiguration",
       "title": "Missing security header: referrer-policy",
-      "evidence": "Header `referrer-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "Header `referrer-policy` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
       "recommendation": "Add `referrer-policy` at edge (Caddy/Next config).",
       "module": "landing",
       "confidence": "verified",
       "cwe": "CWE-693",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
@@ -912,12 +912,12 @@
       "sev": "LOW",
       "category": "A05:2021 Security Misconfiguration",
       "title": "Missing security header: permissions-policy",
-      "evidence": "Header `permissions-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "Header `permissions-policy` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
       "recommendation": "Add `permissions-policy` at edge (Caddy/Next config).",
       "module": "landing",
       "confidence": "verified",
       "cwe": "CWE-693",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
@@ -931,12 +931,12 @@
       "sev": "LOW",
       "category": "A05:2021 Security Misconfiguration",
       "title": "Framework fingerprinting via X-Powered-By",
-      "evidence": "x-powered-by: Next.js on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "x-powered-by: Next.js on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
       "recommendation": "Strip banner (poweredByHeader:false in next.config.js).",
       "module": "landing",
       "confidence": "verified",
       "cwe": "CWE-200",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -950,12 +950,12 @@
       "sev": "LOW",
       "category": "A01:2021 Broken Access Control",
       "title": "Form on /projects has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
       "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.",
       "module": "projects",
       "confidence": "probable",
       "cwe": "CWE-352",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+      "evidence_path": "evidence/projects/route-1.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -969,12 +969,12 @@
       "sev": "LOW",
       "category": "A01:2021 Broken Access Control",
       "title": "Form on /projects/testis has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
       "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.",
       "module": "projects",
       "confidence": "probable",
       "cwe": "CWE-352",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
+      "evidence_path": "evidence/projects/route-2.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -988,12 +988,12 @@
       "sev": "LOW",
       "category": "A01:2021 Broken Access Control",
       "title": "Form on /settings/team has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
       "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.",
       "module": "settings",
       "confidence": "probable",
       "cwe": "CWE-352",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
+      "evidence_path": "evidence/settings/route-1.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1007,12 +1007,12 @@
       "sev": "LOW",
       "category": "A01:2021 Broken Access Control",
       "title": "Form on /settings/api-keys has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
       "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.",
       "module": "settings",
       "confidence": "probable",
       "cwe": "CWE-352",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+      "evidence_path": "evidence/settings/route-2.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1029,8 +1029,8 @@
       "category": "A05:2021 Security Misconfiguration",
       "cwe": "CWE-693",
       "title": "Missing security header: x-frame-options",
-      "evidence": "Header `x-frame-options` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "Header `x-frame-options` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
@@ -1048,8 +1048,8 @@
       "category": "A05:2021 Security Misconfiguration",
       "cwe": "CWE-693",
       "title": "Missing security header: x-content-type-options",
-      "evidence": "Header `x-content-type-options` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "Header `x-content-type-options` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
@@ -1067,8 +1067,8 @@
       "category": "A05:2021 Security Misconfiguration",
       "cwe": "CWE-693",
       "title": "Missing security header: referrer-policy",
-      "evidence": "Header `referrer-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "Header `referrer-policy` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
@@ -1086,8 +1086,8 @@
       "category": "A05:2021 Security Misconfiguration",
       "cwe": "CWE-693",
       "title": "Missing security header: permissions-policy",
-      "evidence": "Header `permissions-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "Header `permissions-policy` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
@@ -1105,8 +1105,8 @@
       "category": "A05:2021 Security Misconfiguration",
       "cwe": "CWE-200",
       "title": "Framework fingerprinting via X-Powered-By",
-      "evidence": "x-powered-by: Next.js on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence": "x-powered-by: Next.js on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "evidence/landing/home.headers.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1124,8 +1124,8 @@
       "category": "A01:2021 Broken Access Control",
       "cwe": "CWE-352",
       "title": "Form on /projects has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+      "evidence_path": "evidence/projects/route-1.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1143,8 +1143,8 @@
       "category": "A01:2021 Broken Access Control",
       "cwe": "CWE-352",
       "title": "Form on /projects has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+      "evidence_path": "evidence/projects/route-1.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1162,8 +1162,8 @@
       "category": "A01:2021 Broken Access Control",
       "cwe": "CWE-352",
       "title": "Form on /projects/testis has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
+      "evidence_path": "evidence/projects/route-2.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1181,8 +1181,8 @@
       "category": "A01:2021 Broken Access Control",
       "cwe": "CWE-352",
       "title": "Form on /settings/team has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
+      "evidence_path": "evidence/settings/route-1.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1200,8 +1200,8 @@
       "category": "A01:2021 Broken Access Control",
       "cwe": "CWE-352",
       "title": "Form on /settings/api-keys has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+      "evidence_path": "evidence/settings/route-2.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1219,8 +1219,8 @@
       "category": "A01:2021 Broken Access Control",
       "cwe": "CWE-352",
       "title": "Form on /settings/api-keys has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+      "evidence_path": "evidence/settings/route-2.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1238,8 +1238,8 @@
       "category": "A01:2021 Broken Access Control",
       "cwe": "CWE-352",
       "title": "Form on /settings/ai has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
+      "evidence_path": "evidence/settings/route-3.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1257,8 +1257,8 @@
       "category": "A01:2021 Broken Access Control",
       "cwe": "CWE-352",
       "title": "Form on /settings/account has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
+      "evidence_path": "evidence/settings/route-6.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1276,8 +1276,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"q\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: \\\"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?q=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: \\\"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?q=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html)",
+      "evidence_path": "evidence/dashboard/reflect-q.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1295,8 +1295,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"search\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?search=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?search=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html)",
+      "evidence_path": "evidence/dashboard/reflect-search.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1314,8 +1314,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"filter\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?filter=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?filter=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html)",
+      "evidence_path": "evidence/dashboard/reflect-filter.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1333,8 +1333,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"project\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: _-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?project=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: _-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?project=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html)",
+      "evidence_path": "evidence/dashboard/reflect-project.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1352,8 +1352,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"view\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?view=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?view=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html)",
+      "evidence_path": "evidence/dashboard/reflect-view.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1371,8 +1371,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"tab\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?tab=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?tab=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html)",
+      "evidence_path": "evidence/dashboard/reflect-tab.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1390,8 +1390,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"ref\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?ref=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?ref=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html)",
+      "evidence_path": "evidence/dashboard/reflect-ref.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1409,8 +1409,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"id\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: \"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?id=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: \"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?id=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html)",
+      "evidence_path": "evidence/dashboard/reflect-id.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1428,8 +1428,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"name\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?name=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?name=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html)",
+      "evidence_path": "evidence/dashboard/reflect-name.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1447,8 +1447,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"sort\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?sort=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?sort=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html)",
+      "evidence_path": "evidence/dashboard/reflect-sort.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1466,8 +1466,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"page\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?page=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?page=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html)",
+      "evidence_path": "evidence/dashboard/reflect-page.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1485,8 +1485,8 @@
       "category": "A01:2021 Broken Access Control",
       "cwe": "CWE-352",
       "title": "Form on /settings/ai has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
+      "evidence_path": "evidence/settings/route-3.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1504,8 +1504,8 @@
       "category": "A01:2021 Broken Access Control",
       "cwe": "CWE-352",
       "title": "Form on /settings/account has no visible CSRF token",
-      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
+      "evidence_path": "evidence/settings/route-6.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1523,8 +1523,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"q\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: \\\"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?q=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: \\\"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?q=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html)",
+      "evidence_path": "evidence/dashboard/reflect-q.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1542,8 +1542,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"search\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?search=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?search=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html)",
+      "evidence_path": "evidence/dashboard/reflect-search.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1561,8 +1561,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"filter\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?filter=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?filter=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html)",
+      "evidence_path": "evidence/dashboard/reflect-filter.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1580,8 +1580,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"project\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: _-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?project=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: _-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?project=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html)",
+      "evidence_path": "evidence/dashboard/reflect-project.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1599,8 +1599,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"view\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?view=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?view=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html)",
+      "evidence_path": "evidence/dashboard/reflect-view.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1618,8 +1618,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"tab\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?tab=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?tab=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html)",
+      "evidence_path": "evidence/dashboard/reflect-tab.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1637,8 +1637,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"ref\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?ref=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?ref=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html)",
+      "evidence_path": "evidence/dashboard/reflect-ref.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1656,8 +1656,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"id\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: \"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?id=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: \"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?id=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html)",
+      "evidence_path": "evidence/dashboard/reflect-id.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1675,8 +1675,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"name\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?name=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?name=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html)",
+      "evidence_path": "evidence/dashboard/reflect-name.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1694,8 +1694,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"sort\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?sort=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?sort=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html)",
+      "evidence_path": "evidence/dashboard/reflect-sort.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1713,8 +1713,8 @@
       "category": "A03:2021 Injection",
       "cwe": "CWE-79",
       "title": "Query param \"page\" reflected in DOM at /dashboard",
-      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?page=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html)",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?page=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html)",
+      "evidence_path": "evidence/dashboard/reflect-page.html",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
@@ -1746,7 +1746,7 @@
       "cwe": "CWE-1006",
       "title": "4 dashboard control(s) produced no observable effect on click",
       "evidence": "Labels: TestForge, Search⌘K, Dashboard, Log out → — no navigation, no XHR, no console change. May be pure UI toggles (expected) or dead buttons (bug).",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/clickables.json",
+      "evidence_path": "evidence/dashboard/clickables.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N",
         "score": 0
@@ -1765,7 +1765,7 @@
       "cwe": "CWE-1006",
       "title": "4 dashboard control(s) produced no observable effect on click",
       "evidence": "Labels: TestForge, Search⌘K, Dashboard, Log out → — no navigation, no XHR, no console change. May be pure UI toggles (expected) or dead buttons (bug).",
-      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/clickables.json",
+      "evidence_path": "evidence/dashboard/clickables.json",
       "cvss4": {
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N",
         "score": 0

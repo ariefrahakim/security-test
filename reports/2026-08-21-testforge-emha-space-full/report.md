@@ -4,7 +4,7 @@
 **Date:** 2026-08-21  
 **Tester:** ariefrahman  
 **Authorization:** owner  
-**Run:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full`
+**Run:** `2026-08-21-testforge-emha-space-full`
 
 ## Overall risk: MODERATE
 
@@ -42,7 +42,7 @@
 
 | ID | Scenario | Result | Evidence |
 |---|---|---|---|
-| S-L1 | Load landing, capture headers | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.png` |
+| S-L1 | Load landing, capture headers | pass | `evidence/landing/home.png` |
 
 **Findings**
 
@@ -55,12 +55,12 @@
 - **CWE:** CWE-693
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-Header `strict-transport-security` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+Header `strict-transport-security` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Add `strict-transport-security` at edge (Caddy/Next config).
@@ -74,12 +74,12 @@ Header `strict-transport-security` absent on https://testforge.emha.space/. See 
 - **CWE:** CWE-693
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-Header `content-security-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+Header `content-security-policy` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Add `content-security-policy` at edge (Caddy/Next config).
@@ -93,12 +93,12 @@ Header `content-security-policy` absent on https://testforge.emha.space/. See /U
 - **CWE:** CWE-693
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-Header `x-frame-options` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+Header `x-frame-options` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Add `x-frame-options` at edge (Caddy/Next config).
@@ -112,12 +112,12 @@ Header `x-frame-options` absent on https://testforge.emha.space/. See /Users/ari
 - **CWE:** CWE-693
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-Header `x-content-type-options` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+Header `x-content-type-options` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Add `x-content-type-options` at edge (Caddy/Next config).
@@ -131,12 +131,12 @@ Header `x-content-type-options` absent on https://testforge.emha.space/. See /Us
 - **CWE:** CWE-693
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-Header `referrer-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+Header `referrer-policy` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Add `referrer-policy` at edge (Caddy/Next config).
@@ -150,12 +150,12 @@ Header `referrer-policy` absent on https://testforge.emha.space/. See /Users/ari
 - **CWE:** CWE-693
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-Header `permissions-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+Header `permissions-policy` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Add `permissions-policy` at edge (Caddy/Next config).
@@ -169,12 +169,12 @@ Header `permissions-policy` absent on https://testforge.emha.space/. See /Users/
 - **CWE:** CWE-200
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-x-powered-by: Next.js on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+x-powered-by: Next.js on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Strip banner (poweredByHeader:false in next.config.js).
@@ -188,12 +188,12 @@ x-powered-by: Next.js on https://testforge.emha.space/. See /Users/ariefrahman/D
 - **CWE:** CWE-693
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-Header `strict-transport-security` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+Header `strict-transport-security` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Add `strict-transport-security` at edge (Caddy/Next config).
@@ -207,12 +207,12 @@ Header `strict-transport-security` absent on https://testforge.emha.space/. See 
 - **CWE:** CWE-693
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-Header `content-security-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+Header `content-security-policy` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Add `content-security-policy` at edge (Caddy/Next config).
@@ -226,12 +226,12 @@ Header `content-security-policy` absent on https://testforge.emha.space/. See /U
 - **CWE:** CWE-693
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-Header `x-frame-options` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+Header `x-frame-options` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Add `x-frame-options` at edge (Caddy/Next config).
@@ -245,12 +245,12 @@ Header `x-frame-options` absent on https://testforge.emha.space/. See /Users/ari
 - **CWE:** CWE-693
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-Header `x-content-type-options` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+Header `x-content-type-options` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Add `x-content-type-options` at edge (Caddy/Next config).
@@ -264,12 +264,12 @@ Header `x-content-type-options` absent on https://testforge.emha.space/. See /Us
 - **CWE:** CWE-693
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-Header `referrer-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+Header `referrer-policy` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Add `referrer-policy` at edge (Caddy/Next config).
@@ -283,12 +283,12 @@ Header `referrer-policy` absent on https://testforge.emha.space/. See /Users/ari
 - **CWE:** CWE-693
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-Header `permissions-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+Header `permissions-policy` absent on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Add `permissions-policy` at edge (Caddy/Next config).
@@ -302,12 +302,12 @@ Header `permissions-policy` absent on https://testforge.emha.space/. See /Users/
 - **CWE:** CWE-200
 - **Confidence:** verified
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json`
+- **Evidence:** `evidence/landing/home.headers.json`
 
 **How we saw it**
 
 ```
-x-powered-by: Next.js on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
+x-powered-by: Next.js on https://testforge.emha.space/. See reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json
 ```
 
 **How to fix:** Strip banner (poweredByHeader:false in next.config.js).
@@ -328,10 +328,10 @@ x-powered-by: Next.js on https://testforge.emha.space/. See /Users/ariefrahman/D
 
 | ID | Scenario | Result | Evidence |
 |---|---|---|---|
-| S-A0 | Locate email/password inputs | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-page.png` |
-| S-A1 | Submit valid email + wrong password; observe error message for user-enumeration | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-wrong-password.png` |
-| S-A2 | Login with correct credentials | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/post-login.png` |
-| S-A3 | Inspect session cookie flags | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/cookies.json` |
+| S-A0 | Locate email/password inputs | pass | `evidence/auth/login-page.png` |
+| S-A1 | Submit valid email + wrong password; observe error message for user-enumeration | pass | `evidence/auth/login-wrong-password.png` |
+| S-A2 | Login with correct credentials | pass | `evidence/auth/post-login.png` |
+| S-A3 | Inspect session cookie flags | pass | `evidence/auth/cookies.json` |
 
 _No findings recorded for this module._
 
@@ -351,7 +351,7 @@ _No findings recorded for this module._
 
 | ID | Scenario | Result | Evidence |
 |---|---|---|---|
-| S-MY-WORK-1 | Navigate https://testforge.emha.space/my-work (nav text: "My Work") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/my-work/route-1.png` |
+| S-MY-WORK-1 | Navigate https://testforge.emha.space/my-work (nav text: "My Work") | pass | `evidence/my-work/route-1.png` |
 
 _No findings recorded for this module._
 
@@ -373,11 +373,11 @@ _No findings recorded for this module._
 
 | ID | Scenario | Result | Evidence |
 |---|---|---|---|
-| S-PROJECTS-1 | Navigate https://testforge.emha.space/projects (nav text: "Projects") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.png` |
-| S-PROJECTS-2 | Form action= method=POST lacks visible CSRF token | finding | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.png` |
-| S-PROJECTS-3 | Form action= method=POST lacks visible CSRF token | finding | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.png` |
-| S-PROJECTS-4 | Navigate https://testforge.emha.space/projects/testis (nav text: "Testis") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.png` |
-| S-PROJECTS-5 | Form action= method=POST lacks visible CSRF token | finding | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.png` |
+| S-PROJECTS-1 | Navigate https://testforge.emha.space/projects (nav text: "Projects") | pass | `evidence/projects/route-1.png` |
+| S-PROJECTS-2 | Form action= method=POST lacks visible CSRF token | finding | `evidence/projects/route-1.png` |
+| S-PROJECTS-3 | Form action= method=POST lacks visible CSRF token | finding | `evidence/projects/route-1.png` |
+| S-PROJECTS-4 | Navigate https://testforge.emha.space/projects/testis (nav text: "Testis") | pass | `evidence/projects/route-2.png` |
+| S-PROJECTS-5 | Form action= method=POST lacks visible CSRF token | finding | `evidence/projects/route-2.png` |
 
 **Findings**
 
@@ -390,12 +390,12 @@ _No findings recorded for this module._
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html`
+- **Evidence:** `evidence/projects/route-1.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -409,12 +409,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html`
+- **Evidence:** `evidence/projects/route-1.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -428,12 +428,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html`
+- **Evidence:** `evidence/projects/route-2.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -447,12 +447,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html`
+- **Evidence:** `evidence/projects/route-1.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -466,12 +466,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html`
+- **Evidence:** `evidence/projects/route-2.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -502,17 +502,17 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 
 | ID | Scenario | Result | Evidence |
 |---|---|---|---|
-| S-SETTINGS-1 | Navigate https://testforge.emha.space/settings/team (nav text: "Team") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.png` |
-| S-SETTINGS-2 | Form action= method=POST lacks visible CSRF token | finding | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.png` |
-| S-SETTINGS-3 | Navigate https://testforge.emha.space/settings/api-keys (nav text: "API Keys") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.png` |
-| S-SETTINGS-4 | Form action= method=POST lacks visible CSRF token | finding | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.png` |
-| S-SETTINGS-5 | Form action= method=POST lacks visible CSRF token | finding | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.png` |
-| S-SETTINGS-6 | Navigate https://testforge.emha.space/settings/ai (nav text: "AI Assist") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.png` |
-| S-SETTINGS-7 | Form action= method=POST lacks visible CSRF token | finding | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.png` |
-| S-SETTINGS-8 | Navigate https://testforge.emha.space/settings/audit-log (nav text: "Audit Log") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-4.png` |
-| S-SETTINGS-9 | Navigate https://testforge.emha.space/settings/backup (nav text: "Backup") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-5.png` |
-| S-SETTINGS-10 | Navigate https://testforge.emha.space/settings/account (nav text: "Account") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.png` |
-| S-SETTINGS-11 | Form action= method=POST lacks visible CSRF token | finding | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.png` |
+| S-SETTINGS-1 | Navigate https://testforge.emha.space/settings/team (nav text: "Team") | pass | `evidence/settings/route-1.png` |
+| S-SETTINGS-2 | Form action= method=POST lacks visible CSRF token | finding | `evidence/settings/route-1.png` |
+| S-SETTINGS-3 | Navigate https://testforge.emha.space/settings/api-keys (nav text: "API Keys") | pass | `evidence/settings/route-2.png` |
+| S-SETTINGS-4 | Form action= method=POST lacks visible CSRF token | finding | `evidence/settings/route-2.png` |
+| S-SETTINGS-5 | Form action= method=POST lacks visible CSRF token | finding | `evidence/settings/route-2.png` |
+| S-SETTINGS-6 | Navigate https://testforge.emha.space/settings/ai (nav text: "AI Assist") | pass | `evidence/settings/route-3.png` |
+| S-SETTINGS-7 | Form action= method=POST lacks visible CSRF token | finding | `evidence/settings/route-3.png` |
+| S-SETTINGS-8 | Navigate https://testforge.emha.space/settings/audit-log (nav text: "Audit Log") | pass | `evidence/settings/route-4.png` |
+| S-SETTINGS-9 | Navigate https://testforge.emha.space/settings/backup (nav text: "Backup") | pass | `evidence/settings/route-5.png` |
+| S-SETTINGS-10 | Navigate https://testforge.emha.space/settings/account (nav text: "Account") | pass | `evidence/settings/route-6.png` |
+| S-SETTINGS-11 | Form action= method=POST lacks visible CSRF token | finding | `evidence/settings/route-6.png` |
 
 **Findings**
 
@@ -525,12 +525,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html`
+- **Evidence:** `evidence/settings/route-1.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -544,12 +544,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html`
+- **Evidence:** `evidence/settings/route-2.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -563,12 +563,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html`
+- **Evidence:** `evidence/settings/route-2.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -582,12 +582,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html`
+- **Evidence:** `evidence/settings/route-3.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -601,12 +601,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html`
+- **Evidence:** `evidence/settings/route-6.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -620,12 +620,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html`
+- **Evidence:** `evidence/settings/route-1.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -639,12 +639,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html`
+- **Evidence:** `evidence/settings/route-2.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -658,12 +658,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html`
+- **Evidence:** `evidence/settings/route-3.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -677,12 +677,12 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 - **CWE:** CWE-352
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html`
+- **Evidence:** `evidence/settings/route-6.html`
 
 **How we saw it**
 
 ```
-Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html
+Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html
 ```
 
 **How to fix:** Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.
@@ -707,9 +707,9 @@ Form action= method=POST. Framework may use SameSite/double-submit; needs verifi
 
 | ID | Scenario | Result | Evidence |
 |---|---|---|---|
-| S-ACADEMY-1 | Navigate https://testforge.emha.space/academy (nav text: "AcademyBeta") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-1.png` |
-| S-ACADEMY-2 | Navigate https://testforge.emha.space/academy/me (nav text: "My progress") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-2.png` |
-| S-ACADEMY-3 | Navigate https://testforge.emha.space/academy/fundamentals/what-qa-does (nav text: "Start QA Fundamentals") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-3.png` |
+| S-ACADEMY-1 | Navigate https://testforge.emha.space/academy (nav text: "AcademyBeta") | pass | `evidence/academy/route-1.png` |
+| S-ACADEMY-2 | Navigate https://testforge.emha.space/academy/me (nav text: "My progress") | pass | `evidence/academy/route-2.png` |
+| S-ACADEMY-3 | Navigate https://testforge.emha.space/academy/fundamentals/what-qa-does (nav text: "Start QA Fundamentals") | pass | `evidence/academy/route-3.png` |
 
 _No findings recorded for this module._
 
@@ -729,7 +729,7 @@ _No findings recorded for this module._
 
 | ID | Scenario | Result | Evidence |
 |---|---|---|---|
-| S-DOCS-1 | Navigate https://testforge.emha.space/docs/help (nav text: "Help") | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/docs/route-1.png` |
+| S-DOCS-1 | Navigate https://testforge.emha.space/docs/help (nav text: "Help") | pass | `evidence/docs/route-1.png` |
 
 _No findings recorded for this module._
 
@@ -749,26 +749,26 @@ _No findings recorded for this module._
 
 | ID | Scenario | Result | Evidence |
 |---|---|---|---|
-| I-000 | Navigate /dashboard | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/03-dashboard-initial.png` |
-| I-001 | Click "TestForge" | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-001-TestForge.png` |
-| I-002 | Click "Search⌘K" | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-002-Search_K.png` |
-| I-003 | Click "Dashboard" | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-003-Dashboard.png` |
-| I-004 | Click "Log out →" | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-004-Log_out_.png` |
-| I-005 | Click "Light" | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-005-Light.png` |
-| I-006 | Click "System" | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-006-System.png` |
-| I-007 | Click "Dark" | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-007-Dark.png` |
-| I-008 | Click "Continue learningMy progress →QA Fundamentals — 0 of 13 lessons doneStart QA Fun" | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.png` |
-| I-refl-q | Reflected probe param=q | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.png` |
-| I-refl-search | Reflected probe param=search | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.png` |
-| I-refl-filter | Reflected probe param=filter | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.png` |
-| I-refl-project | Reflected probe param=project | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.png` |
-| I-refl-view | Reflected probe param=view | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.png` |
-| I-refl-tab | Reflected probe param=tab | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.png` |
-| I-refl-ref | Reflected probe param=ref | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.png` |
-| I-refl-id | Reflected probe param=id | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.png` |
-| I-refl-name | Reflected probe param=name | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.png` |
-| I-refl-sort | Reflected probe param=sort | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.png` |
-| I-refl-page | Reflected probe param=page | pass | `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.png` |
+| I-000 | Navigate /dashboard | pass | `evidence/dashboard/03-dashboard-initial.png` |
+| I-001 | Click "TestForge" | pass | `evidence/dashboard/click-I-001-TestForge.png` |
+| I-002 | Click "Search⌘K" | pass | `evidence/dashboard/click-I-002-Search_K.png` |
+| I-003 | Click "Dashboard" | pass | `evidence/dashboard/click-I-003-Dashboard.png` |
+| I-004 | Click "Log out →" | pass | `evidence/dashboard/click-I-004-Log_out_.png` |
+| I-005 | Click "Light" | pass | `evidence/dashboard/click-I-005-Light.png` |
+| I-006 | Click "System" | pass | `evidence/dashboard/click-I-006-System.png` |
+| I-007 | Click "Dark" | pass | `evidence/dashboard/click-I-007-Dark.png` |
+| I-008 | Click "Continue learningMy progress →QA Fundamentals — 0 of 13 lessons doneStart QA Fun" | pass | `evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.png` |
+| I-refl-q | Reflected probe param=q | pass | `evidence/dashboard/reflect-q.png` |
+| I-refl-search | Reflected probe param=search | pass | `evidence/dashboard/reflect-search.png` |
+| I-refl-filter | Reflected probe param=filter | pass | `evidence/dashboard/reflect-filter.png` |
+| I-refl-project | Reflected probe param=project | pass | `evidence/dashboard/reflect-project.png` |
+| I-refl-view | Reflected probe param=view | pass | `evidence/dashboard/reflect-view.png` |
+| I-refl-tab | Reflected probe param=tab | pass | `evidence/dashboard/reflect-tab.png` |
+| I-refl-ref | Reflected probe param=ref | pass | `evidence/dashboard/reflect-ref.png` |
+| I-refl-id | Reflected probe param=id | pass | `evidence/dashboard/reflect-id.png` |
+| I-refl-name | Reflected probe param=name | pass | `evidence/dashboard/reflect-name.png` |
+| I-refl-sort | Reflected probe param=sort | pass | `evidence/dashboard/reflect-sort.png` |
+| I-refl-page | Reflected probe param=page | pass | `evidence/dashboard/reflect-page.png` |
 
 **Findings**
 
@@ -781,12 +781,12 @@ _No findings recorded for this module._
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html`
+- **Evidence:** `evidence/dashboard/reflect-q.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: \"eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?q=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: \"eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?q=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -800,12 +800,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: \"eVuR_-kK8Yz5
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html`
+- **Evidence:** `evidence/dashboard/reflect-search.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?search=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?search=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -819,12 +819,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: R_-kK8Yz55oiw9
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html`
+- **Evidence:** `evidence/dashboard/reflect-filter.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?filter=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?filter=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -838,12 +838,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: R_-kK8Yz55oiw9
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html`
+- **Evidence:** `evidence/dashboard/reflect-project.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: _-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?project=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: _-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?project=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -857,12 +857,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: _-kK8Yz55oiw9Q
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html`
+- **Evidence:** `evidence/dashboard/reflect-view.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?view=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?view=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -876,12 +876,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oi
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html`
+- **Evidence:** `evidence/dashboard/reflect-tab.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?tab=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?tab=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -895,12 +895,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: eVuR_-kK8Yz55o
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html`
+- **Evidence:** `evidence/dashboard/reflect-ref.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?ref=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?ref=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -914,12 +914,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: eVuR_-kK8Yz55o
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html`
+- **Evidence:** `evidence/dashboard/reflect-id.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: "eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?id=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: "eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?id=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -933,12 +933,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: "eVuR_-kK8Yz55
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html`
+- **Evidence:** `evidence/dashboard/reflect-name.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?name=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?name=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -952,12 +952,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oi
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html`
+- **Evidence:** `evidence/dashboard/reflect-sort.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?sort=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?sort=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -971,12 +971,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oi
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html`
+- **Evidence:** `evidence/dashboard/reflect-page.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?page=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?page=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -990,7 +990,7 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oi
 - **CWE:** CWE-1006
 - **Confidence:** heuristic
 - **CVSS 4.0:** 0 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/clickables.json`
+- **Evidence:** `evidence/dashboard/clickables.json`
 
 **How we saw it**
 
@@ -1009,12 +1009,12 @@ Labels: TestForge, Search⌘K, Dashboard, Log out → — no navigation, no XHR,
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html`
+- **Evidence:** `evidence/dashboard/reflect-q.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: \"eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?q=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: \"eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?q=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -1028,12 +1028,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: \"eVuR_-kK8Yz5
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html`
+- **Evidence:** `evidence/dashboard/reflect-search.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?search=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?search=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -1047,12 +1047,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: R_-kK8Yz55oiw9
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html`
+- **Evidence:** `evidence/dashboard/reflect-filter.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?filter=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?filter=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -1066,12 +1066,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: R_-kK8Yz55oiw9
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html`
+- **Evidence:** `evidence/dashboard/reflect-project.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: _-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?project=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: _-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?project=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -1085,12 +1085,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: _-kK8Yz55oiw9Q
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html`
+- **Evidence:** `evidence/dashboard/reflect-view.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?view=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?view=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -1104,12 +1104,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oi
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html`
+- **Evidence:** `evidence/dashboard/reflect-tab.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?tab=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?tab=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -1123,12 +1123,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: eVuR_-kK8Yz55o
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html`
+- **Evidence:** `evidence/dashboard/reflect-ref.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?ref=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?ref=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -1142,12 +1142,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: eVuR_-kK8Yz55o
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html`
+- **Evidence:** `evidence/dashboard/reflect-id.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: "eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?id=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: "eVuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?id=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -1161,12 +1161,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: "eVuR_-kK8Yz55
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html`
+- **Evidence:** `evidence/dashboard/reflect-name.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?name=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?name=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -1180,12 +1180,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oi
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html`
+- **Evidence:** `evidence/dashboard/reflect-sort.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?sort=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?sort=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -1199,12 +1199,12 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oi
 - **CWE:** CWE-79
 - **Confidence:** probable
 - **CVSS 4.0:** 2.3 (`CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html`
+- **Evidence:** `evidence/dashboard/reflect-page.html`
 
 **How we saw it**
 
 ```
-Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?page=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html)
+Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard?page=zzqmt35h1y4xx\"],\"initialTree\":[\"\",{\"children\":[\"(app)\",{\"children\":[\ (see reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html)
 ```
 
 **How to fix:** Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src.
@@ -1218,7 +1218,7 @@ Canary "zzqmt35h1y4xx" appears in response body. Context excerpt: VuR_-kK8Yz55oi
 - **CWE:** CWE-1006
 - **Confidence:** heuristic
 - **CVSS 4.0:** 0 (`CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N`)
-- **Evidence:** `/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/clickables.json`
+- **Evidence:** `evidence/dashboard/clickables.json`
 
 **How we saw it**
 
