@@ -1,0 +1,850 @@
+{
+  "target": "https://testforge.emha.space",
+  "started_at": "2026-08-21T15:51:15.722Z",
+  "modules": [
+    {
+      "slug": "landing",
+      "name": "Landing (pre-auth)",
+      "routes": [
+        "https://testforge.emha.space/"
+      ],
+      "features": [
+        "Public landing page; links to /login, /signup"
+      ],
+      "scenarios": [
+        {
+          "id": "S-L1",
+          "desc": "Load landing, capture headers",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/landing/home.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/landing/home.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/landing/home.headers.json",
+            "url": "https://testforge.emha.space/"
+          }
+        }
+      ],
+      "findings": [
+        "V-01",
+        "V-02",
+        "V-03",
+        "V-04",
+        "V-05",
+        "V-06",
+        "V-07"
+      ],
+      "coverage": "Read-only: header capture, DOM snapshot. Skipped: signup form fuzz (state-changing, HITL)."
+    },
+    {
+      "slug": "auth",
+      "name": "Authentication",
+      "routes": [
+        "https://testforge.emha.space/login"
+      ],
+      "features": [
+        "Email + password login; links to /forgot-password, /signup, /login/2fa"
+      ],
+      "scenarios": [
+        {
+          "id": "S-A0",
+          "desc": "Locate email/password inputs",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/login-page.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/login-page.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/login-page.headers.json",
+            "url": "https://testforge.emha.space/login"
+          }
+        },
+        {
+          "id": "S-A1",
+          "desc": "Submit valid email + wrong password; observe error message for user-enumeration",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/login-wrong-password.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/login-wrong-password.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/login-wrong-password.headers.json",
+            "url": "https://testforge.emha.space/login"
+          },
+          "observed": "Generic error / no user-enumeration hint detected"
+        },
+        {
+          "id": "S-A2",
+          "desc": "Login with correct credentials",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/post-login.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/post-login.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/post-login.headers.json",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "Redirected to https://testforge.emha.space/dashboard"
+        },
+        {
+          "id": "S-A3",
+          "desc": "Inspect session cookie flags",
+          "result": "pass",
+          "evidence": {
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/cookies.json"
+          }
+        }
+      ],
+      "findings": [],
+      "coverage": "Read-only: login form, wrong-password error, session cookies. Deferred (HITL): password reset flow, 2FA enrolment."
+    },
+    {
+      "slug": "dashboard",
+      "name": "Dashboard",
+      "routes": [
+        "https://testforge.emha.space/dashboard"
+      ],
+      "features": [
+        "TestForge — Test Case Management — Dashboard"
+      ],
+      "scenarios": [
+        {
+          "id": "S-DASHBOARD-1",
+          "desc": "Navigate https://testforge.emha.space/dashboard (nav text: \"TestForge\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/dashboard/route-1.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/dashboard/route-1.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/dashboard/route-1.headers.json",
+            "url": "https://testforge.emha.space/dashboard"
+          }
+        }
+      ],
+      "findings": [],
+      "coverage": "Visited 1/1 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+    },
+    {
+      "slug": "my-work",
+      "name": "My-work",
+      "routes": [
+        "https://testforge.emha.space/my-work"
+      ],
+      "features": [
+        "TestForge — Test Case Management"
+      ],
+      "scenarios": [
+        {
+          "id": "S-MY-WORK-1",
+          "desc": "Navigate https://testforge.emha.space/my-work (nav text: \"My Work\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/my-work/route-1.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/my-work/route-1.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/my-work/route-1.headers.json",
+            "url": "https://testforge.emha.space/my-work"
+          }
+        }
+      ],
+      "findings": [],
+      "coverage": "Visited 1/1 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+    },
+    {
+      "slug": "projects",
+      "name": "Projects",
+      "routes": [
+        "https://testforge.emha.space/projects",
+        "https://testforge.emha.space/projects/testis"
+      ],
+      "features": [
+        "TestForge — Test Case Management — Projects",
+        "Testis — TestForge — Testis"
+      ],
+      "scenarios": [
+        {
+          "id": "S-PROJECTS-1",
+          "desc": "Navigate https://testforge.emha.space/projects (nav text: \"Projects\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.headers.json",
+            "url": "https://testforge.emha.space/projects"
+          }
+        },
+        {
+          "id": "S-PROJECTS-2",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.headers.json",
+            "url": "https://testforge.emha.space/projects"
+          }
+        },
+        {
+          "id": "S-PROJECTS-3",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.headers.json",
+            "url": "https://testforge.emha.space/projects"
+          }
+        },
+        {
+          "id": "S-PROJECTS-4",
+          "desc": "Navigate https://testforge.emha.space/projects/testis (nav text: \"Testis\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-2.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-2.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-2.headers.json",
+            "url": "https://testforge.emha.space/projects/testis"
+          }
+        },
+        {
+          "id": "S-PROJECTS-5",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-2.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-2.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-2.headers.json",
+            "url": "https://testforge.emha.space/projects/testis"
+          }
+        }
+      ],
+      "findings": [
+        "V-08",
+        "V-09",
+        "V-10"
+      ],
+      "coverage": "Visited 2/2 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+    },
+    {
+      "slug": "settings",
+      "name": "Settings",
+      "routes": [
+        "https://testforge.emha.space/settings/team",
+        "https://testforge.emha.space/settings/api-keys",
+        "https://testforge.emha.space/settings/ai",
+        "https://testforge.emha.space/settings/audit-log",
+        "https://testforge.emha.space/settings/backup",
+        "https://testforge.emha.space/settings/account"
+      ],
+      "features": [
+        "TestForge — Test Case Management — Team",
+        "TestForge — Test Case Management — API Keys",
+        "TestForge — Test Case Management — AI assist",
+        "TestForge — Test Case Management — Audit Log",
+        "TestForge — Test Case Management — Backup & restore",
+        "TestForge — Test Case Management — Account"
+      ],
+      "scenarios": [
+        {
+          "id": "S-SETTINGS-1",
+          "desc": "Navigate https://testforge.emha.space/settings/team (nav text: \"Team\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-1.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-1.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-1.headers.json",
+            "url": "https://testforge.emha.space/settings/team"
+          }
+        },
+        {
+          "id": "S-SETTINGS-2",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-1.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-1.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-1.headers.json",
+            "url": "https://testforge.emha.space/settings/team"
+          }
+        },
+        {
+          "id": "S-SETTINGS-3",
+          "desc": "Navigate https://testforge.emha.space/settings/api-keys (nav text: \"API Keys\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.headers.json",
+            "url": "https://testforge.emha.space/settings/api-keys"
+          }
+        },
+        {
+          "id": "S-SETTINGS-4",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.headers.json",
+            "url": "https://testforge.emha.space/settings/api-keys"
+          }
+        },
+        {
+          "id": "S-SETTINGS-5",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.headers.json",
+            "url": "https://testforge.emha.space/settings/api-keys"
+          }
+        },
+        {
+          "id": "S-SETTINGS-6",
+          "desc": "Navigate https://testforge.emha.space/settings/ai (nav text: \"AI Assist\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-3.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-3.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-3.headers.json",
+            "url": "https://testforge.emha.space/settings/ai"
+          }
+        },
+        {
+          "id": "S-SETTINGS-7",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-3.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-3.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-3.headers.json",
+            "url": "https://testforge.emha.space/settings/ai"
+          }
+        },
+        {
+          "id": "S-SETTINGS-8",
+          "desc": "Navigate https://testforge.emha.space/settings/audit-log (nav text: \"Audit Log\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-4.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-4.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-4.headers.json",
+            "url": "https://testforge.emha.space/settings/audit-log"
+          }
+        },
+        {
+          "id": "S-SETTINGS-9",
+          "desc": "Navigate https://testforge.emha.space/settings/backup (nav text: \"Backup\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-5.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-5.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-5.headers.json",
+            "url": "https://testforge.emha.space/settings/backup"
+          }
+        },
+        {
+          "id": "S-SETTINGS-10",
+          "desc": "Navigate https://testforge.emha.space/settings/account (nav text: \"Account\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-6.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-6.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-6.headers.json",
+            "url": "https://testforge.emha.space/settings/account"
+          }
+        },
+        {
+          "id": "S-SETTINGS-11",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-6.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-6.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-6.headers.json",
+            "url": "https://testforge.emha.space/settings/account"
+          }
+        }
+      ],
+      "findings": [
+        "V-11",
+        "V-12",
+        "V-13",
+        "V-14",
+        "V-15"
+      ],
+      "coverage": "Visited 6/6 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+    },
+    {
+      "slug": "academy",
+      "name": "Academy",
+      "routes": [
+        "https://testforge.emha.space/academy",
+        "https://testforge.emha.space/academy/me",
+        "https://testforge.emha.space/academy/fundamentals/what-qa-does"
+      ],
+      "features": [
+        "QA Academy — learn software testing from scratch | TestForge — QA AcademyBeta",
+        "My progress — TestForge QA Academy — My progressBeta",
+        "What a tester actually does — QA Fundamentals | TestForge QA Academy — What a tester actually does"
+      ],
+      "scenarios": [
+        {
+          "id": "S-ACADEMY-1",
+          "desc": "Navigate https://testforge.emha.space/academy (nav text: \"AcademyBeta\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-1.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-1.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-1.headers.json",
+            "url": "https://testforge.emha.space/academy"
+          }
+        },
+        {
+          "id": "S-ACADEMY-2",
+          "desc": "Navigate https://testforge.emha.space/academy/me (nav text: \"My progress\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-2.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-2.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-2.headers.json",
+            "url": "https://testforge.emha.space/academy/me"
+          }
+        },
+        {
+          "id": "S-ACADEMY-3",
+          "desc": "Navigate https://testforge.emha.space/academy/fundamentals/what-qa-does (nav text: \"Start QA Fundamentals\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-3.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-3.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-3.headers.json",
+            "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does"
+          }
+        }
+      ],
+      "findings": [],
+      "coverage": "Visited 3/3 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+    },
+    {
+      "slug": "docs",
+      "name": "Docs",
+      "routes": [
+        "https://testforge.emha.space/docs/help"
+      ],
+      "features": [
+        "Help — TestForge — Help"
+      ],
+      "scenarios": [
+        {
+          "id": "S-DOCS-1",
+          "desc": "Navigate https://testforge.emha.space/docs/help (nav text: \"Help\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/docs/route-1.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/docs/route-1.html",
+            "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/docs/route-1.headers.json",
+            "url": "https://testforge.emha.space/docs/help"
+          }
+        }
+      ],
+      "findings": [],
+      "coverage": "Visited 1/1 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+    }
+  ],
+  "routes_visited": [
+    "https://testforge.emha.space/",
+    "https://testforge.emha.space/login",
+    "https://testforge.emha.space/dashboard",
+    "https://testforge.emha.space/my-work",
+    "https://testforge.emha.space/projects",
+    "https://testforge.emha.space/projects/testis",
+    "https://testforge.emha.space/settings/team",
+    "https://testforge.emha.space/settings/api-keys",
+    "https://testforge.emha.space/settings/ai",
+    "https://testforge.emha.space/settings/audit-log",
+    "https://testforge.emha.space/settings/backup",
+    "https://testforge.emha.space/settings/account",
+    "https://testforge.emha.space/academy",
+    "https://testforge.emha.space/academy/me",
+    "https://testforge.emha.space/academy/fundamentals/what-qa-does",
+    "https://testforge.emha.space/docs/help"
+  ],
+  "scenarios": [
+    {
+      "module": "landing",
+      "id": "S-L1",
+      "desc": "Load landing, capture headers",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/landing/home.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/landing/home.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/landing/home.headers.json",
+        "url": "https://testforge.emha.space/"
+      }
+    },
+    {
+      "module": "auth",
+      "id": "S-A0",
+      "desc": "Locate email/password inputs",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/login-page.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/login-page.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/login-page.headers.json",
+        "url": "https://testforge.emha.space/login"
+      }
+    },
+    {
+      "module": "auth",
+      "id": "S-A1",
+      "desc": "Submit valid email + wrong password; observe error message for user-enumeration",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/login-wrong-password.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/login-wrong-password.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/login-wrong-password.headers.json",
+        "url": "https://testforge.emha.space/login"
+      },
+      "observed": "Generic error / no user-enumeration hint detected"
+    },
+    {
+      "module": "auth",
+      "id": "S-A2",
+      "desc": "Login with correct credentials",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/post-login.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/post-login.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/post-login.headers.json",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "Redirected to https://testforge.emha.space/dashboard"
+    },
+    {
+      "module": "auth",
+      "id": "S-A3",
+      "desc": "Inspect session cookie flags",
+      "result": "pass",
+      "evidence": {
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/auth/cookies.json"
+      }
+    },
+    {
+      "module": "dashboard",
+      "id": "S-DASHBOARD-1",
+      "desc": "Navigate https://testforge.emha.space/dashboard (nav text: \"TestForge\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/dashboard/route-1.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/dashboard/route-1.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/dashboard/route-1.headers.json",
+        "url": "https://testforge.emha.space/dashboard"
+      }
+    },
+    {
+      "module": "my-work",
+      "id": "S-MY-WORK-1",
+      "desc": "Navigate https://testforge.emha.space/my-work (nav text: \"My Work\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/my-work/route-1.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/my-work/route-1.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/my-work/route-1.headers.json",
+        "url": "https://testforge.emha.space/my-work"
+      }
+    },
+    {
+      "module": "projects",
+      "id": "S-PROJECTS-1",
+      "desc": "Navigate https://testforge.emha.space/projects (nav text: \"Projects\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.headers.json",
+        "url": "https://testforge.emha.space/projects"
+      }
+    },
+    {
+      "module": "projects",
+      "id": "S-PROJECTS-2",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.headers.json",
+        "url": "https://testforge.emha.space/projects"
+      }
+    },
+    {
+      "module": "projects",
+      "id": "S-PROJECTS-3",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-1.headers.json",
+        "url": "https://testforge.emha.space/projects"
+      }
+    },
+    {
+      "module": "projects",
+      "id": "S-PROJECTS-4",
+      "desc": "Navigate https://testforge.emha.space/projects/testis (nav text: \"Testis\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-2.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-2.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-2.headers.json",
+        "url": "https://testforge.emha.space/projects/testis"
+      }
+    },
+    {
+      "module": "projects",
+      "id": "S-PROJECTS-5",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-2.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-2.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/projects/route-2.headers.json",
+        "url": "https://testforge.emha.space/projects/testis"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-1",
+      "desc": "Navigate https://testforge.emha.space/settings/team (nav text: \"Team\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-1.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-1.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-1.headers.json",
+        "url": "https://testforge.emha.space/settings/team"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-2",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-1.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-1.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-1.headers.json",
+        "url": "https://testforge.emha.space/settings/team"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-3",
+      "desc": "Navigate https://testforge.emha.space/settings/api-keys (nav text: \"API Keys\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.headers.json",
+        "url": "https://testforge.emha.space/settings/api-keys"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-4",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.headers.json",
+        "url": "https://testforge.emha.space/settings/api-keys"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-5",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-2.headers.json",
+        "url": "https://testforge.emha.space/settings/api-keys"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-6",
+      "desc": "Navigate https://testforge.emha.space/settings/ai (nav text: \"AI Assist\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-3.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-3.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-3.headers.json",
+        "url": "https://testforge.emha.space/settings/ai"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-7",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-3.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-3.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-3.headers.json",
+        "url": "https://testforge.emha.space/settings/ai"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-8",
+      "desc": "Navigate https://testforge.emha.space/settings/audit-log (nav text: \"Audit Log\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-4.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-4.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-4.headers.json",
+        "url": "https://testforge.emha.space/settings/audit-log"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-9",
+      "desc": "Navigate https://testforge.emha.space/settings/backup (nav text: \"Backup\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-5.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-5.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-5.headers.json",
+        "url": "https://testforge.emha.space/settings/backup"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-10",
+      "desc": "Navigate https://testforge.emha.space/settings/account (nav text: \"Account\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-6.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-6.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-6.headers.json",
+        "url": "https://testforge.emha.space/settings/account"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-11",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-6.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-6.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/settings/route-6.headers.json",
+        "url": "https://testforge.emha.space/settings/account"
+      }
+    },
+    {
+      "module": "academy",
+      "id": "S-ACADEMY-1",
+      "desc": "Navigate https://testforge.emha.space/academy (nav text: \"AcademyBeta\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-1.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-1.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-1.headers.json",
+        "url": "https://testforge.emha.space/academy"
+      }
+    },
+    {
+      "module": "academy",
+      "id": "S-ACADEMY-2",
+      "desc": "Navigate https://testforge.emha.space/academy/me (nav text: \"My progress\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-2.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-2.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-2.headers.json",
+        "url": "https://testforge.emha.space/academy/me"
+      }
+    },
+    {
+      "module": "academy",
+      "id": "S-ACADEMY-3",
+      "desc": "Navigate https://testforge.emha.space/academy/fundamentals/what-qa-does (nav text: \"Start QA Fundamentals\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-3.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-3.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/academy/route-3.headers.json",
+        "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does"
+      }
+    },
+    {
+      "module": "docs",
+      "id": "S-DOCS-1",
+      "desc": "Navigate https://testforge.emha.space/docs/help (nav text: \"Help\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-run2/evidence/docs/route-1.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-run2/evidence/docs/route-1.html",
+        "headers": "reports/2026-08-21-testforge-emha-space-run2/evidence/docs/route-1.headers.json",
+        "url": "https://testforge.emha.space/docs/help"
+      }
+    }
+  ],
+  "discovered_links": [
+    {
+      "url": "https://testforge.emha.space/dashboard",
+      "text": "TestForge"
+    },
+    {
+      "url": "https://testforge.emha.space/my-work",
+      "text": "My Work"
+    },
+    {
+      "url": "https://testforge.emha.space/projects",
+      "text": "Projects"
+    },
+    {
+      "url": "https://testforge.emha.space/projects/testis",
+      "text": "Testis"
+    },
+    {
+      "url": "https://testforge.emha.space/settings/team",
+      "text": "Team"
+    },
+    {
+      "url": "https://testforge.emha.space/settings/api-keys",
+      "text": "API Keys"
+    },
+    {
+      "url": "https://testforge.emha.space/settings/ai",
+      "text": "AI Assist"
+    },
+    {
+      "url": "https://testforge.emha.space/settings/audit-log",
+      "text": "Audit Log"
+    },
+    {
+      "url": "https://testforge.emha.space/settings/backup",
+      "text": "Backup"
+    },
+    {
+      "url": "https://testforge.emha.space/settings/account",
+      "text": "Account"
+    },
+    {
+      "url": "https://testforge.emha.space/academy",
+      "text": "AcademyBeta"
+    },
+    {
+      "url": "https://testforge.emha.space/academy/me",
+      "text": "My progress"
+    },
+    {
+      "url": "https://testforge.emha.space/docs/help",
+      "text": "Help"
+    },
+    {
+      "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does",
+      "text": "Start QA Fundamentals"
+    }
+  ],
+  "finished_at": "2026-08-21T15:51:32.684Z"
+}

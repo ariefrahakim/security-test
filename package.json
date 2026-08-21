@@ -1,0 +1,17 @@
+{
+  "name": "sec-agent",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Agentic, authorization-gated web application security tester.",
+  "scripts": {
+    "sec-test": "./scripts/run.sh",
+    "walkthrough": "node scripts/authenticated-walkthrough.js",
+    "triage": "node scripts/triage.js",
+    "build-report": "node scripts/build-report.js",
+    "report": "node scripts/open-latest-report.js",
+    "report:list": "ls -1 reports | grep -v _agent-log"
+  },
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}

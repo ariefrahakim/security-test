@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://testforge.emha.space/dashboard",
+    "text": "TestForge"
+  },
+  {
+    "url": "https://testforge.emha.space/my-work",
+    "text": "My Work"
+  },
+  {
+    "url": "https://testforge.emha.space/projects",
+    "text": "Projects"
+  },
+  {
+    "url": "https://testforge.emha.space/projects/testis",
+    "text": "Testis"
+  },
+  {
+    "url": "https://testforge.emha.space/settings/team",
+    "text": "Team"
+  },
+  {
+    "url": "https://testforge.emha.space/settings/api-keys",
+    "text": "API Keys"
+  },
+  {
+    "url": "https://testforge.emha.space/settings/ai",
+    "text": "AI Assist"
+  },
+  {
+    "url": "https://testforge.emha.space/settings/audit-log",
+    "text": "Audit Log"
+  },
+  {
+    "url": "https://testforge.emha.space/settings/backup",
+    "text": "Backup"
+  },
+  {
+    "url": "https://testforge.emha.space/settings/account",
+    "text": "Account"
+  },
+  {
+    "url": "https://testforge.emha.space/academy",
+    "text": "AcademyBeta"
+  },
+  {
+    "url": "https://testforge.emha.space/academy/me",
+    "text": "My progress"
+  },
+  {
+    "url": "https://testforge.emha.space/docs/help",
+    "text": "Help"
+  },
+  {
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does",
+    "text": "Start QA Fundamentals"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "hypotheses": [
+    {
+      "id": "H-A1",
+      "title": "Password reset token reuse / no expiry",
+      "based_on": [
+        "/forgot-password route enumerated"
+      ],
+      "test_plan": "Request reset email twice, attempt to reuse first token after second issued",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-A2",
+      "title": "Login rate-limit bypass",
+      "based_on": [
+        "login endpoint"
+      ],
+      "test_plan": "50 rapid wrong-password attempts; observe lockout",
+      "requires_hitl": true
+    }
+  ]
+}

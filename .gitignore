@@ -6,6 +6,9 @@
 *_credentials*
 tokens.txt
 cookies.txt
+cookies.json
+**/evidence/**/cookies.json
+**/*session*.json
 
 # Burp
 *.burp
@@ -23,6 +26,9 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Node
+node_modules/
 
 # Bug bounty target notes (sensitive assets)
 private-recon/

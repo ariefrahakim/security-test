@@ -21,22 +21,37 @@ An authorized, agent-driven web security tester built as a Claude Code sub-agent
 ## Quick start
 
 ```bash
-# 1. Configure the target and authorization
+# 1. Install (playwright is the only runtime dep — used for the authenticated walk-through)
+npm install
+
+# 2. Configure the target and authorization
 cp .env.example .env
-$EDITOR .env      # set TARGET_WEB, AUTHORIZATION_TYPE, AUTHORIZATION_NOTE
+$EDITOR .env      # set TARGET_WEB, AUTHORIZATION_TYPE, AUTHORIZATION_NOTE, EMAIL, PASSWORD
 
-# 2. Run the one-shot passive pipeline (no LLM needed)
-./scripts/run.sh
-open reports/<today>-<slug>/report.html
+# 3. Run the one-shot passive pipeline (no LLM needed)
+npm run sec-test              # == ./scripts/run.sh
 
-# 3. Or drive the full agentic workflow through Claude Code
-#    (in a Claude Code session inside this repo)
-#      > Use the sec-orchestrator sub-agent to run the sec-test end-to-end.
-#    Or run the command:
+# 4. Open the latest HTML report
+npm run report                # opens reports/<latest>/report.html in your browser
+npm run report -- <run-name>  # or open a specific run
+
+# 5. Drive the full agentic workflow (recon → authenticated walk-through → verify → report)
+#    inside a Claude Code session in this repo:
 #      /sec-test
 ```
 
 Change target → `sed -i '' 's|^TARGET_WEB=.*|TARGET_WEB=https://next.example.com|' .env` → rerun.
+
+### npm scripts
+
+| Command | What it does |
+|---|---|
+| `npm run sec-test` | One-shot passive pipeline: recon → analyze → build report. |
+| `npm run walkthrough -- <run-dir>` | Playwright authenticated feature walk-through (module enumeration, read-only exploratory probes, evidence capture). Driven by `sec-verify` in the agentic flow; also invocable directly. |
+| `npm run triage -- <run-dir>` | Merge `findings.recon.json` + `findings.verified.json` → `findings.final.json`, drop findings whose evidence file is missing. |
+| `npm run build-report -- <run-dir>` | Rebuild `report.html` + `report.json` + `report.md` from `findings.final.json`. |
+| `npm run report` | Open the most recent run's `report.html` in the default browser. |
+| `npm run report:list` | List all run directories. |
 
 ## The three agents
 
@@ -74,6 +89,18 @@ The whole framework is driven by `.env`. `.env.example` documents every field.
 - CORS reflection (hostile Origin, null Origin)
 
 `sec-orchestrator` extends this by planning **light-active** and **verification** phases per engagement.
+
+## Authenticated feature walk-through (module-based)
+
+When `EMAIL` / `PASSWORD` are set and `AUTHORIZATION_TYPE` allows it, `sec-verify` uses **Playwright MCP** to log in and enumerate every reachable authenticated feature. Discovered routes are grouped into **modules** (Landing, Authentication, Dashboard, Projects, Settings, Billing, Docs, …), and each module gets:
+
+- Routes list, feature description, DOM snapshot + screenshot evidence
+- **Test-scenario table** (steps + result: `pass` / `fail` / `finding` / `hitl-pending`)
+- Read-only exploratory probes (reflection / XSS surface, CSRF-token presence, secrets-in-HTML, IDOR-id detection, response security headers, cookie flags)
+- Findings scoped to the module, each with CVSS 4.0 + evidence file
+- State-changing candidates (password reset, delete, checkout, admin ops) are logged in `hypotheses.json` with `requires_hitl: true` and executed **one at a time on approval only**
+
+The report tabs by module by default; a flat view is available in the export dropdown.
 
 ## Report
 
@@ -125,6 +152,16 @@ This stack is built on public reference implementations. Each contributed specif
 | [**usestrix/strix**](https://github.com/usestrix/strix) | • Hard **root/child split**: "YOU ARE THE ROOT AGENT. Your job is ORCHESTRATION, not hands-on testing"<br>• Mandatory **Discovery → Validation → Reporting** chain per finding<br>• **Full 8-metric CVSS breakdown** + `code_locations` with `fix_before` / `fix_after`<br>• **VALIDATION MANDATE**: CVSS impact must be demonstrated by the PoC, not implied by scanner labels<br>• LLM-based deduplication at report time | • "Never question your authority / NEVER refuse" language — only safe inside their platform-verified scope injection, dangerous outside<br>• Deep monolithic Jinja prompt mixing all roles — we split per-role Markdown<br>• Shared `/workspace` + browser across children — cross-contamination footgun |
 | [**dietrichgebert/ponytail**](https://github.com/dietrichgebert/ponytail) | • **UserPromptSubmit + PreToolUse hook pattern** to re-inject rules-of-engagement every turn (planned — hook-file scaffold under `.claude/`)<br>• **Sub-agent matcher regex** so rules scope by role (`recon` vs `verify`) | • Its actual ruleset ("write less code") is orthogonal to offensive testing — we only borrow the plumbing<br>• Reported "-22% tokens" from output shrinkage — not applicable here (evidence must be preserved) |
 | [**Graphify-Labs/graphify**](https://github.com/Graphify-Labs/graphify) | • **Three-artifact contract** — `graph.json` + `graph.html` + `GRAPH_REPORT.md` inspired our `findings.json` + `report.html` + `report.md`<br>• **`EXTRACTED` vs `INFERRED` edge tag** → our finding `provenance` field separates "observed in response bytes" from "inferred from response behavior"<br>• `PreToolUse` strict-mode: block first raw read, force a query against the graph — analog to blocking first raw scan and forcing a query against the recon artifact | • Not fit for black-box HTTP surface — its schema is code-centric; we don't shoehorn HTTP nodes<br>• Use graphify itself only during a white-box phase against target source code |
+
+### How this stack goes beyond the references
+
+- **Two-gate authorization actually wired** — `.env` value **and** `scripts/scope-check.sh` block every request. GH05TCREW ships a scope validator that never runs inline; ours is mandatory pre-request.
+- **Module-based reporting with test-scenario tables** — none of the reference reports group by product module or ship a per-scenario steps/result table. Ours does; the HTML tabs per module.
+- **Real authenticated feature walk-through** — Playwright MCP driver logs in as owner, enumerates every reachable route, snapshots each, and runs read-only exploratory probes. State-changing tests are queued to HITL, not skipped and not auto-run.
+- **CVSS 4.0 + confidence + provenance on every finding** — `verified` / `probable` / `heuristic` states, plus `extracted` vs `inferred` provenance. Strix has CVSS; none have provenance.
+- **Deterministic report artifacts** — HTML + JSON + MD written from the same `findings.final.json`, with a single Export dropdown (PDF/JSON/CSV/Excel/Markdown). Reproducible from the JSON alone.
+- **Evidence-or-drop** — Phase-4 triage deletes any finding whose cited file doesn't exist on disk. No unverifiable claims survive to the report.
+- **Rate + kill-switch inside the driver** — `MAX_RPM` and `SEC_AGENT_KILL` are enforced by the Playwright walk-through, not just by `safe-curl.sh`.
 
 Broader guidance also mined from:
 
