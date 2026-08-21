@@ -12,6 +12,11 @@
     "INFO": 1,
     "OK": 1
   },
+  "risk": {
+    "level": "MODERATE",
+    "label": "Moderate risk — plan remediation this sprint",
+    "color": "med"
+  },
   "modules": [
     {
       "slug": "landing",
@@ -44,7 +49,14 @@
         "V-06",
         "V-07"
       ],
-      "coverage": "Read-only: header capture, DOM snapshot. Skipped: signup form fuzz (state-changing, HITL)."
+      "coverage": "Read-only: header capture, DOM snapshot. Skipped: signup form fuzz (state-changing, HITL).",
+      "_scenarioStats": {
+        "pass": 1
+      },
+      "_sevBreakdown": {
+        "MEDIUM": 2,
+        "LOW": 5
+      }
     },
     {
       "slug": "auth",
@@ -101,7 +113,11 @@
         }
       ],
       "findings": [],
-      "coverage": "Read-only: login form, wrong-password error, session cookies. Deferred (HITL): password reset flow, 2FA enrolment."
+      "coverage": "Read-only: login form, wrong-password error, session cookies. Deferred (HITL): password reset flow, 2FA enrolment.",
+      "_scenarioStats": {
+        "pass": 4
+      },
+      "_sevBreakdown": {}
     },
     {
       "slug": "dashboard",
@@ -126,7 +142,11 @@
         }
       ],
       "findings": [],
-      "coverage": "Visited 1/1 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+      "coverage": "Visited 1/1 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL.",
+      "_scenarioStats": {
+        "pass": 1
+      },
+      "_sevBreakdown": {}
     },
     {
       "slug": "my-work",
@@ -151,7 +171,11 @@
         }
       ],
       "findings": [],
-      "coverage": "Visited 1/1 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+      "coverage": "Visited 1/1 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL.",
+      "_scenarioStats": {
+        "pass": 1
+      },
+      "_sevBreakdown": {}
     },
     {
       "slug": "projects",
@@ -226,7 +250,14 @@
         "V-09",
         "V-10"
       ],
-      "coverage": "Visited 2/2 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+      "coverage": "Visited 2/2 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL.",
+      "_scenarioStats": {
+        "pass": 2,
+        "finding": 3
+      },
+      "_sevBreakdown": {
+        "LOW": 3
+      }
     },
     {
       "slug": "settings",
@@ -377,7 +408,14 @@
         "V-14",
         "V-15"
       ],
-      "coverage": "Visited 6/6 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+      "coverage": "Visited 6/6 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL.",
+      "_scenarioStats": {
+        "pass": 6,
+        "finding": 5
+      },
+      "_sevBreakdown": {
+        "LOW": 5
+      }
     },
     {
       "slug": "academy",
@@ -428,7 +466,11 @@
         }
       ],
       "findings": [],
-      "coverage": "Visited 3/3 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+      "coverage": "Visited 3/3 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL.",
+      "_scenarioStats": {
+        "pass": 3
+      },
+      "_sevBreakdown": {}
     },
     {
       "slug": "docs",
@@ -453,7 +495,11 @@
         }
       ],
       "findings": [],
-      "coverage": "Visited 1/1 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+      "coverage": "Visited 1/1 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL.",
+      "_scenarioStats": {
+        "pass": 1
+      },
+      "_sevBreakdown": {}
     },
     {
       "slug": "infrastructure",
@@ -476,7 +522,14 @@
         "F-09",
         "F-10"
       ],
-      "coverage": "Passive header + TLS probe."
+      "coverage": "Passive header + TLS probe.",
+      "_scenarioStats": {},
+      "_sevBreakdown": {
+        "MEDIUM": 3,
+        "LOW": 6,
+        "INFO": 1,
+        "OK": 1
+      }
     }
   ],
   "findings": [
@@ -488,7 +541,10 @@
       "evidence": "Header `strict-transport-security` absent on GET /.",
       "recommendation": "Add Strict-Transport-Security: max-age=63072000; includeSubDomains; preload after verifying every subdomain is HTTPS-only.",
       "confidence": "heuristic",
-      "module": "infrastructure"
+      "module": "infrastructure",
+      "_impact": "Reduces defence-in-depth; can be chained into a bigger issue.",
+      "_effort": "Minutes to hours — usually a config or header change.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-02",
@@ -498,7 +554,10 @@
       "evidence": "Header `content-security-policy` absent on GET /.",
       "recommendation": "Ship a nonce-based CSP: default-src 'self'; script-src 'self' 'nonce-<N>'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'.",
       "confidence": "heuristic",
-      "module": "infrastructure"
+      "module": "infrastructure",
+      "_impact": "Reduces defence-in-depth; can be chained into a bigger issue.",
+      "_effort": "Minutes to hours — usually a config or header change.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-11",
@@ -508,7 +567,10 @@
       "evidence": "openssl s_client negotiated TLS 1.0 or 1.1.",
       "recommendation": "Disable TLS < 1.2 at the edge (Caddy: `tls { protocols tls1.2 tls1.3 }`).",
       "confidence": "heuristic",
-      "module": "infrastructure"
+      "module": "infrastructure",
+      "_impact": "Reduces defence-in-depth; can be chained into a bigger issue.",
+      "_effort": "Minutes to hours — usually a config or header change.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "V-01",
@@ -524,7 +586,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
       },
-      "recommendation": "Add `strict-transport-security` at edge (Caddy/Next config)."
+      "recommendation": "Add `strict-transport-security` at edge (Caddy/Next config).",
+      "_impact": "Reduces defence-in-depth; can be chained into a bigger issue.",
+      "_effort": "Minutes to hours — usually a config or header change.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "V-02",
@@ -540,7 +605,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
       },
-      "recommendation": "Add `content-security-policy` at edge (Caddy/Next config)."
+      "recommendation": "Add `content-security-policy` at edge (Caddy/Next config).",
+      "_impact": "Reduces defence-in-depth; can be chained into a bigger issue.",
+      "_effort": "Minutes to hours — usually a config or header change.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-03",
@@ -550,7 +618,10 @@
       "evidence": "Header `x-frame-options` absent on GET /.",
       "recommendation": "Prefer CSP frame-ancestors 'none'; or X-Frame-Options: DENY.",
       "confidence": "heuristic",
-      "module": "infrastructure"
+      "module": "infrastructure",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-04",
@@ -560,7 +631,10 @@
       "evidence": "Header `x-content-type-options` absent on GET /.",
       "recommendation": "Add X-Content-Type-Options: nosniff globally.",
       "confidence": "heuristic",
-      "module": "infrastructure"
+      "module": "infrastructure",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-05",
@@ -570,7 +644,10 @@
       "evidence": "Header `referrer-policy` absent on GET /.",
       "recommendation": "Add Referrer-Policy: strict-origin-when-cross-origin.",
       "confidence": "heuristic",
-      "module": "infrastructure"
+      "module": "infrastructure",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-06",
@@ -580,7 +657,10 @@
       "evidence": "Header `permissions-policy` absent on GET /.",
       "recommendation": "Deny unused features, e.g. Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=().",
       "confidence": "heuristic",
-      "module": "infrastructure"
+      "module": "infrastructure",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-07",
@@ -588,7 +668,10 @@
       "category": "A05 Injection / Info Disclosure",
       "title": "Framework fingerprinting via X-Powered-By",
       "evidence": "x-powered-by: Next.js",
-      "recommendation": "Strip framework banner (Next.js: `poweredByHeader:false` in next.config.js). Enforce at Caddy too as belt-and-braces."
+      "recommendation": "Strip framework banner (Next.js: `poweredByHeader:false` in next.config.js). Enforce at Caddy too as belt-and-braces.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-08",
@@ -598,7 +681,10 @@
       "evidence": "Disallow list includes: /api/, /share/, /invite/, /verify, /verify-email, /reset-password, /forgot-password, /login/2fa, ….",
       "recommendation": "Do not enumerate protected paths in robots.txt. Rely on server-side auth; use noindex on individual pages.",
       "confidence": "heuristic",
-      "module": "infrastructure"
+      "module": "infrastructure",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Backend (API)"
     },
     {
       "id": "V-03",
@@ -614,7 +700,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
       },
-      "recommendation": "Add `x-frame-options` at edge (Caddy/Next config)."
+      "recommendation": "Add `x-frame-options` at edge (Caddy/Next config).",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "V-04",
@@ -630,7 +719,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
       },
-      "recommendation": "Add `x-content-type-options` at edge (Caddy/Next config)."
+      "recommendation": "Add `x-content-type-options` at edge (Caddy/Next config).",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "V-05",
@@ -646,7 +738,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
       },
-      "recommendation": "Add `referrer-policy` at edge (Caddy/Next config)."
+      "recommendation": "Add `referrer-policy` at edge (Caddy/Next config).",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "V-06",
@@ -662,7 +757,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
         "score": 2.3
       },
-      "recommendation": "Add `permissions-policy` at edge (Caddy/Next config)."
+      "recommendation": "Add `permissions-policy` at edge (Caddy/Next config).",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "V-07",
@@ -678,7 +776,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
       },
-      "recommendation": "Strip banner (poweredByHeader:false in next.config.js)."
+      "recommendation": "Strip banner (poweredByHeader:false in next.config.js).",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "V-08",
@@ -694,7 +795,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
       },
-      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Backend (Auth)"
     },
     {
       "id": "V-09",
@@ -710,7 +814,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
       },
-      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Backend (Auth)"
     },
     {
       "id": "V-10",
@@ -726,7 +833,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
       },
-      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Backend (Auth)"
     },
     {
       "id": "V-11",
@@ -742,7 +852,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
       },
-      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Backend (Auth)"
     },
     {
       "id": "V-12",
@@ -758,7 +871,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
       },
-      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Backend (Auth)"
     },
     {
       "id": "V-13",
@@ -774,7 +890,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
       },
-      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Backend (Auth)"
     },
     {
       "id": "V-14",
@@ -790,7 +909,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
       },
-      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Backend (Auth)"
     },
     {
       "id": "V-15",
@@ -806,7 +928,10 @@
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
         "score": 2.3
       },
-      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Backend (Auth)"
     },
     {
       "id": "F-09",
@@ -816,7 +941,10 @@
       "evidence": "GET /.well-known/security.txt returned 404.",
       "recommendation": "Publish security.txt per RFC 9116 (Contact, Expires, Preferred-Languages).",
       "confidence": "heuristic",
-      "module": "infrastructure"
+      "module": "infrastructure",
+      "_impact": "Informational — no exploit path observed.",
+      "_effort": "Optional — best-practice tightening.",
+      "_owner": "To be triaged"
     },
     {
       "id": "F-10",
@@ -826,8 +954,16 @@
       "evidence": "HTTP responded 308 → HTTPS.",
       "recommendation": "Maintain. Combine with HSTS to close first-visit downgrade window.",
       "confidence": "heuristic",
-      "module": "infrastructure"
+      "module": "infrastructure",
+      "_impact": "Control observed working correctly.",
+      "_effort": "No action.",
+      "_owner": "Platform / DevOps"
     }
+  ],
+  "top_recommendations": [
+    "F-01",
+    "F-02",
+    "F-11"
   ],
   "hypotheses": [
     {

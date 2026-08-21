@@ -1,0 +1,893 @@
+{
+  "target": "https://testforge.emha.space",
+  "started_at": "2026-08-21T16:02:49.224Z",
+  "finished_at": "2026-08-21T16:03:31.461Z",
+  "modules": [
+    {
+      "slug": "dashboard",
+      "name": "Dashboard (deep interactive)",
+      "routes": [
+        "/dashboard"
+      ],
+      "features": [
+        "Interactive widget clicks, modal opens, tabs, dropdowns, sort headers, pagination, reflection probes, storage inspection, XHR capture"
+      ],
+      "scenarios": [
+        {
+          "id": "I-000",
+          "desc": "Navigate /dashboard",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/03-dashboard-initial.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/03-dashboard-initial.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": ""
+        },
+        {
+          "id": "I-001",
+          "desc": "Click \"TestForge\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-001-TestForge.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-001-TestForge.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+        },
+        {
+          "id": "I-002",
+          "desc": "Click \"Search⌘K\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-002-Search_K.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-002-Search_K.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+        },
+        {
+          "id": "I-003",
+          "desc": "Click \"Dashboard\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-003-Dashboard.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-003-Dashboard.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+        },
+        {
+          "id": "I-004",
+          "desc": "Click \"Log out →\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-004-Log_out_.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-004-Log_out_.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+        },
+        {
+          "id": "I-005",
+          "desc": "Click \"Light\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-005-Light.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-005-Light.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-light\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"Light\" aria-label=\"Light\" aria-pressed=\"false\" data-testid=\"theme-light\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-"
+        },
+        {
+          "id": "I-006",
+          "desc": "Click \"System\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-006-System.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-006-System.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-system\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"System\" aria-pressed=\"true\" aria-label=\"System\" data-testid=\"theme-system\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ri"
+        },
+        {
+          "id": "I-007",
+          "desc": "Click \"Dark\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-007-Dark.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-007-Dark.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-dark\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button title=\"Dark\" type=\"button\" aria-label=\"Dark\" aria-pressed=\"false\" data-testid=\"theme-dark\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-offs"
+        },
+        {
+          "id": "I-008",
+          "desc": "Click \"Continue learningMy progress →QA Fundamentals — 0 of 13 lessons doneStart QA Fun\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"dashboard-academy-widget\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <section data-testid=\"dashboard-academy-widget\" class=\"rounded-xl border border-hairline bg-surface p-6\">…</section>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m "
+        },
+        {
+          "id": "I-refl-q",
+          "desc": "Reflected probe param=q",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-q.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-q.html",
+            "url": "https://testforge.emha.space/dashboard?q=zzqmt3529kvxx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-search",
+          "desc": "Reflected probe param=search",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-search.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-search.html",
+            "url": "https://testforge.emha.space/dashboard?search=zzqmt3529kvxx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-filter",
+          "desc": "Reflected probe param=filter",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-filter.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-filter.html",
+            "url": "https://testforge.emha.space/dashboard?filter=zzqmt3529kvxx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-project",
+          "desc": "Reflected probe param=project",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-project.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-project.html",
+            "url": "https://testforge.emha.space/dashboard?project=zzqmt3529kvxx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-view",
+          "desc": "Reflected probe param=view",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-view.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-view.html",
+            "url": "https://testforge.emha.space/dashboard?view=zzqmt3529kvxx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-tab",
+          "desc": "Reflected probe param=tab",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-tab.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-tab.html",
+            "url": "https://testforge.emha.space/dashboard?tab=zzqmt3529kvxx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-ref",
+          "desc": "Reflected probe param=ref",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-ref.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-ref.html",
+            "url": "https://testforge.emha.space/dashboard?ref=zzqmt3529kvxx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-id",
+          "desc": "Reflected probe param=id",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-id.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-id.html",
+            "url": "https://testforge.emha.space/dashboard?id=zzqmt3529kvxx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-name",
+          "desc": "Reflected probe param=name",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-name.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-name.html",
+            "url": "https://testforge.emha.space/dashboard?name=zzqmt3529kvxx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-sort",
+          "desc": "Reflected probe param=sort",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-sort.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-sort.html",
+            "url": "https://testforge.emha.space/dashboard?sort=zzqmt3529kvxx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-page",
+          "desc": "Reflected probe param=page",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-page.png",
+            "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-page.html",
+            "url": "https://testforge.emha.space/dashboard?page=zzqmt3529kvxx"
+          },
+          "observed": "reflected=true"
+        }
+      ],
+      "findings": [
+        "V-D01",
+        "V-D02",
+        "V-D03",
+        "V-D04",
+        "V-D05",
+        "V-D06",
+        "V-D07",
+        "V-D08",
+        "V-D09",
+        "V-D10",
+        "V-D11",
+        "V-D12"
+      ],
+      "coverage": "Deep-interactive walk: 20 interactions, 198 XHRs observed, 0 console errors, 0 unhandled exceptions. State-changing submits deferred to HITL."
+    }
+  ],
+  "dashboard_walk": {
+    "target": "https://testforge.emha.space",
+    "module": "dashboard",
+    "started_at": "2026-08-21T16:02:49.224Z",
+    "interactions": [
+      {
+        "id": "I-000",
+        "kind": "navigate",
+        "target": "/dashboard",
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/03-dashboard-initial.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/03-dashboard-initial.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-001",
+        "kind": "click",
+        "target": {
+          "tag": "A",
+          "label": "TestForge",
+          "href": "/dashboard",
+          "role": "",
+          "testid": ""
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": null,
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-001-TestForge.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-001-TestForge.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-002",
+        "kind": "click",
+        "target": {
+          "tag": "BUTTON",
+          "label": "Search⌘K",
+          "href": "",
+          "role": "",
+          "testid": "global-search-trigger"
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": null,
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-002-Search_K.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-002-Search_K.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-003",
+        "kind": "click",
+        "target": {
+          "tag": "A",
+          "label": "Dashboard",
+          "href": "/dashboard",
+          "role": "",
+          "testid": "nav-dashboard"
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": null,
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-003-Dashboard.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-003-Dashboard.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-004",
+        "kind": "click",
+        "target": {
+          "tag": "BUTTON",
+          "label": "Log out →",
+          "href": "",
+          "role": "",
+          "testid": ""
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": null,
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-004-Log_out_.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-004-Log_out_.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-005",
+        "kind": "click",
+        "target": {
+          "tag": "BUTTON",
+          "label": "Light",
+          "href": "",
+          "role": "",
+          "testid": "theme-light"
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": "locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-light\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"Light\" aria-label=\"Light\" aria-pressed=\"false\" data-testid=\"theme-light\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-",
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-005-Light.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-005-Light.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-006",
+        "kind": "click",
+        "target": {
+          "tag": "BUTTON",
+          "label": "System",
+          "href": "",
+          "role": "",
+          "testid": "theme-system"
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": "locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-system\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"System\" aria-pressed=\"true\" aria-label=\"System\" data-testid=\"theme-system\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ri",
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-006-System.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-006-System.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-007",
+        "kind": "click",
+        "target": {
+          "tag": "BUTTON",
+          "label": "Dark",
+          "href": "",
+          "role": "",
+          "testid": "theme-dark"
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": "locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-dark\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button title=\"Dark\" type=\"button\" aria-label=\"Dark\" aria-pressed=\"false\" data-testid=\"theme-dark\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-offs",
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-007-Dark.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-007-Dark.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-008",
+        "kind": "click",
+        "target": {
+          "tag": "SECTION",
+          "label": "Continue learningMy progress →QA Fundamentals — 0 of 13 lessons doneStart QA Fun",
+          "href": "",
+          "role": "",
+          "testid": "dashboard-academy-widget"
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": "locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"dashboard-academy-widget\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <section data-testid=\"dashboard-academy-widget\" class=\"rounded-xl border border-hairline bg-surface p-6\">…</section>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m ",
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-refl-q",
+        "kind": "reflect-probe",
+        "param": "q",
+        "url": "https://testforge.emha.space/dashboard?q=zzqmt3529kvxx",
+        "reflected": true,
+        "excerpt": "\\\"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?q=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-q.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-q.html",
+          "url": "https://testforge.emha.space/dashboard?q=zzqmt3529kvxx"
+        }
+      },
+      {
+        "id": "I-refl-search",
+        "kind": "reflect-probe",
+        "param": "search",
+        "url": "https://testforge.emha.space/dashboard?search=zzqmt3529kvxx",
+        "reflected": true,
+        "excerpt": "R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?search=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-search.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-search.html",
+          "url": "https://testforge.emha.space/dashboard?search=zzqmt3529kvxx"
+        }
+      },
+      {
+        "id": "I-refl-filter",
+        "kind": "reflect-probe",
+        "param": "filter",
+        "url": "https://testforge.emha.space/dashboard?filter=zzqmt3529kvxx",
+        "reflected": true,
+        "excerpt": "R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?filter=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-filter.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-filter.html",
+          "url": "https://testforge.emha.space/dashboard?filter=zzqmt3529kvxx"
+        }
+      },
+      {
+        "id": "I-refl-project",
+        "kind": "reflect-probe",
+        "param": "project",
+        "url": "https://testforge.emha.space/dashboard?project=zzqmt3529kvxx",
+        "reflected": true,
+        "excerpt": "_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?project=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-project.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-project.html",
+          "url": "https://testforge.emha.space/dashboard?project=zzqmt3529kvxx"
+        }
+      },
+      {
+        "id": "I-refl-view",
+        "kind": "reflect-probe",
+        "param": "view",
+        "url": "https://testforge.emha.space/dashboard?view=zzqmt3529kvxx",
+        "reflected": true,
+        "excerpt": "VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?view=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-view.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-view.html",
+          "url": "https://testforge.emha.space/dashboard?view=zzqmt3529kvxx"
+        }
+      },
+      {
+        "id": "I-refl-tab",
+        "kind": "reflect-probe",
+        "param": "tab",
+        "url": "https://testforge.emha.space/dashboard?tab=zzqmt3529kvxx",
+        "reflected": true,
+        "excerpt": "eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?tab=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-tab.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-tab.html",
+          "url": "https://testforge.emha.space/dashboard?tab=zzqmt3529kvxx"
+        }
+      },
+      {
+        "id": "I-refl-ref",
+        "kind": "reflect-probe",
+        "param": "ref",
+        "url": "https://testforge.emha.space/dashboard?ref=zzqmt3529kvxx",
+        "reflected": true,
+        "excerpt": "eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?ref=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-ref.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-ref.html",
+          "url": "https://testforge.emha.space/dashboard?ref=zzqmt3529kvxx"
+        }
+      },
+      {
+        "id": "I-refl-id",
+        "kind": "reflect-probe",
+        "param": "id",
+        "url": "https://testforge.emha.space/dashboard?id=zzqmt3529kvxx",
+        "reflected": true,
+        "excerpt": "\"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?id=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-id.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-id.html",
+          "url": "https://testforge.emha.space/dashboard?id=zzqmt3529kvxx"
+        }
+      },
+      {
+        "id": "I-refl-name",
+        "kind": "reflect-probe",
+        "param": "name",
+        "url": "https://testforge.emha.space/dashboard?name=zzqmt3529kvxx",
+        "reflected": true,
+        "excerpt": "VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?name=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-name.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-name.html",
+          "url": "https://testforge.emha.space/dashboard?name=zzqmt3529kvxx"
+        }
+      },
+      {
+        "id": "I-refl-sort",
+        "kind": "reflect-probe",
+        "param": "sort",
+        "url": "https://testforge.emha.space/dashboard?sort=zzqmt3529kvxx",
+        "reflected": true,
+        "excerpt": "VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?sort=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-sort.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-sort.html",
+          "url": "https://testforge.emha.space/dashboard?sort=zzqmt3529kvxx"
+        }
+      },
+      {
+        "id": "I-refl-page",
+        "kind": "reflect-probe",
+        "param": "page",
+        "url": "https://testforge.emha.space/dashboard?page=zzqmt3529kvxx",
+        "reflected": true,
+        "excerpt": "VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?page=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-page.png",
+          "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-page.html",
+          "url": "https://testforge.emha.space/dashboard?page=zzqmt3529kvxx"
+        }
+      }
+    ],
+    "xhrs_summary": {
+      "total": 198,
+      "by_status": {
+        "200": 197,
+        "303": 1
+      },
+      "unique_endpoints": 19,
+      "idor_shaped": 0,
+      "broken": 0
+    },
+    "console_summary": {
+      "total_messages": 0,
+      "errors": 0,
+      "page_errors": 0
+    },
+    "findings_refs": [
+      "V-D01",
+      "V-D02",
+      "V-D03",
+      "V-D04",
+      "V-D05",
+      "V-D06",
+      "V-D07",
+      "V-D08",
+      "V-D09",
+      "V-D10",
+      "V-D11",
+      "V-D12"
+    ],
+    "interactions_count": 20,
+    "finished_at": "2026-08-21T16:03:31.461Z"
+  },
+  "routes_visited": [
+    "https://testforge.emha.space/dashboard",
+    "https://testforge.emha.space/dashboard?q=zzqmt3529kvxx",
+    "https://testforge.emha.space/dashboard?search=zzqmt3529kvxx",
+    "https://testforge.emha.space/dashboard?filter=zzqmt3529kvxx",
+    "https://testforge.emha.space/dashboard?project=zzqmt3529kvxx",
+    "https://testforge.emha.space/dashboard?view=zzqmt3529kvxx",
+    "https://testforge.emha.space/dashboard?tab=zzqmt3529kvxx",
+    "https://testforge.emha.space/dashboard?ref=zzqmt3529kvxx",
+    "https://testforge.emha.space/dashboard?id=zzqmt3529kvxx",
+    "https://testforge.emha.space/dashboard?name=zzqmt3529kvxx",
+    "https://testforge.emha.space/dashboard?sort=zzqmt3529kvxx",
+    "https://testforge.emha.space/dashboard?page=zzqmt3529kvxx"
+  ],
+  "scenarios": [
+    {
+      "module": "dashboard",
+      "id": "I-000",
+      "desc": "Navigate /dashboard",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/03-dashboard-initial.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/03-dashboard-initial.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": ""
+    },
+    {
+      "module": "dashboard",
+      "id": "I-001",
+      "desc": "Click \"TestForge\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-001-TestForge.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-001-TestForge.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-002",
+      "desc": "Click \"Search⌘K\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-002-Search_K.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-002-Search_K.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-003",
+      "desc": "Click \"Dashboard\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-003-Dashboard.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-003-Dashboard.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-004",
+      "desc": "Click \"Log out →\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-004-Log_out_.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-004-Log_out_.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-005",
+      "desc": "Click \"Light\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-005-Light.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-005-Light.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-light\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"Light\" aria-label=\"Light\" aria-pressed=\"false\" data-testid=\"theme-light\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-006",
+      "desc": "Click \"System\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-006-System.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-006-System.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-system\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"System\" aria-pressed=\"true\" aria-label=\"System\" data-testid=\"theme-system\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ri"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-007",
+      "desc": "Click \"Dark\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-007-Dark.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-007-Dark.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-dark\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button title=\"Dark\" type=\"button\" aria-label=\"Dark\" aria-pressed=\"false\" data-testid=\"theme-dark\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-offs"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-008",
+      "desc": "Click \"Continue learningMy progress →QA Fundamentals — 0 of 13 lessons doneStart QA Fun\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"dashboard-academy-widget\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <section data-testid=\"dashboard-academy-widget\" class=\"rounded-xl border border-hairline bg-surface p-6\">…</section>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m "
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-q",
+      "desc": "Reflected probe param=q",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-q.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-q.html",
+        "url": "https://testforge.emha.space/dashboard?q=zzqmt3529kvxx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-search",
+      "desc": "Reflected probe param=search",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-search.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-search.html",
+        "url": "https://testforge.emha.space/dashboard?search=zzqmt3529kvxx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-filter",
+      "desc": "Reflected probe param=filter",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-filter.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-filter.html",
+        "url": "https://testforge.emha.space/dashboard?filter=zzqmt3529kvxx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-project",
+      "desc": "Reflected probe param=project",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-project.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-project.html",
+        "url": "https://testforge.emha.space/dashboard?project=zzqmt3529kvxx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-view",
+      "desc": "Reflected probe param=view",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-view.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-view.html",
+        "url": "https://testforge.emha.space/dashboard?view=zzqmt3529kvxx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-tab",
+      "desc": "Reflected probe param=tab",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-tab.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-tab.html",
+        "url": "https://testforge.emha.space/dashboard?tab=zzqmt3529kvxx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-ref",
+      "desc": "Reflected probe param=ref",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-ref.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-ref.html",
+        "url": "https://testforge.emha.space/dashboard?ref=zzqmt3529kvxx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-id",
+      "desc": "Reflected probe param=id",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-id.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-id.html",
+        "url": "https://testforge.emha.space/dashboard?id=zzqmt3529kvxx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-name",
+      "desc": "Reflected probe param=name",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-name.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-name.html",
+        "url": "https://testforge.emha.space/dashboard?name=zzqmt3529kvxx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-sort",
+      "desc": "Reflected probe param=sort",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-sort.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-sort.html",
+        "url": "https://testforge.emha.space/dashboard?sort=zzqmt3529kvxx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-page",
+      "desc": "Reflected probe param=page",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-page.png",
+        "dom": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-page.html",
+        "url": "https://testforge.emha.space/dashboard?page=zzqmt3529kvxx"
+      },
+      "observed": "reflected=true"
+    }
+  ]
+}

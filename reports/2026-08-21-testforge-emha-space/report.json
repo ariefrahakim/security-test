@@ -3,7 +3,8 @@
     "target": "https://testforge.emha.space",
     "tester": "ariefrahman",
     "date": "2026-08-21",
-    "authorization": "owner"
+    "authorization": "owner",
+    "run_dir": "reports/2026-08-21-testforge-emha-space"
   },
   "counts": {
     "MEDIUM": 3,
@@ -11,6 +12,43 @@
     "INFO": 1,
     "OK": 1
   },
+  "risk": {
+    "level": "MODERATE",
+    "label": "Moderate risk — plan remediation this sprint",
+    "color": "med"
+  },
+  "modules": [
+    {
+      "slug": "infrastructure",
+      "name": "Infrastructure / Transport",
+      "routes": [],
+      "features": [
+        "TLS + edge headers observed on public origin"
+      ],
+      "scenarios": [],
+      "findings": [
+        "F-01",
+        "F-02",
+        "F-11",
+        "F-03",
+        "F-04",
+        "F-05",
+        "F-06",
+        "F-07",
+        "F-08",
+        "F-09",
+        "F-10"
+      ],
+      "coverage": "Passive header + TLS probe.",
+      "_scenarioStats": {},
+      "_sevBreakdown": {
+        "MEDIUM": 3,
+        "LOW": 6,
+        "INFO": 1,
+        "OK": 1
+      }
+    }
+  ],
   "findings": [
     {
       "id": "F-01",
@@ -18,7 +56,10 @@
       "category": "A02 Security Misconfiguration",
       "title": "Missing HSTS",
       "evidence": "Header `strict-transport-security` absent on GET /.",
-      "recommendation": "Add Strict-Transport-Security: max-age=63072000; includeSubDomains; preload after verifying every subdomain is HTTPS-only."
+      "recommendation": "Add Strict-Transport-Security: max-age=63072000; includeSubDomains; preload after verifying every subdomain is HTTPS-only.",
+      "_impact": "Reduces defence-in-depth; can be chained into a bigger issue.",
+      "_effort": "Minutes to hours — usually a config or header change.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-02",
@@ -26,7 +67,10 @@
       "category": "A02 Security Misconfiguration",
       "title": "Missing Content-Security-Policy",
       "evidence": "Header `content-security-policy` absent on GET /.",
-      "recommendation": "Ship a nonce-based CSP: default-src 'self'; script-src 'self' 'nonce-<N>'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'."
+      "recommendation": "Ship a nonce-based CSP: default-src 'self'; script-src 'self' 'nonce-<N>'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'.",
+      "_impact": "Reduces defence-in-depth; can be chained into a bigger issue.",
+      "_effort": "Minutes to hours — usually a config or header change.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-11",
@@ -34,7 +78,10 @@
       "category": "A04 Cryptographic Failures",
       "title": "Legacy TLS version accepted",
       "evidence": "openssl s_client negotiated TLS 1.0 or 1.1.",
-      "recommendation": "Disable TLS < 1.2 at the edge (Caddy: `tls { protocols tls1.2 tls1.3 }`)."
+      "recommendation": "Disable TLS < 1.2 at the edge (Caddy: `tls { protocols tls1.2 tls1.3 }`).",
+      "_impact": "Reduces defence-in-depth; can be chained into a bigger issue.",
+      "_effort": "Minutes to hours — usually a config or header change.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-03",
@@ -42,7 +89,10 @@
       "category": "A02 Security Misconfiguration",
       "title": "Missing clickjacking protection (X-Frame-Options)",
       "evidence": "Header `x-frame-options` absent on GET /.",
-      "recommendation": "Prefer CSP frame-ancestors 'none'; or X-Frame-Options: DENY."
+      "recommendation": "Prefer CSP frame-ancestors 'none'; or X-Frame-Options: DENY.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-04",
@@ -50,7 +100,10 @@
       "category": "A02 Security Misconfiguration",
       "title": "Missing X-Content-Type-Options",
       "evidence": "Header `x-content-type-options` absent on GET /.",
-      "recommendation": "Add X-Content-Type-Options: nosniff globally."
+      "recommendation": "Add X-Content-Type-Options: nosniff globally.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-05",
@@ -58,7 +111,10 @@
       "category": "A02 Security Misconfiguration",
       "title": "Missing Referrer-Policy",
       "evidence": "Header `referrer-policy` absent on GET /.",
-      "recommendation": "Add Referrer-Policy: strict-origin-when-cross-origin."
+      "recommendation": "Add Referrer-Policy: strict-origin-when-cross-origin.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-06",
@@ -66,7 +122,10 @@
       "category": "A02 Security Misconfiguration",
       "title": "Missing Permissions-Policy",
       "evidence": "Header `permissions-policy` absent on GET /.",
-      "recommendation": "Deny unused features, e.g. Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()."
+      "recommendation": "Deny unused features, e.g. Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=().",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-07",
@@ -74,7 +133,10 @@
       "category": "A05 Injection / Info Disclosure",
       "title": "Framework fingerprinting via X-Powered-By",
       "evidence": "x-powered-by: Next.js",
-      "recommendation": "Strip framework banner (Next.js: `poweredByHeader:false` in next.config.js). Enforce at Caddy too as belt-and-braces."
+      "recommendation": "Strip framework banner (Next.js: `poweredByHeader:false` in next.config.js). Enforce at Caddy too as belt-and-braces.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Platform / DevOps"
     },
     {
       "id": "F-08",
@@ -82,7 +144,10 @@
       "category": "A01 Broken Access Control (recon aid)",
       "title": "robots.txt enumerates sensitive routes",
       "evidence": "Disallow list includes: /api/, /share/, /invite/, /verify, /verify-email, /reset-password, /forgot-password, /login/2fa, ….",
-      "recommendation": "Do not enumerate protected paths in robots.txt. Rely on server-side auth; use noindex on individual pages."
+      "recommendation": "Do not enumerate protected paths in robots.txt. Rely on server-side auth; use noindex on individual pages.",
+      "_impact": "Hygiene / policy gap; unlikely direct impact.",
+      "_effort": "Minutes — config or minor code tweak.",
+      "_owner": "Backend (API)"
     },
     {
       "id": "F-09",
@@ -90,7 +155,10 @@
       "category": "Best practice",
       "title": "Missing /.well-known/security.txt",
       "evidence": "GET /.well-known/security.txt returned 404.",
-      "recommendation": "Publish security.txt per RFC 9116 (Contact, Expires, Preferred-Languages)."
+      "recommendation": "Publish security.txt per RFC 9116 (Contact, Expires, Preferred-Languages).",
+      "_impact": "Informational — no exploit path observed.",
+      "_effort": "Optional — best-practice tightening.",
+      "_owner": "To be triaged"
     },
     {
       "id": "F-10",
@@ -98,7 +166,16 @@
       "category": "Positive control",
       "title": "HTTPS enforced from plain HTTP",
       "evidence": "HTTP responded 308 → HTTPS.",
-      "recommendation": "Maintain. Combine with HSTS to close first-visit downgrade window."
+      "recommendation": "Maintain. Combine with HSTS to close first-visit downgrade window.",
+      "_impact": "Control observed working correctly.",
+      "_effort": "No action.",
+      "_owner": "Platform / DevOps"
     }
-  ]
+  ],
+  "top_recommendations": [
+    "F-01",
+    "F-02",
+    "F-11"
+  ],
+  "hypotheses": []
 }

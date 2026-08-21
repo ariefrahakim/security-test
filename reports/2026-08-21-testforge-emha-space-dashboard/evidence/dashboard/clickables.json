@@ -1,0 +1,242 @@
+[
+  {
+    "tag": "A",
+    "label": "TestForge",
+    "href": "/dashboard",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "",
+    "type": ""
+  },
+  {
+    "tag": "BUTTON",
+    "label": "Search⌘K",
+    "href": "",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "global-search-trigger",
+    "type": "button"
+  },
+  {
+    "tag": "A",
+    "label": "Dashboard",
+    "href": "/dashboard",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "nav-dashboard",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "My Work",
+    "href": "/my-work",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "nav-my-work",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "Projects",
+    "href": "/projects",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "nav-projects",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "Testis",
+    "href": "/projects/testis",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "Team",
+    "href": "/settings/team",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "nav-team",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "API Keys",
+    "href": "/settings/api-keys",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "nav-api-keys",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "AI Assist",
+    "href": "/settings/ai",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "nav-ai-assist",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "Audit Log",
+    "href": "/settings/audit-log",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "nav-audit-log",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "Backup",
+    "href": "/settings/backup",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "nav-backup",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "Account",
+    "href": "/settings/account",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "nav-account",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "AcademyBeta",
+    "href": "/academy",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "nav-academy",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "My progress",
+    "href": "/academy/me",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "nav-academy-me",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "Help",
+    "href": "/docs/help",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "nav-help",
+    "type": ""
+  },
+  {
+    "tag": "BUTTON",
+    "label": "Log out →",
+    "href": "",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "",
+    "type": "button"
+  },
+  {
+    "tag": "BUTTON",
+    "label": "Light",
+    "href": "",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "theme-light",
+    "type": "button"
+  },
+  {
+    "tag": "BUTTON",
+    "label": "System",
+    "href": "",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "theme-system",
+    "type": "button"
+  },
+  {
+    "tag": "BUTTON",
+    "label": "Dark",
+    "href": "",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "theme-dark",
+    "type": "button"
+  },
+  {
+    "tag": "A",
+    "label": "View all →",
+    "href": "/projects",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "Testis1 test cases · 2 runs",
+    "href": "/projects/testis",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "",
+    "type": ""
+  },
+  {
+    "tag": "SECTION",
+    "label": "Continue learningMy progress →QA Fundamentals — 0 of 13 lessons doneStart QA Fun",
+    "href": "",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "dashboard-academy-widget",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "My progress →",
+    "href": "/academy/me",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "",
+    "type": ""
+  },
+  {
+    "tag": "A",
+    "label": "Start QA Fundamentals",
+    "href": "/academy/fundamentals/what-qa-does",
+    "role": "",
+    "ariaExpanded": "",
+    "ariaSort": "",
+    "testid": "dashboard-academy-resume",
+    "type": ""
+  }
+]

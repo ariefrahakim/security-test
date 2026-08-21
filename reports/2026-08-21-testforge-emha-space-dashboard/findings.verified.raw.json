@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "generated_at": "2026-08-21T16:03:31.462Z",
+    "generator": "dashboard-deep-walk.js v1",
+    "module": "dashboard"
+  },
+  "findings": [
+    {
+      "id": "V-D01",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"q\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt3529kvxx\" appears in response body. Context excerpt: \\\"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?q=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-q.html)",
+      "evidence_path": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-q.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "V-D02",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"search\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt3529kvxx\" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?search=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-search.html)",
+      "evidence_path": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-search.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "V-D03",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"filter\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt3529kvxx\" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?filter=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-filter.html)",
+      "evidence_path": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-filter.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "V-D04",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"project\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt3529kvxx\" appears in response body. Context excerpt: _-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?project=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-project.html)",
+      "evidence_path": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-project.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "V-D05",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"view\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt3529kvxx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?view=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-view.html)",
+      "evidence_path": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-view.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "V-D06",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"tab\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt3529kvxx\" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?tab=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-tab.html)",
+      "evidence_path": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-tab.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "V-D07",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"ref\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt3529kvxx\" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?ref=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-ref.html)",
+      "evidence_path": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-ref.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "V-D08",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"id\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt3529kvxx\" appears in response body. Context excerpt: \"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?id=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-id.html)",
+      "evidence_path": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-id.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "V-D09",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"name\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt3529kvxx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?name=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-name.html)",
+      "evidence_path": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-name.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "V-D10",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"sort\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt3529kvxx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?sort=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-sort.html)",
+      "evidence_path": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-sort.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "V-D11",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"page\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt3529kvxx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?page=zzqmt3529kvxx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-page.html)",
+      "evidence_path": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/reflect-page.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "V-D12",
+      "module": "dashboard",
+      "sev": "INFO",
+      "confidence": "heuristic",
+      "category": "UX / Reliability",
+      "cwe": "CWE-1006",
+      "title": "4 dashboard control(s) produced no observable effect on click",
+      "evidence": "Labels: TestForge, Search⌘K, Dashboard, Log out → — no navigation, no XHR, no console change. May be pure UI toggles (expected) or dead buttons (bug).",
+      "evidence_path": "reports/2026-08-21-testforge-emha-space-dashboard/evidence/dashboard/clickables.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N",
+        "score": 0
+      },
+      "recommendation": "Manually verify these controls: expected pure-CSS toggle vs missing click handler."
+    }
+  ]
+}
