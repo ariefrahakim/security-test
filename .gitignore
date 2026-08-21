@@ -1,0 +1,29 @@
+# Secrets — jangan pernah commit
+.env
+*.pem
+*.key
+*_secret*
+*_credentials*
+tokens.txt
+cookies.txt
+
+# Burp
+*.burp
+burp-project-*
+
+# Screenshots berat / video PoC — pertimbangkan Git LFS
+*.mp4
+*.mov
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Bug bounty target notes (aset sensitif)
+private-recon/
+scope-notes/
