@@ -1,0 +1,10 @@
+404  /.env
+404  /.git/config
+404  /.DS_Store
+404  /backup.zip
+404  /backup.tar.gz
+404  /config.json
+404  /admin
+404  /.htaccess
+404  /phpinfo.php
+404  /server-status

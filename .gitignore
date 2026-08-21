@@ -24,6 +24,13 @@ Thumbs.db
 .idea/
 *.swp
 
-# Bug bounty target notes (aset sensitif)
+# Bug bounty target notes (sensitive assets)
 private-recon/
 scope-notes/
+
+# Agent request log — internal telemetry, don't commit
+reports/_agent-log/
+
+# Raw evidence bodies — may contain PII in future runs. Exclude by default;
+# comment out the next line if you want to commit sample raw evidence.
+# reports/**/raw/

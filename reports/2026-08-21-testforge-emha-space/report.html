@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/>
+<title>Security Report — https://testforge.emha.space</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<style>
+:root{--bg:#0b1020;--panel:#141a2e;--panel2:#1c2340;--text:#e6ecff;--muted:#8b93b8;--accent:#66d9ef;--ok:#4ade80;--info:#60a5fa;--low:#fbbf24;--med:#fb923c;--high:#ef4444;--crit:#b91c1c;--border:#2a3255;}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+header{padding:32px 40px 20px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#0e1530,#0b1020);position:sticky;top:0;z-index:5}
+h1{margin:0 0 4px;font-size:22px}.sub{color:var(--muted);font-size:13px}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.btn{background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:8px 12px;border-radius:8px;cursor:pointer;font-size:13px}
+.btn:hover{background:#242c50}.btn.primary{background:var(--accent);color:#001824;border-color:var(--accent);font-weight:600}
+main{padding:24px 40px 80px;max-width:1240px;margin:0 auto}
+section{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:20px 22px;margin:18px 0}
+section h2{margin:0 0 12px;font-size:16px;color:var(--accent)}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+th{color:var(--muted);background:var(--panel2)}tr:hover td{background:#171e3a}
+.sev{padding:3px 9px;border-radius:999px;font-size:11px;font-weight:700;display:inline-block}
+.sev.INFO{background:#1e3a8a44;color:var(--info)}.sev.LOW{background:#78350f44;color:var(--low)}
+.sev.MEDIUM{background:#7c2d1244;color:var(--med)}.sev.HIGH{background:#7f1d1d44;color:var(--high)}
+.sev.CRITICAL{background:#450a0a;color:#fecaca}.sev.OK{background:#14532d44;color:var(--ok)}
+code,pre{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;background:#0a0f22;padding:2px 6px;border-radius:5px;color:#cfe1ff}pre{padding:12px 14px;overflow:auto;font-size:12px;border:1px solid var(--border)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.kpi .box{background:var(--panel2);padding:14px;border-radius:10px;border:1px solid var(--border)}
+.kpi .n{font-size:26px;font-weight:700}.kpi .l{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+@media print{body{background:#fff;color:#111}header .toolbar,footer{display:none}section{background:#fff;border:1px solid #ccc;page-break-inside:avoid}code,pre{background:#f3f4f6;color:#111}tr:hover td{background:transparent}}
+</style></head><body>
+<header>
+<h1>Security Assessment Report</h1>
+<div class="sub"><b>Target:</b> https://testforge.emha.space · <b>Date:</b> 2026-08-21 · <b>Tester:</b> ariefrahman · <b>Authorization:</b> owner</div>
+<div class="toolbar">
+<label class="sub" for="fmt" style="align-self:center;margin-right:4px">Export as</label>
+<select id="fmt" class="btn" style="padding-right:32px">
+  <option value="pdf">PDF (print)</option>
+  <option value="json">JSON</option>
+  <option value="csv">CSV</option>
+  <option value="xls">Excel (.xls)</option>
+  <option value="md">Markdown</option>
+</select>
+<button class="btn primary" onclick="doExport()">Export</button>
+</div></header>
+<main>
+<section><h2>Summary</h2>
+<div class="kpi">
+<div class="box"><div class="l">MEDIUM</div><div class="n">3</div></div><div class="box"><div class="l">LOW</div><div class="n">6</div></div><div class="box"><div class="l">INFO</div><div class="n">1</div></div><div class="box"><div class="l">OK</div><div class="n">1</div></div>
+</div></section>
+<section><h2>Findings</h2>
+<table><thead><tr><th>ID</th><th>Severity</th><th>Title</th><th>Category</th><th>Confidence</th><th>Evidence</th><th>Recommendation</th></tr></thead>
+<tbody id="fbody"></tbody></table>
+</section></main>
+<script>
+const F=[{"id":"F-01","sev":"MEDIUM","category":"A02 Security Misconfiguration","title":"Missing HSTS","evidence":"Header `strict-transport-security` absent on GET /.","recommendation":"Add Strict-Transport-Security: max-age=63072000; includeSubDomains; preload after verifying every subdomain is HTTPS-only."},{"id":"F-02","sev":"MEDIUM","category":"A02 Security Misconfiguration","title":"Missing Content-Security-Policy","evidence":"Header `content-security-policy` absent on GET /.","recommendation":"Ship a nonce-based CSP: default-src 'self'; script-src 'self' 'nonce-\u003cN>'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'."},{"id":"F-11","sev":"MEDIUM","category":"A04 Cryptographic Failures","title":"Legacy TLS version accepted","evidence":"openssl s_client negotiated TLS 1.0 or 1.1.","recommendation":"Disable TLS \u003c 1.2 at the edge (Caddy: `tls { protocols tls1.2 tls1.3 }`)."},{"id":"F-03","sev":"LOW","category":"A02 Security Misconfiguration","title":"Missing clickjacking protection (X-Frame-Options)","evidence":"Header `x-frame-options` absent on GET /.","recommendation":"Prefer CSP frame-ancestors 'none'; or X-Frame-Options: DENY."},{"id":"F-04","sev":"LOW","category":"A02 Security Misconfiguration","title":"Missing X-Content-Type-Options","evidence":"Header `x-content-type-options` absent on GET /.","recommendation":"Add X-Content-Type-Options: nosniff globally."},{"id":"F-05","sev":"LOW","category":"A02 Security Misconfiguration","title":"Missing Referrer-Policy","evidence":"Header `referrer-policy` absent on GET /.","recommendation":"Add Referrer-Policy: strict-origin-when-cross-origin."},{"id":"F-06","sev":"LOW","category":"A02 Security Misconfiguration","title":"Missing Permissions-Policy","evidence":"Header `permissions-policy` absent on GET /.","recommendation":"Deny unused features, e.g. Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()."},{"id":"F-07","sev":"LOW","category":"A05 Injection / Info Disclosure","title":"Framework fingerprinting via X-Powered-By","evidence":"x-powered-by: Next.js","recommendation":"Strip framework banner (Next.js: `poweredByHeader:false` in next.config.js). Enforce at Caddy too as belt-and-braces."},{"id":"F-08","sev":"LOW","category":"A01 Broken Access Control (recon aid)","title":"robots.txt enumerates sensitive routes","evidence":"Disallow list includes: /api/, /share/, /invite/, /verify, /verify-email, /reset-password, /forgot-password, /login/2fa, ….","recommendation":"Do not enumerate protected paths in robots.txt. Rely on server-side auth; use noindex on individual pages."},{"id":"F-09","sev":"INFO","category":"Best practice","title":"Missing /.well-known/security.txt","evidence":"GET /.well-known/security.txt returned 404.","recommendation":"Publish security.txt per RFC 9116 (Contact, Expires, Preferred-Languages)."},{"id":"F-10","sev":"OK","category":"Positive control","title":"HTTPS enforced from plain HTTP","evidence":"HTTP responded 308 → HTTPS.","recommendation":"Maintain. Combine with HSTS to close first-visit downgrade window."}],M={"target":"https://testforge.emha.space","tester":"ariefrahman","date":"2026-08-21","authorization":"owner"};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+document.getElementById("fbody").innerHTML=F.map(f=>`<tr><td><code>${esc(f.id)}</code></td><td><span class="sev ${esc(f.sev)}">${esc(f.sev)}</span></td><td><b>${esc(f.title)}</b></td><td>${esc(f.category||f.owasp||"")}</td><td>${esc(f.confidence||"")}</td><td>${esc(f.evidence||"")}</td><td>${esc(f.recommendation||"")}</td></tr>`).join("");
+function dl(name,mime,body){const b=new Blob([body],{type:mime}),u=URL.createObjectURL(b),a=document.createElement("a");a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500);}
+const csvEsc=v=>{const s=String(v??"");return /[",\r\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s;};
+function exportJSON(){dl("report.json","application/json",JSON.stringify({meta:M,findings:F},null,2));}
+function exportCSV(){const h=["id","sev","title","category","confidence","evidence","recommendation"];const rows=[h,...F.map(f=>h.map(k=>f[k]??""))];dl("report.csv","text/csv;charset=utf-8","\ufeff"+rows.map(r=>r.map(csvEsc).join(",")).join("\r\n"));}
+function exportXLS(){const xesc=v=>String(v??"").replace(/&/g,"&amp;").replace(/</g,"&lt;");const row=c=>"<Row>"+c.map(x=>'<Cell><Data ss:Type="String">'+xesc(x)+"</Data></Cell>").join("")+"</Row>";const rows=[row(["ID","Severity","Title","Category","Confidence","Evidence","Recommendation"]),...F.map(f=>row([f.id,f.sev,f.title,f.category||f.owasp||"",f.confidence||"",f.evidence||"",f.recommendation||""]))].join("");dl("report.xls","application/vnd.ms-excel",'<?xml version="1.0"?><?mso-application progid="Excel.Sheet"?><Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"><Worksheet ss:Name="Findings"><Table>'+rows+"</Table></Worksheet></Workbook>");}
+function exportMD(){const lines=["# Security Assessment Report",""," - Target: "+M.target," - Date: "+M.date," - Tester: "+M.tester," - Authorization: "+M.authorization,"","## Findings",""];for(const f of F){lines.push("### "+f.id+" — ["+f.sev+"] "+f.title);lines.push("");lines.push("- Category: "+(f.category||f.owasp||"—"));if(f.confidence)lines.push("- Confidence: "+f.confidence);if(f.cvss4)lines.push("- CVSS 4.0: "+(f.cvss4.score||"")+" ("+(f.cvss4.vector||"")+")");lines.push("");lines.push("**Evidence**\n\n```\n"+(f.evidence||"").trim()+"\n```");lines.push("");lines.push("**Recommendation:** "+(f.recommendation||"—"));lines.push("");}dl("report.md","text/markdown;charset=utf-8",lines.join("\n"));}
+function doExport(){const v=document.getElementById("fmt").value;({pdf:()=>window.print(),json:exportJSON,csv:exportCSV,xls:exportXLS,md:exportMD})[v]();}
+</script></body></html>
