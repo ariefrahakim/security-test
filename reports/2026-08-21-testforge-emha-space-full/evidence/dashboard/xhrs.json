@@ -1,0 +1,1388 @@
+[
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/?_rsc=16djb",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": "0:[\"eVuR_-kK8Yz55oiw9QMtN\",[[\"children\",\"__PAGE__\",[\"__PAGE__\",{}],null,null]]]\n"
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/signup?_rsc=16djb",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": "0:[\"eVuR_-kK8Yz55oiw9QMtN\",[[\"children\",\"signup\",[\"signup\",{\"children\":[\"__PAGE__\",{}]}],null,null]]]\n"
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/forgot-password?_rsc=16djb",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": "0:[\"eVuR_-kK8Yz55oiw9QMtN\",[[\"children\",\"forgot-password\",[\"forgot-password\",{\"children\":[\"__PAGE__\",{}]}],null,null]]]\n"
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/login",
+    "status": 303,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/dashboard?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=qf7ft",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard?q=zzqmt35h1y4xx",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/dashboard?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=fr248",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard?search=zzqmt35h1y4xx",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": "0:[\"$@1\",[\"eVuR_-kK8Yz55oiw9QMtN\",null]]\n1:{\"authed\":true,\"progress\":{}}\n"
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/dashboard?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=1uu29",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": "0:[\"eVuR_-kK8Yz55oiw9QMtN\",[[\"children\",\"academy\",[\"academy\",{\"children\":[\"__PAGE__\",{}]}],null,null]]]\n"
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard?filter=zzqmt35h1y4xx",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/dashboard?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=cr6yp",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard?project=zzqmt35h1y4xx",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": "0:[\"$@1\",[\"eVuR_-kK8Yz55oiw9QMtN\",null]]\n1:{\"authed\":true,\"progress\":{}}\n"
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/dashboard?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": "0:[\"eVuR_-kK8Yz55oiw9QMtN\",[[\"children\",\"academy\",[\"academy\",{\"children\":[\"me\",{\"children\":[\"__PAGE__\",{}]}]}],null,null]]]\n"
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=2tyas",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard?view=zzqmt35h1y4xx",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/dashboard?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=hs5mc",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard?tab=zzqmt35h1y4xx",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": "0:[\"$@1\",[\"eVuR_-kK8Yz55oiw9QMtN\",null]]\n1:{\"authed\":true,\"progress\":{}}\n"
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/dashboard?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": "0:[\"eVuR_-kK8Yz55oiw9QMtN\",[[\"children\",\"(app)\",\"children\",\"projects\",[\"projects\",{\"children\":[\"__PAGE__\",{}]}],null,null]]]\n"
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": "0:[\"eVuR_-kK8Yz55oiw9QMtN\",[[\"children\",\"(app)\",\"children\",\"settings\",[\"settings\",{\"children\":[\"backup\",{\"children\":[\"__PAGE__\",{}]}]}],null,null]]]\n"
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=rznay",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard?ref=zzqmt35h1y4xx",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/dashboard?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=1wijq",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard?id=zzqmt35h1y4xx",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/dashboard?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=zsvz2",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard?name=zzqmt35h1y4xx",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/dashboard?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": "0:[\"eVuR_-kK8Yz55oiw9QMtN\",[[\"children\",\"academy\",[\"academy\",{\"children\":[[\"track\",\"fundamentals\",\"d\"],{\"children\":[[\"lesson\",\"what-qa-does\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}],null,null]]]\n"
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=113dl",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard?sort=zzqmt35h1y4xx",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/dashboard?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=di4qs",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "POST",
+    "url": "https://testforge.emha.space/dashboard?page=zzqmt35h1y4xx",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/dashboard?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/my-work?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/team?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/projects/testis?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/ai?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/account?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/api-keys?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/backup?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/settings/audit-log?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/docs/help?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/me?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  },
+  {
+    "method": "GET",
+    "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does?_rsc=1kmdy",
+    "status": 200,
+    "contentType": "text/x-component",
+    "bodyPreview": null
+  }
+]

@@ -1,9 +1,0 @@
-{
-  "meta": {
-    "generated_at": "2026-08-21T00:00:00Z",
-    "generator": "dashboard-deep-walk.js v1 + orchestrator triage",
-    "module": "dashboard",
-    "note": "Raw walker output preserved at findings.verified.raw.json. Post-triage: 11 reflection candidates rolled up into a single INFO in findings.final.json (Next.js RSC JSON echo, not an HTML sink). See findings.final.json for the definitive list."
-  },
-  "findings": []
-}

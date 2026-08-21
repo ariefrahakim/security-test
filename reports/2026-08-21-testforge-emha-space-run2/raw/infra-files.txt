@@ -1,5 +1,0 @@
-ERR  robots.txt
-ERR  sitemap.xml
-ERR  .well-known/security.txt
-ERR  humans.txt
-ERR  manifest.json

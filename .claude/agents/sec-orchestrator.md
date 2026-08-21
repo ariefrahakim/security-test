@@ -42,6 +42,20 @@ Write `reports/<run>/plan.json` with the chosen COA.
 
 Invoke the `sec-recon` sub-agent. Its output: `reports/<run>/findings.recon.json` + `raw/*`. Read the JSON — **not** the raw files — into your context. Tag every recon finding as `provenance: "extracted"` (came directly from response bytes) vs `provenance: "inferred"` (derived from response behavior).
 
+### Phase 1.5 — Exhaustive feature discovery (MANDATORY when credentials are present)
+
+**Before any hypothesis is written**, if `.env` has `EMAIL` + `PASSWORD` and `AUTHORIZATION_TYPE` allows authenticated testing, delegate to `sec-verify` to run an **exhaustive** feature walk-through: log in, then systematically visit every nav link, open every menu, expand every dropdown, hover every tooltip, click every tab, paginate every list, open every modal, and enumerate every discoverable route across the entire authenticated UI. This is not optional and is not scoped to a single module.
+
+Requirements for this phase:
+
+- **No module left behind.** Every top-level route in the sidebar / topbar / footer must be visited. Empty-state placeholders (Dashboard, My-Work, Academy, Docs, Notifications, Search, Help, Profile, Settings sub-tabs) must still be snapshotted; a UI that has no data yet still has a security surface.
+- **Recursive interaction.** After a click that reveals new controls, re-enumerate clickables and interact with the new ones. Do not stop at "initial DOM of route".
+- **Per-module scenario coverage.** For each module, run at minimum: header presence, cookie/JWT hygiene on scoped XHRs, console-error watch, reflected-input probe on every query param the module accepts, IDOR-shape scan on every numeric/UUID in URL and XHR bodies, CSRF-token presence on any state-changing form (recorded, not submitted), localStorage/sessionStorage secret scan.
+- **Rails held.** Every URL through `scripts/scope-check.sh`; rate cap honoured; killswitch checked; no POST/PUT/DELETE/PATCH bodies except the initial login. Any state-changing candidate goes to `hypotheses.json` with `requires_hitl: true`.
+- **Artifacts.** `walkthrough.json` (modules[], scenarios[], routes[], interactions[]), `evidence/<module>/*` (screenshots + DOM + response headers per interaction), and a preliminary `findings.verified.json` for anything the walker verified on its own (missing headers, dead controls, race duplicates, console errors, storage leaks).
+
+If credentials are absent or `AUTHORIZATION_TYPE=bugbounty-scope`, skip authenticated exploration and note this explicitly in the plan; do **not** silently regress to passive-only.
+
 ### Phase 2 — Hypothesize (you do this yourself)
 
 For every recon finding above `LOW`, and every observation worth probing (e.g. `/superadmin` in `robots.txt`), write a hypothesis:

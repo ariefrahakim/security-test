@@ -1,0 +1,43 @@
+{
+  "run_id": "2026-08-21-testforge-emha-space-full",
+  "target": "https://testforge.emha.space",
+  "authorization": {
+    "type": "owner",
+    "note": "Domain owner (Arief Rahman Hakim). Confirmed 2026-08-21."
+  },
+  "rate_limit_rpm": 60,
+  "killswitch": false,
+  "mode": "auto",
+  "coa_candidates": [
+    {
+      "id": "COA-A",
+      "name": "passive-only baseline",
+      "cost_req": "~30",
+      "tradeoff": "safe, no auth surface coverage — REJECTED (owner auth available)"
+    },
+    {
+      "id": "COA-B",
+      "name": "passive + authenticated exhaustive walk",
+      "cost_req": "~600",
+      "tradeoff": "full coverage of authed modules, no state changes — CHOSEN"
+    },
+    {
+      "id": "COA-C",
+      "name": "authenticated + active exploitation (POST/PUT/DELETE)",
+      "cost_req": "~2000+",
+      "tradeoff": "highest fidelity but requires per-request HITL for every mutation — DEFERRED"
+    }
+  ],
+  "chosen": "COA-B",
+  "phases": [
+    {"phase": 0, "name": "Plan", "artifact": "plan.json"},
+    {"phase": 1, "name": "Recon (passive)", "delegate": "sec-recon", "artifact": "findings.recon.json"},
+    {"phase": "1.5", "name": "Exhaustive authenticated feature discovery", "tool": "scripts/authenticated-walkthrough.js + scripts/dashboard-deep-walk.js (Playwright)", "artifact": "raw/walkthrough/*, findings.walkthrough.json"},
+    {"phase": 2, "name": "Hypothesize", "artifact": "hypotheses.json"},
+    {"phase": 3, "name": "Verify (non-state-changing only, HITL for mutations)", "delegate": "sec-verify", "artifact": "findings.verified.json"},
+    {"phase": 4, "name": "Triage + dedup", "artifact": "findings.final.json"},
+    {"phase": 5, "name": "Report (v3 UX)", "tool": "scripts/build-report.js", "artifact": "report.html,report.json,report.md"},
+    {"phase": 6, "name": "Hand-off"}
+  ],
+  "hitl_policy": "queue any POST/PUT/DELETE/PATCH in hypotheses.json with requires_hitl=true; do not execute"
+}

@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "generated_at": "2026-08-21T16:15:28.066Z",
+    "generator": "triage.js v1",
+    "run_dir": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full",
+    "notes": [
+      "post-triage dedup: collapsed recon header findings into verified twins",
+      "dropped F-11 as false positive (TLS <1.2 negotiation refused per raw/tls.txt)"
+    ]
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "module": "landing",
+      "sev": "MEDIUM",
+      "confidence": "verified",
+      "category": "A05:2021 Security Misconfiguration",
+      "cwe": "CWE-693",
+      "title": "Missing security header: strict-transport-security",
+      "evidence": "Header `strict-transport-security` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Add `strict-transport-security` at edge (Caddy/Next config)."
+    },
+    {
+      "id": "F-02",
+      "module": "landing",
+      "sev": "MEDIUM",
+      "confidence": "verified",
+      "category": "A05:2021 Security Misconfiguration",
+      "cwe": "CWE-693",
+      "title": "Missing security header: content-security-policy",
+      "evidence": "Header `content-security-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Add `content-security-policy` at edge (Caddy/Next config)."
+    },
+    {
+      "id": "F-03",
+      "module": "landing",
+      "sev": "LOW",
+      "confidence": "verified",
+      "category": "A05:2021 Security Misconfiguration",
+      "cwe": "CWE-693",
+      "title": "Missing security header: x-frame-options",
+      "evidence": "Header `x-frame-options` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Add `x-frame-options` at edge (Caddy/Next config)."
+    },
+    {
+      "id": "F-04",
+      "module": "landing",
+      "sev": "LOW",
+      "confidence": "verified",
+      "category": "A05:2021 Security Misconfiguration",
+      "cwe": "CWE-693",
+      "title": "Missing security header: x-content-type-options",
+      "evidence": "Header `x-content-type-options` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Add `x-content-type-options` at edge (Caddy/Next config)."
+    },
+    {
+      "id": "F-05",
+      "module": "landing",
+      "sev": "LOW",
+      "confidence": "verified",
+      "category": "A05:2021 Security Misconfiguration",
+      "cwe": "CWE-693",
+      "title": "Missing security header: referrer-policy",
+      "evidence": "Header `referrer-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Add `referrer-policy` at edge (Caddy/Next config)."
+    },
+    {
+      "id": "F-06",
+      "module": "landing",
+      "sev": "LOW",
+      "confidence": "verified",
+      "category": "A05:2021 Security Misconfiguration",
+      "cwe": "CWE-693",
+      "title": "Missing security header: permissions-policy",
+      "evidence": "Header `permissions-policy` absent on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Add `permissions-policy` at edge (Caddy/Next config)."
+    },
+    {
+      "id": "F-07",
+      "module": "landing",
+      "sev": "LOW",
+      "confidence": "verified",
+      "category": "A05:2021 Security Misconfiguration",
+      "cwe": "CWE-200",
+      "title": "Framework fingerprinting via X-Powered-By",
+      "evidence": "x-powered-by: Next.js on https://testforge.emha.space/. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Strip banner (poweredByHeader:false in next.config.js)."
+    },
+    {
+      "id": "F-08",
+      "module": "projects",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A01:2021 Broken Access Control",
+      "cwe": "CWE-352",
+      "title": "Form on /projects has no visible CSRF token",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+    },
+    {
+      "id": "F-09",
+      "module": "projects",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A01:2021 Broken Access Control",
+      "cwe": "CWE-352",
+      "title": "Form on /projects/testis has no visible CSRF token",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+    },
+    {
+      "id": "F-10",
+      "module": "settings",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A01:2021 Broken Access Control",
+      "cwe": "CWE-352",
+      "title": "Form on /settings/team has no visible CSRF token",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+    },
+    {
+      "id": "F-11",
+      "module": "settings",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A01:2021 Broken Access Control",
+      "cwe": "CWE-352",
+      "title": "Form on /settings/api-keys has no visible CSRF token",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+    },
+    {
+      "id": "F-12",
+      "module": "settings",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A01:2021 Broken Access Control",
+      "cwe": "CWE-352",
+      "title": "Form on /settings/ai has no visible CSRF token",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+    },
+    {
+      "id": "F-13",
+      "module": "settings",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A01:2021 Broken Access Control",
+      "cwe": "CWE-352",
+      "title": "Form on /settings/account has no visible CSRF token",
+      "evidence": "Form action= method=POST. Framework may use SameSite/double-submit; needs verification. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Verify CSRF protection: SameSite=Strict on session cookie AND server-side origin check, or explicit CSRF token."
+    },
+    {
+      "id": "F-14",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"q\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: \\\"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?q=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html)",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "F-15",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"search\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?search=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html)",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "F-16",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"filter\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?filter=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html)",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "F-17",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"project\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: _-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?project=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html)",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "F-18",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"view\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?view=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html)",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "F-19",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"tab\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?tab=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html)",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "F-20",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"ref\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?ref=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html)",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "F-21",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"id\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: \"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?id=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html)",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "F-22",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"name\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?name=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html)",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "F-23",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"sort\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?sort=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html)",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "F-24",
+      "module": "dashboard",
+      "sev": "LOW",
+      "confidence": "probable",
+      "category": "A03:2021 Injection",
+      "cwe": "CWE-79",
+      "title": "Query param \"page\" reflected in DOM at /dashboard",
+      "evidence": "Canary \"zzqmt35h1y4xx\" appears in response body. Context excerpt: VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?page=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\ (see /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html)",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Ensure the value is HTML-encoded on render and not written into a JS string literal. Add CSP with strict script-src."
+    },
+    {
+      "id": "F-25",
+      "sev": "LOW",
+      "category": "A01 Broken Access Control (recon aid)",
+      "title": "robots.txt enumerates sensitive routes",
+      "evidence": "Disallow list includes: /api/, /share/, /invite/, /verify, /verify-email, /reset-password, /forgot-password, /login/2fa, ….",
+      "recommendation": "Do not enumerate protected paths in robots.txt. Rely on server-side auth; use noindex on individual pages.",
+      "confidence": "heuristic",
+      "module": "infrastructure"
+    },
+    {
+      "id": "F-26",
+      "module": "dashboard",
+      "sev": "INFO",
+      "confidence": "heuristic",
+      "category": "UX / Reliability",
+      "cwe": "CWE-1006",
+      "title": "4 dashboard control(s) produced no observable effect on click",
+      "evidence": "Labels: TestForge, Search⌘K, Dashboard, Log out → — no navigation, no XHR, no console change. May be pure UI toggles (expected) or dead buttons (bug).",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/clickables.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N",
+        "score": 0
+      },
+      "recommendation": "Manually verify these controls: expected pure-CSS toggle vs missing click handler."
+    },
+    {
+      "id": "F-27",
+      "sev": "INFO",
+      "category": "Best practice",
+      "title": "Missing /.well-known/security.txt",
+      "evidence": "GET /.well-known/security.txt returned 404.",
+      "recommendation": "Publish security.txt per RFC 9116 (Contact, Expires, Preferred-Languages).",
+      "confidence": "heuristic",
+      "module": "infrastructure"
+    },
+    {
+      "id": "F-28",
+      "sev": "OK",
+      "category": "Positive control",
+      "title": "HTTPS enforced from plain HTTP",
+      "evidence": "HTTP responded 308 → HTTPS.",
+      "recommendation": "Maintain. Combine with HSTS to close first-visit downgrade window.",
+      "confidence": "heuristic",
+      "module": "infrastructure"
+    }
+  ]
+}

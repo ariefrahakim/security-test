@@ -1,0 +1,13 @@
+{
+  "status": 200,
+  "headers": {
+    "x-action-revalidated": "[[],0,0]",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "content-encoding": "gzip",
+    "via": "1.1 Caddy",
+    "date": "Fri, 21 Aug 2026 16:13:59 GMT",
+    "content-type": "text/x-component",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding",
+    "x-powered-by": "Next.js"
+  }
+}

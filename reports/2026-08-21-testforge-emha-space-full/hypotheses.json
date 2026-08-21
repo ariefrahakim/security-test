@@ -1,0 +1,121 @@
+{
+  "hypotheses": [
+    {
+      "id": "H-A1",
+      "title": "Password reset token reuse / no expiry",
+      "based_on": [
+        "/forgot-password route enumerated"
+      ],
+      "test_plan": "Request reset email twice, attempt to reuse first token after second issued",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-A2",
+      "title": "Login rate-limit bypass",
+      "based_on": [
+        "login endpoint"
+      ],
+      "test_plan": "50 rapid wrong-password attempts; observe lockout",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-D-xss-q",
+      "title": "Reflected XSS candidate: q on /dashboard",
+      "based_on": [
+        "https://testforge.emha.space/dashboard?q=zzqmt35h1y4xx"
+      ],
+      "test_plan": "Send payload <svg/onload=alert(1)> in ?q=",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-D-xss-search",
+      "title": "Reflected XSS candidate: search on /dashboard",
+      "based_on": [
+        "https://testforge.emha.space/dashboard?search=zzqmt35h1y4xx"
+      ],
+      "test_plan": "Send payload <svg/onload=alert(1)> in ?search=",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-D-xss-filter",
+      "title": "Reflected XSS candidate: filter on /dashboard",
+      "based_on": [
+        "https://testforge.emha.space/dashboard?filter=zzqmt35h1y4xx"
+      ],
+      "test_plan": "Send payload <svg/onload=alert(1)> in ?filter=",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-D-xss-project",
+      "title": "Reflected XSS candidate: project on /dashboard",
+      "based_on": [
+        "https://testforge.emha.space/dashboard?project=zzqmt35h1y4xx"
+      ],
+      "test_plan": "Send payload <svg/onload=alert(1)> in ?project=",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-D-xss-view",
+      "title": "Reflected XSS candidate: view on /dashboard",
+      "based_on": [
+        "https://testforge.emha.space/dashboard?view=zzqmt35h1y4xx"
+      ],
+      "test_plan": "Send payload <svg/onload=alert(1)> in ?view=",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-D-xss-tab",
+      "title": "Reflected XSS candidate: tab on /dashboard",
+      "based_on": [
+        "https://testforge.emha.space/dashboard?tab=zzqmt35h1y4xx"
+      ],
+      "test_plan": "Send payload <svg/onload=alert(1)> in ?tab=",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-D-xss-ref",
+      "title": "Reflected XSS candidate: ref on /dashboard",
+      "based_on": [
+        "https://testforge.emha.space/dashboard?ref=zzqmt35h1y4xx"
+      ],
+      "test_plan": "Send payload <svg/onload=alert(1)> in ?ref=",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-D-xss-id",
+      "title": "Reflected XSS candidate: id on /dashboard",
+      "based_on": [
+        "https://testforge.emha.space/dashboard?id=zzqmt35h1y4xx"
+      ],
+      "test_plan": "Send payload <svg/onload=alert(1)> in ?id=",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-D-xss-name",
+      "title": "Reflected XSS candidate: name on /dashboard",
+      "based_on": [
+        "https://testforge.emha.space/dashboard?name=zzqmt35h1y4xx"
+      ],
+      "test_plan": "Send payload <svg/onload=alert(1)> in ?name=",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-D-xss-sort",
+      "title": "Reflected XSS candidate: sort on /dashboard",
+      "based_on": [
+        "https://testforge.emha.space/dashboard?sort=zzqmt35h1y4xx"
+      ],
+      "test_plan": "Send payload <svg/onload=alert(1)> in ?sort=",
+      "requires_hitl": true
+    },
+    {
+      "id": "H-D-xss-page",
+      "title": "Reflected XSS candidate: page on /dashboard",
+      "based_on": [
+        "https://testforge.emha.space/dashboard?page=zzqmt35h1y4xx"
+      ],
+      "test_plan": "Send payload <svg/onload=alert(1)> in ?page=",
+      "requires_hitl": true
+    }
+  ]
+}

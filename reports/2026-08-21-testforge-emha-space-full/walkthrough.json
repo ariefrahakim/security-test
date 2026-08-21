@@ -1,0 +1,1683 @@
+{
+  "target": "https://testforge.emha.space",
+  "started_at": "2026-08-21T16:13:56.708Z",
+  "finished_at": "2026-08-21T16:15:01.340Z",
+  "modules": [
+    {
+      "slug": "landing",
+      "name": "Landing (pre-auth)",
+      "routes": [
+        "https://testforge.emha.space/"
+      ],
+      "features": [
+        "Public landing page; links to /login, /signup"
+      ],
+      "scenarios": [
+        {
+          "id": "S-L1",
+          "desc": "Load landing, capture headers",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+            "url": "https://testforge.emha.space/"
+          }
+        }
+      ],
+      "findings": [
+        "V-01",
+        "V-02",
+        "V-03",
+        "V-04",
+        "V-05",
+        "V-06",
+        "V-07"
+      ],
+      "coverage": "Read-only: header capture, DOM snapshot. Skipped: signup form fuzz (state-changing, HITL)."
+    },
+    {
+      "slug": "auth",
+      "name": "Authentication",
+      "routes": [
+        "https://testforge.emha.space/login"
+      ],
+      "features": [
+        "Email + password login; links to /forgot-password, /signup, /login/2fa"
+      ],
+      "scenarios": [
+        {
+          "id": "S-A0",
+          "desc": "Locate email/password inputs",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-page.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-page.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-page.headers.json",
+            "url": "https://testforge.emha.space/login"
+          }
+        },
+        {
+          "id": "S-A1",
+          "desc": "Submit valid email + wrong password; observe error message for user-enumeration",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-wrong-password.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-wrong-password.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-wrong-password.headers.json",
+            "url": "https://testforge.emha.space/login"
+          },
+          "observed": "Generic error / no user-enumeration hint detected"
+        },
+        {
+          "id": "S-A2",
+          "desc": "Login with correct credentials",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/post-login.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/post-login.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/post-login.headers.json",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "Redirected to https://testforge.emha.space/dashboard"
+        },
+        {
+          "id": "S-A3",
+          "desc": "Inspect session cookie flags",
+          "result": "pass",
+          "evidence": {
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/cookies.json"
+          }
+        }
+      ],
+      "findings": [],
+      "coverage": "Read-only: login form, wrong-password error, session cookies. Deferred (HITL): password reset flow, 2FA enrolment."
+    },
+    {
+      "slug": "my-work",
+      "name": "My-work",
+      "routes": [
+        "https://testforge.emha.space/my-work"
+      ],
+      "features": [
+        "TestForge — Test Case Management"
+      ],
+      "scenarios": [
+        {
+          "id": "S-MY-WORK-1",
+          "desc": "Navigate https://testforge.emha.space/my-work (nav text: \"My Work\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/my-work/route-1.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/my-work/route-1.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/my-work/route-1.headers.json",
+            "url": "https://testforge.emha.space/my-work"
+          }
+        }
+      ],
+      "findings": [],
+      "coverage": "Visited 1/1 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+    },
+    {
+      "slug": "projects",
+      "name": "Projects",
+      "routes": [
+        "https://testforge.emha.space/projects",
+        "https://testforge.emha.space/projects/testis"
+      ],
+      "features": [
+        "TestForge — Test Case Management — Projects",
+        "Testis — TestForge — Testis"
+      ],
+      "scenarios": [
+        {
+          "id": "S-PROJECTS-1",
+          "desc": "Navigate https://testforge.emha.space/projects (nav text: \"Projects\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.headers.json",
+            "url": "https://testforge.emha.space/projects"
+          }
+        },
+        {
+          "id": "S-PROJECTS-2",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.headers.json",
+            "url": "https://testforge.emha.space/projects"
+          }
+        },
+        {
+          "id": "S-PROJECTS-3",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.headers.json",
+            "url": "https://testforge.emha.space/projects"
+          }
+        },
+        {
+          "id": "S-PROJECTS-4",
+          "desc": "Navigate https://testforge.emha.space/projects/testis (nav text: \"Testis\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.headers.json",
+            "url": "https://testforge.emha.space/projects/testis"
+          }
+        },
+        {
+          "id": "S-PROJECTS-5",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.headers.json",
+            "url": "https://testforge.emha.space/projects/testis"
+          }
+        }
+      ],
+      "findings": [
+        "V-08",
+        "V-09",
+        "V-10"
+      ],
+      "coverage": "Visited 2/2 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+    },
+    {
+      "slug": "settings",
+      "name": "Settings",
+      "routes": [
+        "https://testforge.emha.space/settings/team",
+        "https://testforge.emha.space/settings/api-keys",
+        "https://testforge.emha.space/settings/ai",
+        "https://testforge.emha.space/settings/audit-log",
+        "https://testforge.emha.space/settings/backup",
+        "https://testforge.emha.space/settings/account"
+      ],
+      "features": [
+        "TestForge — Test Case Management — Team",
+        "TestForge — Test Case Management — API Keys",
+        "TestForge — Test Case Management — AI assist",
+        "TestForge — Test Case Management — Audit Log",
+        "TestForge — Test Case Management — Backup & restore",
+        "TestForge — Test Case Management — Account"
+      ],
+      "scenarios": [
+        {
+          "id": "S-SETTINGS-1",
+          "desc": "Navigate https://testforge.emha.space/settings/team (nav text: \"Team\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.headers.json",
+            "url": "https://testforge.emha.space/settings/team"
+          }
+        },
+        {
+          "id": "S-SETTINGS-2",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.headers.json",
+            "url": "https://testforge.emha.space/settings/team"
+          }
+        },
+        {
+          "id": "S-SETTINGS-3",
+          "desc": "Navigate https://testforge.emha.space/settings/api-keys (nav text: \"API Keys\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.headers.json",
+            "url": "https://testforge.emha.space/settings/api-keys"
+          }
+        },
+        {
+          "id": "S-SETTINGS-4",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.headers.json",
+            "url": "https://testforge.emha.space/settings/api-keys"
+          }
+        },
+        {
+          "id": "S-SETTINGS-5",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.headers.json",
+            "url": "https://testforge.emha.space/settings/api-keys"
+          }
+        },
+        {
+          "id": "S-SETTINGS-6",
+          "desc": "Navigate https://testforge.emha.space/settings/ai (nav text: \"AI Assist\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.headers.json",
+            "url": "https://testforge.emha.space/settings/ai"
+          }
+        },
+        {
+          "id": "S-SETTINGS-7",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.headers.json",
+            "url": "https://testforge.emha.space/settings/ai"
+          }
+        },
+        {
+          "id": "S-SETTINGS-8",
+          "desc": "Navigate https://testforge.emha.space/settings/audit-log (nav text: \"Audit Log\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-4.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-4.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-4.headers.json",
+            "url": "https://testforge.emha.space/settings/audit-log"
+          }
+        },
+        {
+          "id": "S-SETTINGS-9",
+          "desc": "Navigate https://testforge.emha.space/settings/backup (nav text: \"Backup\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-5.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-5.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-5.headers.json",
+            "url": "https://testforge.emha.space/settings/backup"
+          }
+        },
+        {
+          "id": "S-SETTINGS-10",
+          "desc": "Navigate https://testforge.emha.space/settings/account (nav text: \"Account\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.headers.json",
+            "url": "https://testforge.emha.space/settings/account"
+          }
+        },
+        {
+          "id": "S-SETTINGS-11",
+          "desc": "Form action= method=POST lacks visible CSRF token",
+          "result": "finding",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.headers.json",
+            "url": "https://testforge.emha.space/settings/account"
+          }
+        }
+      ],
+      "findings": [
+        "V-11",
+        "V-12",
+        "V-13",
+        "V-14",
+        "V-15"
+      ],
+      "coverage": "Visited 6/6 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+    },
+    {
+      "slug": "academy",
+      "name": "Academy",
+      "routes": [
+        "https://testforge.emha.space/academy",
+        "https://testforge.emha.space/academy/me",
+        "https://testforge.emha.space/academy/fundamentals/what-qa-does"
+      ],
+      "features": [
+        "QA Academy — learn software testing from scratch | TestForge — QA AcademyBeta",
+        "My progress — TestForge QA Academy — My progressBeta",
+        "What a tester actually does — QA Fundamentals | TestForge QA Academy — What a tester actually does"
+      ],
+      "scenarios": [
+        {
+          "id": "S-ACADEMY-1",
+          "desc": "Navigate https://testforge.emha.space/academy (nav text: \"AcademyBeta\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-1.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-1.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-1.headers.json",
+            "url": "https://testforge.emha.space/academy"
+          }
+        },
+        {
+          "id": "S-ACADEMY-2",
+          "desc": "Navigate https://testforge.emha.space/academy/me (nav text: \"My progress\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-2.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-2.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-2.headers.json",
+            "url": "https://testforge.emha.space/academy/me"
+          }
+        },
+        {
+          "id": "S-ACADEMY-3",
+          "desc": "Navigate https://testforge.emha.space/academy/fundamentals/what-qa-does (nav text: \"Start QA Fundamentals\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-3.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-3.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-3.headers.json",
+            "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does"
+          }
+        }
+      ],
+      "findings": [],
+      "coverage": "Visited 3/3 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+    },
+    {
+      "slug": "docs",
+      "name": "Docs",
+      "routes": [
+        "https://testforge.emha.space/docs/help"
+      ],
+      "features": [
+        "Help — TestForge — Help"
+      ],
+      "scenarios": [
+        {
+          "id": "S-DOCS-1",
+          "desc": "Navigate https://testforge.emha.space/docs/help (nav text: \"Help\")",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/docs/route-1.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/docs/route-1.html",
+            "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/docs/route-1.headers.json",
+            "url": "https://testforge.emha.space/docs/help"
+          }
+        }
+      ],
+      "findings": [],
+      "coverage": "Visited 1/1 discovered route(s). State-changing actions (create/edit/delete) deferred to HITL."
+    },
+    {
+      "slug": "dashboard",
+      "name": "Dashboard (deep interactive)",
+      "routes": [
+        "/dashboard"
+      ],
+      "features": [
+        "Interactive widget clicks, modal opens, tabs, dropdowns, sort headers, pagination, reflection probes, storage inspection, XHR capture"
+      ],
+      "scenarios": [
+        {
+          "id": "I-000",
+          "desc": "Navigate /dashboard",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/03-dashboard-initial.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/03-dashboard-initial.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": ""
+        },
+        {
+          "id": "I-001",
+          "desc": "Click \"TestForge\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-001-TestForge.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-001-TestForge.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+        },
+        {
+          "id": "I-002",
+          "desc": "Click \"Search⌘K\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-002-Search_K.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-002-Search_K.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+        },
+        {
+          "id": "I-003",
+          "desc": "Click \"Dashboard\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-003-Dashboard.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-003-Dashboard.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+        },
+        {
+          "id": "I-004",
+          "desc": "Click \"Log out →\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-004-Log_out_.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-004-Log_out_.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+        },
+        {
+          "id": "I-005",
+          "desc": "Click \"Light\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-005-Light.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-005-Light.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-light\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"Light\" aria-label=\"Light\" aria-pressed=\"false\" data-testid=\"theme-light\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-"
+        },
+        {
+          "id": "I-006",
+          "desc": "Click \"System\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-006-System.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-006-System.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-system\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"System\" aria-pressed=\"true\" aria-label=\"System\" data-testid=\"theme-system\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ri"
+        },
+        {
+          "id": "I-007",
+          "desc": "Click \"Dark\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-007-Dark.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-007-Dark.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-dark\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button title=\"Dark\" type=\"button\" aria-label=\"Dark\" aria-pressed=\"false\" data-testid=\"theme-dark\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-offs"
+        },
+        {
+          "id": "I-008",
+          "desc": "Click \"Continue learningMy progress →QA Fundamentals — 0 of 13 lessons doneStart QA Fun\"",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.html",
+            "url": "https://testforge.emha.space/dashboard"
+          },
+          "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"dashboard-academy-widget\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <section data-testid=\"dashboard-academy-widget\" class=\"rounded-xl border border-hairline bg-surface p-6\">…</section>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m "
+        },
+        {
+          "id": "I-refl-q",
+          "desc": "Reflected probe param=q",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html",
+            "url": "https://testforge.emha.space/dashboard?q=zzqmt35h1y4xx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-search",
+          "desc": "Reflected probe param=search",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html",
+            "url": "https://testforge.emha.space/dashboard?search=zzqmt35h1y4xx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-filter",
+          "desc": "Reflected probe param=filter",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html",
+            "url": "https://testforge.emha.space/dashboard?filter=zzqmt35h1y4xx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-project",
+          "desc": "Reflected probe param=project",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html",
+            "url": "https://testforge.emha.space/dashboard?project=zzqmt35h1y4xx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-view",
+          "desc": "Reflected probe param=view",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html",
+            "url": "https://testforge.emha.space/dashboard?view=zzqmt35h1y4xx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-tab",
+          "desc": "Reflected probe param=tab",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html",
+            "url": "https://testforge.emha.space/dashboard?tab=zzqmt35h1y4xx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-ref",
+          "desc": "Reflected probe param=ref",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html",
+            "url": "https://testforge.emha.space/dashboard?ref=zzqmt35h1y4xx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-id",
+          "desc": "Reflected probe param=id",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html",
+            "url": "https://testforge.emha.space/dashboard?id=zzqmt35h1y4xx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-name",
+          "desc": "Reflected probe param=name",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html",
+            "url": "https://testforge.emha.space/dashboard?name=zzqmt35h1y4xx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-sort",
+          "desc": "Reflected probe param=sort",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html",
+            "url": "https://testforge.emha.space/dashboard?sort=zzqmt35h1y4xx"
+          },
+          "observed": "reflected=true"
+        },
+        {
+          "id": "I-refl-page",
+          "desc": "Reflected probe param=page",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.png",
+            "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html",
+            "url": "https://testforge.emha.space/dashboard?page=zzqmt35h1y4xx"
+          },
+          "observed": "reflected=true"
+        }
+      ],
+      "findings": [
+        "V-D01",
+        "V-D02",
+        "V-D03",
+        "V-D04",
+        "V-D05",
+        "V-D06",
+        "V-D07",
+        "V-D08",
+        "V-D09",
+        "V-D10",
+        "V-D11",
+        "V-D12"
+      ],
+      "coverage": "Deep-interactive walk: 20 interactions, 198 XHRs observed, 0 console errors, 0 unhandled exceptions. State-changing submits deferred to HITL."
+    }
+  ],
+  "discovered_links": [
+    {
+      "url": "https://testforge.emha.space/dashboard",
+      "text": "TestForge"
+    },
+    {
+      "url": "https://testforge.emha.space/my-work",
+      "text": "My Work"
+    },
+    {
+      "url": "https://testforge.emha.space/projects",
+      "text": "Projects"
+    },
+    {
+      "url": "https://testforge.emha.space/projects/testis",
+      "text": "Testis"
+    },
+    {
+      "url": "https://testforge.emha.space/settings/team",
+      "text": "Team"
+    },
+    {
+      "url": "https://testforge.emha.space/settings/api-keys",
+      "text": "API Keys"
+    },
+    {
+      "url": "https://testforge.emha.space/settings/ai",
+      "text": "AI Assist"
+    },
+    {
+      "url": "https://testforge.emha.space/settings/audit-log",
+      "text": "Audit Log"
+    },
+    {
+      "url": "https://testforge.emha.space/settings/backup",
+      "text": "Backup"
+    },
+    {
+      "url": "https://testforge.emha.space/settings/account",
+      "text": "Account"
+    },
+    {
+      "url": "https://testforge.emha.space/academy",
+      "text": "AcademyBeta"
+    },
+    {
+      "url": "https://testforge.emha.space/academy/me",
+      "text": "My progress"
+    },
+    {
+      "url": "https://testforge.emha.space/docs/help",
+      "text": "Help"
+    },
+    {
+      "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does",
+      "text": "Start QA Fundamentals"
+    }
+  ],
+  "dashboard_walk": {
+    "target": "https://testforge.emha.space",
+    "module": "dashboard",
+    "started_at": "2026-08-21T16:14:21.152Z",
+    "interactions": [
+      {
+        "id": "I-000",
+        "kind": "navigate",
+        "target": "/dashboard",
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/03-dashboard-initial.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/03-dashboard-initial.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-001",
+        "kind": "click",
+        "target": {
+          "tag": "A",
+          "label": "TestForge",
+          "href": "/dashboard",
+          "role": "",
+          "testid": ""
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": null,
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-001-TestForge.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-001-TestForge.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-002",
+        "kind": "click",
+        "target": {
+          "tag": "BUTTON",
+          "label": "Search⌘K",
+          "href": "",
+          "role": "",
+          "testid": "global-search-trigger"
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": null,
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-002-Search_K.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-002-Search_K.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-003",
+        "kind": "click",
+        "target": {
+          "tag": "A",
+          "label": "Dashboard",
+          "href": "/dashboard",
+          "role": "",
+          "testid": "nav-dashboard"
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": null,
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-003-Dashboard.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-003-Dashboard.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-004",
+        "kind": "click",
+        "target": {
+          "tag": "BUTTON",
+          "label": "Log out →",
+          "href": "",
+          "role": "",
+          "testid": ""
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": null,
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-004-Log_out_.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-004-Log_out_.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-005",
+        "kind": "click",
+        "target": {
+          "tag": "BUTTON",
+          "label": "Light",
+          "href": "",
+          "role": "",
+          "testid": "theme-light"
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": "locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-light\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"Light\" aria-label=\"Light\" aria-pressed=\"false\" data-testid=\"theme-light\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-",
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-005-Light.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-005-Light.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-006",
+        "kind": "click",
+        "target": {
+          "tag": "BUTTON",
+          "label": "System",
+          "href": "",
+          "role": "",
+          "testid": "theme-system"
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": "locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-system\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"System\" aria-pressed=\"true\" aria-label=\"System\" data-testid=\"theme-system\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ri",
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-006-System.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-006-System.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-007",
+        "kind": "click",
+        "target": {
+          "tag": "BUTTON",
+          "label": "Dark",
+          "href": "",
+          "role": "",
+          "testid": "theme-dark"
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": "locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-dark\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button title=\"Dark\" type=\"button\" aria-label=\"Dark\" aria-pressed=\"false\" data-testid=\"theme-dark\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-offs",
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-007-Dark.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-007-Dark.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-008",
+        "kind": "click",
+        "target": {
+          "tag": "SECTION",
+          "label": "Continue learningMy progress →QA Fundamentals — 0 of 13 lessons doneStart QA Fun",
+          "href": "",
+          "role": "",
+          "testid": "dashboard-academy-widget"
+        },
+        "urlBefore": "https://testforge.emha.space/dashboard",
+        "urlAfter": "https://testforge.emha.space/dashboard",
+        "clickErr": "locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"dashboard-academy-widget\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <section data-testid=\"dashboard-academy-widget\" class=\"rounded-xl border border-hairline bg-surface p-6\">…</section>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m ",
+        "xhrDelta": [],
+        "badXhr": [],
+        "consoleErrDelta": 0,
+        "errDelta": 0,
+        "doubleClickDupXhr": null,
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.html",
+          "url": "https://testforge.emha.space/dashboard"
+        }
+      },
+      {
+        "id": "I-refl-q",
+        "kind": "reflect-probe",
+        "param": "q",
+        "url": "https://testforge.emha.space/dashboard?q=zzqmt35h1y4xx",
+        "reflected": true,
+        "excerpt": "\\\"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?q=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html",
+          "url": "https://testforge.emha.space/dashboard?q=zzqmt35h1y4xx"
+        }
+      },
+      {
+        "id": "I-refl-search",
+        "kind": "reflect-probe",
+        "param": "search",
+        "url": "https://testforge.emha.space/dashboard?search=zzqmt35h1y4xx",
+        "reflected": true,
+        "excerpt": "R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?search=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html",
+          "url": "https://testforge.emha.space/dashboard?search=zzqmt35h1y4xx"
+        }
+      },
+      {
+        "id": "I-refl-filter",
+        "kind": "reflect-probe",
+        "param": "filter",
+        "url": "https://testforge.emha.space/dashboard?filter=zzqmt35h1y4xx",
+        "reflected": true,
+        "excerpt": "R_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?filter=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html",
+          "url": "https://testforge.emha.space/dashboard?filter=zzqmt35h1y4xx"
+        }
+      },
+      {
+        "id": "I-refl-project",
+        "kind": "reflect-probe",
+        "param": "project",
+        "url": "https://testforge.emha.space/dashboard?project=zzqmt35h1y4xx",
+        "reflected": true,
+        "excerpt": "_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?project=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html",
+          "url": "https://testforge.emha.space/dashboard?project=zzqmt35h1y4xx"
+        }
+      },
+      {
+        "id": "I-refl-view",
+        "kind": "reflect-probe",
+        "param": "view",
+        "url": "https://testforge.emha.space/dashboard?view=zzqmt35h1y4xx",
+        "reflected": true,
+        "excerpt": "VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?view=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html",
+          "url": "https://testforge.emha.space/dashboard?view=zzqmt35h1y4xx"
+        }
+      },
+      {
+        "id": "I-refl-tab",
+        "kind": "reflect-probe",
+        "param": "tab",
+        "url": "https://testforge.emha.space/dashboard?tab=zzqmt35h1y4xx",
+        "reflected": true,
+        "excerpt": "eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?tab=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html",
+          "url": "https://testforge.emha.space/dashboard?tab=zzqmt35h1y4xx"
+        }
+      },
+      {
+        "id": "I-refl-ref",
+        "kind": "reflect-probe",
+        "param": "ref",
+        "url": "https://testforge.emha.space/dashboard?ref=zzqmt35h1y4xx",
+        "reflected": true,
+        "excerpt": "eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?ref=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html",
+          "url": "https://testforge.emha.space/dashboard?ref=zzqmt35h1y4xx"
+        }
+      },
+      {
+        "id": "I-refl-id",
+        "kind": "reflect-probe",
+        "param": "id",
+        "url": "https://testforge.emha.space/dashboard?id=zzqmt35h1y4xx",
+        "reflected": true,
+        "excerpt": "\"eVuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?id=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html",
+          "url": "https://testforge.emha.space/dashboard?id=zzqmt35h1y4xx"
+        }
+      },
+      {
+        "id": "I-refl-name",
+        "kind": "reflect-probe",
+        "param": "name",
+        "url": "https://testforge.emha.space/dashboard?name=zzqmt35h1y4xx",
+        "reflected": true,
+        "excerpt": "VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?name=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html",
+          "url": "https://testforge.emha.space/dashboard?name=zzqmt35h1y4xx"
+        }
+      },
+      {
+        "id": "I-refl-sort",
+        "kind": "reflect-probe",
+        "param": "sort",
+        "url": "https://testforge.emha.space/dashboard?sort=zzqmt35h1y4xx",
+        "reflected": true,
+        "excerpt": "VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?sort=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html",
+          "url": "https://testforge.emha.space/dashboard?sort=zzqmt35h1y4xx"
+        }
+      },
+      {
+        "id": "I-refl-page",
+        "kind": "reflect-probe",
+        "param": "page",
+        "url": "https://testforge.emha.space/dashboard?page=zzqmt35h1y4xx",
+        "reflected": true,
+        "excerpt": "VuR_-kK8Yz55oiw9QMtN\\\",\\\"assetPrefix\\\":\\\"\\\",\\\"urlParts\\\":[\\\"\\\",\\\"dashboard?page=zzqmt35h1y4xx\\\"],\\\"initialTree\\\":[\\\"\\\",{\\\"children\\\":[\\\"(app)\\\",{\\\"children\\\":[\\",
+        "evidence": {
+          "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.png",
+          "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html",
+          "url": "https://testforge.emha.space/dashboard?page=zzqmt35h1y4xx"
+        }
+      }
+    ],
+    "xhrs_summary": {
+      "total": 198,
+      "by_status": {
+        "200": 197,
+        "303": 1
+      },
+      "unique_endpoints": 19,
+      "idor_shaped": 0,
+      "broken": 0
+    },
+    "console_summary": {
+      "total_messages": 0,
+      "errors": 0,
+      "page_errors": 0
+    },
+    "findings_refs": [
+      "V-D01",
+      "V-D02",
+      "V-D03",
+      "V-D04",
+      "V-D05",
+      "V-D06",
+      "V-D07",
+      "V-D08",
+      "V-D09",
+      "V-D10",
+      "V-D11",
+      "V-D12"
+    ],
+    "interactions_count": 20,
+    "finished_at": "2026-08-21T16:15:01.340Z"
+  },
+  "scenarios": [
+    {
+      "module": "landing",
+      "id": "S-L1",
+      "desc": "Load landing, capture headers",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/landing/home.headers.json",
+        "url": "https://testforge.emha.space/"
+      }
+    },
+    {
+      "module": "auth",
+      "id": "S-A0",
+      "desc": "Locate email/password inputs",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-page.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-page.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-page.headers.json",
+        "url": "https://testforge.emha.space/login"
+      }
+    },
+    {
+      "module": "auth",
+      "id": "S-A1",
+      "desc": "Submit valid email + wrong password; observe error message for user-enumeration",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-wrong-password.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-wrong-password.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/login-wrong-password.headers.json",
+        "url": "https://testforge.emha.space/login"
+      },
+      "observed": "Generic error / no user-enumeration hint detected"
+    },
+    {
+      "module": "auth",
+      "id": "S-A2",
+      "desc": "Login with correct credentials",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/post-login.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/post-login.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/post-login.headers.json",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "Redirected to https://testforge.emha.space/dashboard"
+    },
+    {
+      "module": "auth",
+      "id": "S-A3",
+      "desc": "Inspect session cookie flags",
+      "result": "pass",
+      "evidence": {
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/auth/cookies.json"
+      }
+    },
+    {
+      "module": "my-work",
+      "id": "S-MY-WORK-1",
+      "desc": "Navigate https://testforge.emha.space/my-work (nav text: \"My Work\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/my-work/route-1.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/my-work/route-1.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/my-work/route-1.headers.json",
+        "url": "https://testforge.emha.space/my-work"
+      }
+    },
+    {
+      "module": "projects",
+      "id": "S-PROJECTS-1",
+      "desc": "Navigate https://testforge.emha.space/projects (nav text: \"Projects\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.headers.json",
+        "url": "https://testforge.emha.space/projects"
+      }
+    },
+    {
+      "module": "projects",
+      "id": "S-PROJECTS-2",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.headers.json",
+        "url": "https://testforge.emha.space/projects"
+      }
+    },
+    {
+      "module": "projects",
+      "id": "S-PROJECTS-3",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-1.headers.json",
+        "url": "https://testforge.emha.space/projects"
+      }
+    },
+    {
+      "module": "projects",
+      "id": "S-PROJECTS-4",
+      "desc": "Navigate https://testforge.emha.space/projects/testis (nav text: \"Testis\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.headers.json",
+        "url": "https://testforge.emha.space/projects/testis"
+      }
+    },
+    {
+      "module": "projects",
+      "id": "S-PROJECTS-5",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/projects/route-2.headers.json",
+        "url": "https://testforge.emha.space/projects/testis"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-1",
+      "desc": "Navigate https://testforge.emha.space/settings/team (nav text: \"Team\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.headers.json",
+        "url": "https://testforge.emha.space/settings/team"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-2",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-1.headers.json",
+        "url": "https://testforge.emha.space/settings/team"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-3",
+      "desc": "Navigate https://testforge.emha.space/settings/api-keys (nav text: \"API Keys\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.headers.json",
+        "url": "https://testforge.emha.space/settings/api-keys"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-4",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.headers.json",
+        "url": "https://testforge.emha.space/settings/api-keys"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-5",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-2.headers.json",
+        "url": "https://testforge.emha.space/settings/api-keys"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-6",
+      "desc": "Navigate https://testforge.emha.space/settings/ai (nav text: \"AI Assist\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.headers.json",
+        "url": "https://testforge.emha.space/settings/ai"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-7",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-3.headers.json",
+        "url": "https://testforge.emha.space/settings/ai"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-8",
+      "desc": "Navigate https://testforge.emha.space/settings/audit-log (nav text: \"Audit Log\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-4.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-4.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-4.headers.json",
+        "url": "https://testforge.emha.space/settings/audit-log"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-9",
+      "desc": "Navigate https://testforge.emha.space/settings/backup (nav text: \"Backup\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-5.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-5.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-5.headers.json",
+        "url": "https://testforge.emha.space/settings/backup"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-10",
+      "desc": "Navigate https://testforge.emha.space/settings/account (nav text: \"Account\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.headers.json",
+        "url": "https://testforge.emha.space/settings/account"
+      }
+    },
+    {
+      "module": "settings",
+      "id": "S-SETTINGS-11",
+      "desc": "Form action= method=POST lacks visible CSRF token",
+      "result": "finding",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/settings/route-6.headers.json",
+        "url": "https://testforge.emha.space/settings/account"
+      }
+    },
+    {
+      "module": "academy",
+      "id": "S-ACADEMY-1",
+      "desc": "Navigate https://testforge.emha.space/academy (nav text: \"AcademyBeta\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-1.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-1.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-1.headers.json",
+        "url": "https://testforge.emha.space/academy"
+      }
+    },
+    {
+      "module": "academy",
+      "id": "S-ACADEMY-2",
+      "desc": "Navigate https://testforge.emha.space/academy/me (nav text: \"My progress\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-2.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-2.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-2.headers.json",
+        "url": "https://testforge.emha.space/academy/me"
+      }
+    },
+    {
+      "module": "academy",
+      "id": "S-ACADEMY-3",
+      "desc": "Navigate https://testforge.emha.space/academy/fundamentals/what-qa-does (nav text: \"Start QA Fundamentals\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-3.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-3.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/academy/route-3.headers.json",
+        "url": "https://testforge.emha.space/academy/fundamentals/what-qa-does"
+      }
+    },
+    {
+      "module": "docs",
+      "id": "S-DOCS-1",
+      "desc": "Navigate https://testforge.emha.space/docs/help (nav text: \"Help\")",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/docs/route-1.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/docs/route-1.html",
+        "headers": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/docs/route-1.headers.json",
+        "url": "https://testforge.emha.space/docs/help"
+      }
+    },
+    {
+      "module": "dashboard",
+      "id": "I-000",
+      "desc": "Navigate /dashboard",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/03-dashboard-initial.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/03-dashboard-initial.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": ""
+    },
+    {
+      "module": "dashboard",
+      "id": "I-001",
+      "desc": "Click \"TestForge\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-001-TestForge.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-001-TestForge.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-002",
+      "desc": "Click \"Search⌘K\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-002-Search_K.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-002-Search_K.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-003",
+      "desc": "Click \"Dashboard\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-003-Dashboard.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-003-Dashboard.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-004",
+      "desc": "Click \"Log out →\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-004-Log_out_.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-004-Log_out_.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-005",
+      "desc": "Click \"Light\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-005-Light.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-005-Light.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-light\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"Light\" aria-label=\"Light\" aria-pressed=\"false\" data-testid=\"theme-light\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-006",
+      "desc": "Click \"System\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-006-System.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-006-System.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-system\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" title=\"System\" aria-pressed=\"true\" aria-label=\"System\" data-testid=\"theme-system\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ri"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-007",
+      "desc": "Click \"Dark\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-007-Dark.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-007-Dark.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"theme-dark\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button title=\"Dark\" type=\"button\" aria-label=\"Dark\" aria-pressed=\"false\" data-testid=\"theme-dark\" class=\"relative grid place-items-center h-9 w-9 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:ring-offs"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-008",
+      "desc": "Click \"Continue learningMy progress →QA Fundamentals — 0 of 13 lessons doneStart QA Fun\"",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/click-I-008-Continue_learningMy_progress_QA_Fundamentals_0_of_13_lessons.html",
+        "url": "https://testforge.emha.space/dashboard"
+      },
+      "observed": "xhrs=0 bad=0 consoleErrΔ=0 pageErrΔ=0 clickErr=locator.click: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"dashboard-academy-widget\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <section data-testid=\"dashboard-academy-widget\" class=\"rounded-xl border border-hairline bg-surface p-6\">…</section>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m "
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-q",
+      "desc": "Reflected probe param=q",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-q.html",
+        "url": "https://testforge.emha.space/dashboard?q=zzqmt35h1y4xx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-search",
+      "desc": "Reflected probe param=search",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-search.html",
+        "url": "https://testforge.emha.space/dashboard?search=zzqmt35h1y4xx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-filter",
+      "desc": "Reflected probe param=filter",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-filter.html",
+        "url": "https://testforge.emha.space/dashboard?filter=zzqmt35h1y4xx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-project",
+      "desc": "Reflected probe param=project",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-project.html",
+        "url": "https://testforge.emha.space/dashboard?project=zzqmt35h1y4xx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-view",
+      "desc": "Reflected probe param=view",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-view.html",
+        "url": "https://testforge.emha.space/dashboard?view=zzqmt35h1y4xx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-tab",
+      "desc": "Reflected probe param=tab",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-tab.html",
+        "url": "https://testforge.emha.space/dashboard?tab=zzqmt35h1y4xx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-ref",
+      "desc": "Reflected probe param=ref",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-ref.html",
+        "url": "https://testforge.emha.space/dashboard?ref=zzqmt35h1y4xx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-id",
+      "desc": "Reflected probe param=id",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-id.html",
+        "url": "https://testforge.emha.space/dashboard?id=zzqmt35h1y4xx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-name",
+      "desc": "Reflected probe param=name",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-name.html",
+        "url": "https://testforge.emha.space/dashboard?name=zzqmt35h1y4xx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-sort",
+      "desc": "Reflected probe param=sort",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-sort.html",
+        "url": "https://testforge.emha.space/dashboard?sort=zzqmt35h1y4xx"
+      },
+      "observed": "reflected=true"
+    },
+    {
+      "module": "dashboard",
+      "id": "I-refl-page",
+      "desc": "Reflected probe param=page",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.png",
+        "dom": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-21-testforge-emha-space-full/evidence/dashboard/reflect-page.html",
+        "url": "https://testforge.emha.space/dashboard?page=zzqmt35h1y4xx"
+      },
+      "observed": "reflected=true"
+    }
+  ],
+  "routes_visited": [
+    "https://testforge.emha.space/",
+    "https://testforge.emha.space/login",
+    "https://testforge.emha.space/my-work",
+    "https://testforge.emha.space/projects",
+    "https://testforge.emha.space/projects/testis",
+    "https://testforge.emha.space/settings/team",
+    "https://testforge.emha.space/settings/api-keys",
+    "https://testforge.emha.space/settings/ai",
+    "https://testforge.emha.space/settings/audit-log",
+    "https://testforge.emha.space/settings/backup",
+    "https://testforge.emha.space/settings/account",
+    "https://testforge.emha.space/academy",
+    "https://testforge.emha.space/academy/me",
+    "https://testforge.emha.space/academy/fundamentals/what-qa-does",
+    "https://testforge.emha.space/docs/help",
+    "/dashboard"
+  ]
+}
