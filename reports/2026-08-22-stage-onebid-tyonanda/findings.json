@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "generated_at": "2026-08-22T01:19:06.193Z",
+    "generator": "analyze-recon.js v1",
+    "evidence_dir": "reports/2026-08-22-stage-onebid-tyonanda/raw"
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "sev": "LOW",
+      "category": "A02 Security Misconfiguration",
+      "title": "Missing clickjacking protection (X-Frame-Options)",
+      "evidence": "Header `x-frame-options` absent on GET /.",
+      "recommendation": "Prefer CSP frame-ancestors 'none'; or X-Frame-Options: DENY."
+    },
+    {
+      "id": "F-02",
+      "sev": "OK",
+      "category": "Positive control",
+      "title": "HTTPS enforced from plain HTTP",
+      "evidence": "HTTP responded 301 → HTTPS.",
+      "recommendation": "Maintain. Combine with HSTS to close first-visit downgrade window."
+    },
+    {
+      "id": "F-03",
+      "sev": "MEDIUM",
+      "category": "A04 Cryptographic Failures",
+      "title": "Legacy TLS version accepted",
+      "evidence": "openssl s_client negotiated TLS 1.0 or 1.1.",
+      "recommendation": "Disable TLS < 1.2 at the edge (Caddy: `tls { protocols tls1.2 tls1.3 }`)."
+    }
+  ]
+}

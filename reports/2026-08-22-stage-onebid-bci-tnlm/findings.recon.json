@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "generated_at": "2026-08-22T00:03:27.802Z",
+    "generator": "analyze-recon.js v1 (orchestrator-corrected)",
+    "evidence_dir": "reports/2026-08-22-stage-onebid-bci-tnlm/raw",
+    "corrections": [
+      "F-03 dropped: analyzer flagged legacy TLS but raw/tls.txt confirms tls1/tls1_1 negotiated NONE cipher (refused). Only TLS 1.2 and 1.3 accepted.",
+      "F-01 upgraded to verified with evidence_path; V-03 covers the same root cause and will win at dedupe.",
+      "F-01 removed from recon layer post-triage \u2014 superseded by V-03 from authenticated walkthrough (same root cause, richer evidence)."
+    ]
+  },
+  "findings": [
+    {
+      "id": "F-02",
+      "sev": "OK",
+      "category": "Positive control",
+      "title": "HTTPS enforced from plain HTTP",
+      "evidence": "HTTP responded 301 to HTTPS. HSTS present (max-age=31536000; includeSubDomains). TLS 1.2/1.3 only. See raw/headers-http.txt and raw/tls.txt.",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-22-stage-onebid-bci-tnlm/raw/headers-http.txt",
+      "confidence": "verified",
+      "recommendation": "Maintain. Consider HSTS preload after Sub-Resource CSP hardening."
+    }
+  ]
+}

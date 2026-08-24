@@ -9,7 +9,9 @@
     "triage": "node scripts/triage.js",
     "build-report": "node scripts/build-report.js",
     "report": "node scripts/open-latest-report.js",
-    "report:list": "ls -1 reports | grep -v _agent-log"
+    "report:list": "ls -1 reports | grep -v _agent-log",
+    "compare": "node scripts/compare-reports.js",
+    "report:compare": "open reports/_comparison-emha-vs-onebid/comparison.html || xdg-open reports/_comparison-emha-vs-onebid/comparison.html"
   },
   "dependencies": {
     "jspdf": "^4.2.1",

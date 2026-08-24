@@ -1,0 +1,148 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/>
+<title>Security Comparison Report</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<style>
+:root{--bg:#0b1020;--panel:#141a2e;--panel2:#1c2340;--text:#e6ecff;--muted:#8b93b8;--sub:#a7b0d6;--accent:#66d9ef;--border:#2a3255;--card:#151b31;
+--ok:#4ade80;--info:#60a5fa;--low:#fbbf24;--med:#fb923c;--high:#ef4444;--crit:#b91c1c;}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+header{padding:22px 40px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#0e1530,#0b1020)}
+h1{margin:0;font-size:22px}.sub{color:var(--muted);font-size:13px}
+main{padding:22px 40px 80px;max-width:1240px;margin:0 auto}
+section{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:20px 22px;margin:16px 0}
+section h2{margin:0 0 12px;font-size:15px;color:var(--accent);text-transform:uppercase;letter-spacing:.8px}
+.grid{display:grid;gap:14px}
+.runs{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}
+.card.winner{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok) inset}
+.card .t{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}
+.card .tgt{font-size:15px;font-weight:700;margin:4px 0 8px;word-break:break-all}
+.card .score{font-size:34px;font-weight:800;line-height:1}
+.card .badge{display:inline-block;padding:2px 10px;border-radius:999px;font-size:10.5px;font-weight:700;margin-top:8px;letter-spacing:.5px}
+.card .badge.win{background:var(--ok);color:#052e16}
+.card .badge.lose{background:var(--high);color:#fff}
+.card .badge.tie{background:var(--muted);color:#0b1020}
+.metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 12px;margin-top:10px;font-size:12.5px}
+.metrics span{color:var(--muted)}
+.sev{padding:2px 8px;border-radius:999px;font-size:10.5px;font-weight:800;display:inline-block}
+.sev.INFO{background:#1e3a8a55;color:var(--info)}.sev.LOW{background:#78350f66;color:var(--low)}
+.sev.MEDIUM{background:#7c2d1266;color:var(--med)}.sev.HIGH{background:#7f1d1d66;color:var(--high)}
+.sev.CRITICAL{background:#450a0a;color:#fecaca}.sev.OK{background:#14532d66;color:var(--ok)}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+th{color:var(--muted);background:var(--panel2);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+.bar{height:8px;background:#0a0f22;border-radius:4px;overflow:hidden;display:flex}
+.bar span{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:11px;color:var(--muted);margin-top:6px}
+.legend b{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:middle}
+.verdict{background:linear-gradient(90deg,#14532d66,#141a2e);border:1px solid var(--ok);border-radius:12px;padding:16px 20px;margin-bottom:0}
+.verdict .h{font-weight:800;font-size:15px;color:var(--ok);margin-bottom:2px}
+</style></head><body>
+<header><h1>Security Comparison</h1>
+<div class="sub">Comparing 3 runs. Lower risk-score is better (CRIT×10 + HIGH×7 + MED×3 + LOW×1).</div>
+</header>
+<main>
+
+<section class="verdict"><div class="h">✓ Winner: https://stage-onebid.us.bci-tnlm.com/login</div>
+<div class="sub">Lowest risk-score (11) across the compared runs. See side-by-side for context — coverage differs.</div></section>
+
+<section><h2>Runs at a glance</h2>
+<div class="grid runs" id="runCards"></div>
+</section>
+
+<section><h2>Severity breakdown</h2>
+<div class="legend"><span><b style="background:#b91c1c"></b>Critical</span><span><b style="background:#ef4444"></b>High</span><span><b style="background:#fb923c"></b>Medium</span><span><b style="background:#fbbf24"></b>Low</span><span><b style="background:#60a5fa"></b>Info</span><span><b style="background:#4ade80"></b>OK</span></div>
+<table><thead><tr><th>Target</th><th>Bar</th><th>Total</th></tr></thead><tbody id="barBody"></tbody></table>
+</section>
+
+<section><h2>Side by side</h2>
+<table><thead><tr><th>Metric</th><th>https://testforge.emha.space</th><th>https://stage-onebid.us.bci-tnlm.com/login</th><th>https://stage-onebid.us.bci-tnlm.com/login</th></tr></thead><tbody id="sxsBody"></tbody></table>
+</section>
+
+<section><h2>Categories touched</h2>
+<table><thead><tr><th>Category</th><th>https://testforge.emha.space</th><th>https://stage-onebid.us.bci-tnlm.com/login</th><th>https://stage-onebid.us.bci-tnlm.com/login</th></tr></thead><tbody id="catBody"></tbody></table>
+</section>
+
+<section><h2>Systemic — present in ALL runs</h2>
+<table><thead><tr><th>Severity</th><th>Title</th><th>Run 1</th><th>Run 2</th><th>Run 3</th></tr></thead>
+<tbody><tr><td><span class="sev OK">OK</span></td><td>HTTPS enforced from plain HTTP</td><td>1</td><td>1</td><td>1</td></tr></tbody></table></section>
+
+<section><h2>Unique to each target</h2>
+<div class="grid runs">
+<div class="card"><div class="t">Only in</div><div class="tgt">https://testforge.emha.space</div>
+    <table style="margin-top:8px"><thead><tr><th style="width:70px">Sev</th><th>Title</th></tr></thead>
+    <tbody><tr><td><span class="sev MEDIUM">MEDIUM</span></td><td>Missing security header: strict-transport-security</td></tr><tr><td><span class="sev MEDIUM">MEDIUM</span></td><td>Missing security header: content-security-policy</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Missing security header: x-frame-options</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Missing security header: x-content-type-options</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Missing security header: referrer-policy</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Missing security header: permissions-policy</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Framework fingerprinting via X-Powered-By</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Form on /projects has no visible CSRF token</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Form on /projects/testis has no visible CSRF token</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Form on /settings/team has no visible CSRF token</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Form on /settings/api-keys has no visible CSRF token</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Form on /settings/ai has no visible CSRF token</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Form on /settings/account has no visible CSRF token</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Query param &quot;q&quot; reflected in DOM at /dashboard</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Query param &quot;search&quot; reflected in DOM at /dashboard</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Query param &quot;filter&quot; reflected in DOM at /dashboard</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Query param &quot;project&quot; reflected in DOM at /dashboard</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Query param &quot;view&quot; reflected in DOM at /dashboard</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Query param &quot;tab&quot; reflected in DOM at /dashboard</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Query param &quot;ref&quot; reflected in DOM at /dashboard</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Query param &quot;id&quot; reflected in DOM at /dashboard</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Query param &quot;name&quot; reflected in DOM at /dashboard</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Query param &quot;sort&quot; reflected in DOM at /dashboard</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Query param &quot;page&quot; reflected in DOM at /dashboard</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>robots.txt enumerates sensitive routes</td></tr><tr><td><span class="sev INFO">INFO</span></td><td>4 dashboard control(s) produced no observable effect on click</td></tr><tr><td><span class="sev INFO">INFO</span></td><td>Missing /.well-known/security.txt</td></tr></tbody></table></div><div class="card"><div class="t">Only in</div><div class="tgt">https://stage-onebid.us.bci-tnlm.com/login</div>
+    <table style="margin-top:8px"><thead><tr><th style="width:70px">Sev</th><th>Title</th></tr></thead>
+    <tbody><tr><td><span class="sev HIGH">HIGH</span></td><td>Bearer/refresh tokens delivered in non-HttpOnly, non-Secure cookies</td></tr><tr><td><span class="sev MEDIUM">MEDIUM</span></td><td>JWT persisted in localStorage under key `auth-storage`</td></tr><tr><td><span class="sev MEDIUM">MEDIUM</span></td><td>Auth token stored in BOTH cookie and localStorage (double-storage anti-pattern)</td></tr><tr><td><span class="sev MEDIUM">MEDIUM</span></td><td>CSP script-src allows &#39;unsafe-inline&#39; and &#39;unsafe-eval&#39;</td></tr></tbody></table></div><div class="card"><div class="t">Only in</div><div class="tgt">https://stage-onebid.us.bci-tnlm.com/login</div>
+    <table style="margin-top:8px"><thead><tr><th style="width:70px">Sev</th><th>Title</th></tr></thead>
+    <tbody><tr><td><span class="sev MEDIUM">MEDIUM</span></td><td>Legacy TLS version accepted</td></tr><tr><td><span class="sev MEDIUM">MEDIUM</span></td><td>App session cookie missing hardening flags</td></tr><tr><td><span class="sev MEDIUM">MEDIUM</span></td><td>JWT stored in Web Storage (localStorage/sessionStorage)</td></tr><tr><td><span class="sev LOW">LOW</span></td><td>Missing clickjacking protection (X-Frame-Options)</td></tr></tbody></table></div>
+</div>
+</section>
+
+<section><h2>How to read this</h2>
+<ul class="sub">
+  <li><b>Risk-score</b> weights: CRITICAL=10, HIGH=7, MEDIUM=3, LOW=1, INFO/OK=0. Sum across all findings per run.</li>
+  <li>Fewer findings alone ≠ better security. Coverage differs. Compare severity mix and systemic rows first.</li>
+  <li>Findings present in all runs point to systemic issues in the shared platform (e.g. edge headers).</li>
+  <li>State-changing PoCs are HITL-queued in <code>hypotheses.json</code> and NOT counted as findings.</li>
+</ul>
+</section>
+
+</main>
+<script>
+const D={"runs":[{"name":"2026-08-21-testforge-emha-space-full","target":"https://testforge.emha.space","date":"2026-08-21","auth":"owner","risk":{"level":"MODERATE","label":"Moderate risk — plan remediation this sprint","color":"med"},"counts":{"MEDIUM":4,"LOW":47,"INFO":3,"OK":1},"modules":9,"scenarios":46,"findings":55,"hypotheses":13,"score":59,"categories":{"Security Misconfiguration":14,"Broken Access Control":14,"Injection":22,"A01 Broken Access Control (recon aid)":1,"UX / Reliability":2,"Best practice":1,"Positive control":1}},{"name":"2026-08-22-stage-onebid-bci-tnlm","target":"https://stage-onebid.us.bci-tnlm.com/login","date":"2026-08-22","auth":"internal-authorized","risk":{"level":"HIGH","label":"High risk — fix before next release","color":"high"},"counts":{"HIGH":1,"MEDIUM":3,"LOW":1,"OK":1},"modules":9,"scenarios":114,"findings":6,"hypotheses":9,"score":17,"categories":{"Security Misconfiguration":3,"Cryptographic Failures":1,"Insecure Design":1,"Positive control":1}},{"name":"2026-08-22-stage-onebid-tyonanda","target":"https://stage-onebid.us.bci-tnlm.com/login","date":"2026-08-22","auth":"internal-authorized","risk":{"level":"MODERATE","label":"Moderate risk — plan remediation this sprint","color":"med"},"counts":{"MEDIUM":3,"LOW":2,"OK":1},"modules":9,"scenarios":106,"findings":6,"hypotheses":5,"score":11,"categories":{"A04 Cryptographic Failures":1,"Security Misconfiguration":2,"Cryptographic Failures":1,"A02 Security Misconfiguration":1,"Positive control":1}}],"shared":[{"sev":"OK","title":"HTTPS enforced from plain HTTP","counts":[1,1,1]}],"uniques":[{"target":"https://testforge.emha.space","findings":[{"sev":"MEDIUM","title":"Missing security header: strict-transport-security"},{"sev":"MEDIUM","title":"Missing security header: content-security-policy"},{"sev":"LOW","title":"Missing security header: x-frame-options"},{"sev":"LOW","title":"Missing security header: x-content-type-options"},{"sev":"LOW","title":"Missing security header: referrer-policy"},{"sev":"LOW","title":"Missing security header: permissions-policy"},{"sev":"LOW","title":"Framework fingerprinting via X-Powered-By"},{"sev":"LOW","title":"Form on /projects has no visible CSRF token"},{"sev":"LOW","title":"Form on /projects/testis has no visible CSRF token"},{"sev":"LOW","title":"Form on /settings/team has no visible CSRF token"},{"sev":"LOW","title":"Form on /settings/api-keys has no visible CSRF token"},{"sev":"LOW","title":"Form on /settings/ai has no visible CSRF token"},{"sev":"LOW","title":"Form on /settings/account has no visible CSRF token"},{"sev":"LOW","title":"Query param \"q\" reflected in DOM at /dashboard"},{"sev":"LOW","title":"Query param \"search\" reflected in DOM at /dashboard"},{"sev":"LOW","title":"Query param \"filter\" reflected in DOM at /dashboard"},{"sev":"LOW","title":"Query param \"project\" reflected in DOM at /dashboard"},{"sev":"LOW","title":"Query param \"view\" reflected in DOM at /dashboard"},{"sev":"LOW","title":"Query param \"tab\" reflected in DOM at /dashboard"},{"sev":"LOW","title":"Query param \"ref\" reflected in DOM at /dashboard"},{"sev":"LOW","title":"Query param \"id\" reflected in DOM at /dashboard"},{"sev":"LOW","title":"Query param \"name\" reflected in DOM at /dashboard"},{"sev":"LOW","title":"Query param \"sort\" reflected in DOM at /dashboard"},{"sev":"LOW","title":"Query param \"page\" reflected in DOM at /dashboard"},{"sev":"LOW","title":"robots.txt enumerates sensitive routes"},{"sev":"INFO","title":"4 dashboard control(s) produced no observable effect on click"},{"sev":"INFO","title":"Missing /.well-known/security.txt"}]},{"target":"https://stage-onebid.us.bci-tnlm.com/login","findings":[{"sev":"HIGH","title":"Bearer/refresh tokens delivered in non-HttpOnly, non-Secure cookies"},{"sev":"MEDIUM","title":"JWT persisted in localStorage under key `auth-storage`"},{"sev":"MEDIUM","title":"Auth token stored in BOTH cookie and localStorage (double-storage anti-pattern)"},{"sev":"MEDIUM","title":"CSP script-src allows 'unsafe-inline' and 'unsafe-eval'"}]},{"target":"https://stage-onebid.us.bci-tnlm.com/login","findings":[{"sev":"MEDIUM","title":"Legacy TLS version accepted"},{"sev":"MEDIUM","title":"App session cookie missing hardening flags"},{"sev":"MEDIUM","title":"JWT stored in Web Storage (localStorage/sessionStorage)"},{"sev":"LOW","title":"Missing clickjacking protection (X-Frame-Options)"}]}],"winner":"https://stage-onebid.us.bci-tnlm.com/login"};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const SEV_ORDER=['CRITICAL','HIGH','MEDIUM','LOW','INFO','OK'];
+const SEV_COLOR={CRITICAL:'#b91c1c',HIGH:'#ef4444',MEDIUM:'#fb923c',LOW:'#fbbf24',INFO:'#60a5fa',OK:'#4ade80'};
+
+// Run cards
+const rc=document.getElementById('runCards');
+const minScore=Math.min(...D.runs.map(r=>r.score));
+const maxScore=Math.max(...D.runs.map(r=>r.score));
+rc.innerHTML=D.runs.map(r=>{
+  const isWin=r.target===D.winner && r.score===minScore;
+  const isLose=r.score===maxScore && minScore!==maxScore && !isWin;
+  const badge=isWin?'<span class="badge win">Best posture</span>':isLose?'<span class="badge lose">Worst posture</span>':'<span class="badge tie">—</span>';
+  return `<div class="card ${isWin?'winner':''}">
+    <div class="t">Target</div>
+    <div class="tgt">${esc(r.target)}</div>
+    <div class="t">Risk-score</div>
+    <div class="score">${r.score}</div>
+    ${badge}
+    <div class="metrics">
+      <span>Overall risk</span><b>${esc(r.risk.level)}</b>
+      <span>Modules</span><b>${r.modules}</b>
+      <span>Scenarios</span><b>${r.scenarios}</b>
+      <span>Findings</span><b>${r.findings}</b>
+      <span>HITL-pending</span><b>${r.hypotheses}</b>
+      <span>Date</span><b>${esc(r.date)}</b>
+    </div>
+  </div>`;
+}).join('');
+
+// Bars
+const barBody=document.getElementById('barBody');
+const totals=D.runs.map(r=>SEV_ORDER.reduce((a,k)=>a+(r.counts[k]||0),0));
+const maxTotal=Math.max(1,...totals);
+barBody.innerHTML=D.runs.map((r,i)=>{
+  const total=totals[i];
+  const widthPct=(total/maxTotal)*100;
+  const segs=SEV_ORDER.map(k=>{const v=r.counts[k]||0;if(!v)return '';const p=(v/(total||1))*100;return '<span title="'+k+' '+v+'" style="width:'+p+'%;background:'+SEV_COLOR[k]+'"></span>'}).join('');
+  return `<tr><td>${esc(r.target)}</td><td><div class="bar" style="width:${widthPct}%">${segs}</div></td><td>${total}</td></tr>`;
+}).join('');
+
+// Side-by-side
+const rows=[
+  ['Overall risk',D.runs.map(r=>r.risk.level)],
+  ['Risk-score (lower=better)',D.runs.map(r=>r.score)],
+  ['Modules',D.runs.map(r=>r.modules)],
+  ['Scenarios',D.runs.map(r=>r.scenarios)],
+  ['Total findings',D.runs.map(r=>r.findings)],
+  ['HITL-pending',D.runs.map(r=>r.hypotheses)],
+  ...SEV_ORDER.map(k=>[k+' findings',D.runs.map(r=>r.counts[k]||0)]),
+];
+document.getElementById('sxsBody').innerHTML=rows.map(([label,vals])=>`<tr><td><b>${esc(label)}</b></td>${vals.map(v=>'<td>'+esc(String(v))+'</td>').join('')}</tr>`).join('');
+
+// Categories
+const cats=new Set();D.runs.forEach(r=>Object.keys(r.categories).forEach(c=>cats.add(c)));
+document.getElementById('catBody').innerHTML=[...cats].sort().map(c=>`<tr><td>${esc(c)}</td>${D.runs.map(r=>'<td>'+(r.categories[c]||0)+'</td>').join('')}</tr>`).join('');
+</script>
+</body></html>

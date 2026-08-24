@@ -1,0 +1,221 @@
+{
+  "compared_at": "2026-08-24T02:25:53.609Z",
+  "runs": [
+    {
+      "name": "2026-08-21-testforge-emha-space-full",
+      "target": "https://testforge.emha.space",
+      "risk": {
+        "level": "MODERATE",
+        "label": "Moderate risk — plan remediation this sprint",
+        "color": "med"
+      },
+      "counts": {
+        "MEDIUM": 4,
+        "LOW": 47,
+        "INFO": 3,
+        "OK": 1
+      },
+      "score": 59
+    },
+    {
+      "name": "2026-08-22-stage-onebid-bci-tnlm",
+      "target": "https://stage-onebid.us.bci-tnlm.com/login",
+      "risk": {
+        "level": "HIGH",
+        "label": "High risk — fix before next release",
+        "color": "high"
+      },
+      "counts": {
+        "HIGH": 1,
+        "MEDIUM": 3,
+        "LOW": 1,
+        "OK": 1
+      },
+      "score": 17
+    },
+    {
+      "name": "2026-08-22-stage-onebid-tyonanda",
+      "target": "https://stage-onebid.us.bci-tnlm.com/login",
+      "risk": {
+        "level": "MODERATE",
+        "label": "Moderate risk — plan remediation this sprint",
+        "color": "med"
+      },
+      "counts": {
+        "MEDIUM": 3,
+        "LOW": 2,
+        "OK": 1
+      },
+      "score": 11
+    }
+  ],
+  "winner": "https://stage-onebid.us.bci-tnlm.com/login",
+  "shared": [
+    {
+      "sev": "OK",
+      "title": "HTTPS enforced from plain HTTP",
+      "counts": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "uniques": [
+    {
+      "target": "https://testforge.emha.space",
+      "findings": [
+        {
+          "sev": "MEDIUM",
+          "title": "Missing security header: strict-transport-security"
+        },
+        {
+          "sev": "MEDIUM",
+          "title": "Missing security header: content-security-policy"
+        },
+        {
+          "sev": "LOW",
+          "title": "Missing security header: x-frame-options"
+        },
+        {
+          "sev": "LOW",
+          "title": "Missing security header: x-content-type-options"
+        },
+        {
+          "sev": "LOW",
+          "title": "Missing security header: referrer-policy"
+        },
+        {
+          "sev": "LOW",
+          "title": "Missing security header: permissions-policy"
+        },
+        {
+          "sev": "LOW",
+          "title": "Framework fingerprinting via X-Powered-By"
+        },
+        {
+          "sev": "LOW",
+          "title": "Form on /projects has no visible CSRF token"
+        },
+        {
+          "sev": "LOW",
+          "title": "Form on /projects/testis has no visible CSRF token"
+        },
+        {
+          "sev": "LOW",
+          "title": "Form on /settings/team has no visible CSRF token"
+        },
+        {
+          "sev": "LOW",
+          "title": "Form on /settings/api-keys has no visible CSRF token"
+        },
+        {
+          "sev": "LOW",
+          "title": "Form on /settings/ai has no visible CSRF token"
+        },
+        {
+          "sev": "LOW",
+          "title": "Form on /settings/account has no visible CSRF token"
+        },
+        {
+          "sev": "LOW",
+          "title": "Query param \"q\" reflected in DOM at /dashboard"
+        },
+        {
+          "sev": "LOW",
+          "title": "Query param \"search\" reflected in DOM at /dashboard"
+        },
+        {
+          "sev": "LOW",
+          "title": "Query param \"filter\" reflected in DOM at /dashboard"
+        },
+        {
+          "sev": "LOW",
+          "title": "Query param \"project\" reflected in DOM at /dashboard"
+        },
+        {
+          "sev": "LOW",
+          "title": "Query param \"view\" reflected in DOM at /dashboard"
+        },
+        {
+          "sev": "LOW",
+          "title": "Query param \"tab\" reflected in DOM at /dashboard"
+        },
+        {
+          "sev": "LOW",
+          "title": "Query param \"ref\" reflected in DOM at /dashboard"
+        },
+        {
+          "sev": "LOW",
+          "title": "Query param \"id\" reflected in DOM at /dashboard"
+        },
+        {
+          "sev": "LOW",
+          "title": "Query param \"name\" reflected in DOM at /dashboard"
+        },
+        {
+          "sev": "LOW",
+          "title": "Query param \"sort\" reflected in DOM at /dashboard"
+        },
+        {
+          "sev": "LOW",
+          "title": "Query param \"page\" reflected in DOM at /dashboard"
+        },
+        {
+          "sev": "LOW",
+          "title": "robots.txt enumerates sensitive routes"
+        },
+        {
+          "sev": "INFO",
+          "title": "4 dashboard control(s) produced no observable effect on click"
+        },
+        {
+          "sev": "INFO",
+          "title": "Missing /.well-known/security.txt"
+        }
+      ]
+    },
+    {
+      "target": "https://stage-onebid.us.bci-tnlm.com/login",
+      "findings": [
+        {
+          "sev": "HIGH",
+          "title": "Bearer/refresh tokens delivered in non-HttpOnly, non-Secure cookies"
+        },
+        {
+          "sev": "MEDIUM",
+          "title": "JWT persisted in localStorage under key `auth-storage`"
+        },
+        {
+          "sev": "MEDIUM",
+          "title": "Auth token stored in BOTH cookie and localStorage (double-storage anti-pattern)"
+        },
+        {
+          "sev": "MEDIUM",
+          "title": "CSP script-src allows 'unsafe-inline' and 'unsafe-eval'"
+        }
+      ]
+    },
+    {
+      "target": "https://stage-onebid.us.bci-tnlm.com/login",
+      "findings": [
+        {
+          "sev": "MEDIUM",
+          "title": "Legacy TLS version accepted"
+        },
+        {
+          "sev": "MEDIUM",
+          "title": "App session cookie missing hardening flags"
+        },
+        {
+          "sev": "MEDIUM",
+          "title": "JWT stored in Web Storage (localStorage/sessionStorage)"
+        },
+        {
+          "sev": "LOW",
+          "title": "Missing clickjacking protection (X-Frame-Options)"
+        }
+      ]
+    }
+  ]
+}

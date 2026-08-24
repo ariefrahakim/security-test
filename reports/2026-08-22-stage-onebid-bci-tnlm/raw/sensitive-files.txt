@@ -1,0 +1,10 @@
+200  /.env
+200  /.git/config
+200  /.DS_Store
+200  /backup.zip
+200  /backup.tar.gz
+200  /config.json
+200  /admin
+200  /.htaccess
+200  /phpinfo.php
+200  /server-status

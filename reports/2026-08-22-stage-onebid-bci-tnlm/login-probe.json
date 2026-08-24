@@ -1,0 +1,177 @@
+{
+  "finalUrl": "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+  "calls": [
+    {
+      "url": "https://api-stage-portal.bidocean.com/api/v1/account/auth/sign-in",
+      "status": 201,
+      "reqPost": "{\"email\":\"tyonanda@bcicentral.hubexo.com\",\"password\":\"Tnlm123\"}",
+      "respHeaders": {
+        "cf-cache-status": "DYNAMIC",
+        "etag": "W/\"784-Xl+Va56VwP7P415lLdPGY9od1rY\"",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=lLS%2FXevI%2BIEXF8mManPE6paiC5CWFQhe%2B2kj1AOPflttFAdLOo1%2FhGvKzeCExiVEbEUhMPJ2fwJ7Hj%2FlPb1zTfAHHRO0MRxEP7EvKxl3Wq9BR%2BAc5dHjNwRxC0qZbO%2BQTrRnl9ztJ0r6xbwK0tgM3g%3D%3D\"}]}",
+        "expires": "Sat, 22 Aug 2026 00:09:07 GMT",
+        "apigw-requestid": "CelJZiWtiYcEPtg=",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "x-cache": "Miss from cloudfront",
+        "x-amz-cf-id": "_TJMT5kWiqfEoRBd-P4_XOvzi-CqvyC0QmkGy3DHwkXSkRBdXE7SZw==",
+        "date": "Sat, 22 Aug 2026 00:09:08 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "origin",
+        "content-security-policy": "default-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data: https://validator.swagger.io https://api.staging.bci-tnlm.com; connect-src 'self' https://api.staging.bci-tnlm.com; font-src 'self';",
+        "cache-control": "no-cache",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "access-control-allow-credentials": "true",
+        "via": "1.1 ab53d8128819b04176ebc9c2f0dee72a.cloudfront.net (CloudFront)",
+        "cf-ray": "a2eda5913ba0ce36-SIN",
+        "permissions-policy": "accelerometer=(), autoplay=(), camera=(), ch-device-memory=(), ch-ua-arch=(), ch-ua-bitness=(), clipboard-read=(self), clipboard-write=(self), display-capture=(self), encrypted-media=(self), fullscreen=(self), geolocation=(self), gyroscope=(), hid=(), idle-detection=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-get=(self), screen-wake-lock=(), serial=(), usb=(), window-management=(), xr-spatial-tracking=()",
+        "access-control-allow-origin": "https://stage-onebid.us.bci-tnlm.com",
+        "content-length": "1924",
+        "x-amz-cf-pop": "SIN3-P3",
+        "server": "cloudflare"
+      },
+      "body": ""
+    }
+  ],
+  "cookies": [
+    {
+      "name": "__cf_bm",
+      "value": "DbMw1GWI2jsgxaxx6s4sdq7LUZ_u.fuXzJosJoRAbpQ-1787357340.232741-1.0.1.1-EGEZM9Qclq4E646XJX1R1ODK_zZ7kc9XN8maMCXNmvt8BmxeoGEtPyeT.Srz7aDDVTgZV15Kutw8agyU4gzxDm89m6osU2z22kssk7ECuUT01sB6VRFMI1tWUhafqG4K",
+      "domain": ".hs-scripts.com",
+      "path": "/",
+      "expires": 1787359140.216611,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "61IV1q4J3xN3kgzASqI.rknplnrXgQbFdVCvAtEvXKU-1787357340.2775698-1.0.1.1-bgu5DkBakzAQiazjQ4Fzq_CYHOScew9w9rG7n96jQXTwKLK3wtjByg4fYiNbJvs9B6hvRxotkToEiMn0PiTidAVRIcjAv3FZQeU5TPzkklp2Uz2byUUt1.WzRJ6iT7QF",
+      "domain": ".usemessages.com",
+      "path": "/",
+      "expires": 1787359140.256981,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "wKZBHFbCOXGuv9eH4sdSF3eMHikwHXSji5GUyjvvbuU-1787357340.2747495-1.0.1.1-hlMUJRoOqkCpVxYY1OB2DM4n2JQT3a3kmE5NORqyhoSQnfcyK4C497B5kVdHyBEryn68GzM02rYRf9SWpVUfKDIgEF1Nfn9z19PqGhDJBuFspoatXuv.cNYjAf5oaL3z",
+      "domain": ".hs-analytics.net",
+      "path": "/",
+      "expires": 1787359140.26036,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__hs_do_not_track",
+      "value": "yes",
+      "domain": "stage-onebid.us.bci-tnlm.com",
+      "path": "/",
+      "expires": 1802909349,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "SA2Ui_dNgmINRSMKCLbADnPPBiC1fYe.wf5Tk3xorSk-1787357340.3041255-1.0.1.1-4wpQilzGQKVlbPMJrxdTrkfd7lWCZXFTcDFnpwqLdedjXucSa1HA4xJVIdowjzsXdoU2xBazrPVAq2gNK7PciK9d5UG49x8Qft348ouzSbjM1ts8nYHHWLqwRENX1wmu",
+      "domain": ".hsadspixel.net",
+      "path": "/",
+      "expires": 1787359140.284206,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": ".cbiFRJ_PasAYVhF1TSIM7Ogv1v8NH1gKQZQBIbGd4s-1787357340.3128593-1.0.1.1-YsTwATDw11w4NyjpJnLKgKtF22sb4Zztr8zS.sqmWrfHX9ntPkTuXU4yd9E5sskGQKw_wcjbzlmWWR6u.vb9UoPOPlATMstu.pNIWHz3zRYSbe.K2LeBWGHXk0tw9L27",
+      "domain": ".hs-banner.com",
+      "path": "/",
+      "expires": 1787359140.304154,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "vKs82xVtfKoH5kXwhwZBqZCkRJE0lsFp0CZsEzagrqI-1787357340.6713085-1.0.1.1-qG0pfx6qe7yYv0sh8Dhnk_jM3aQ3gNpLmOwORCP3sdcdStv14lOqEDo6fl67fJZZlp6_FB_RSIwep95bnaHTAzpJ2XkvGQACvGrob8MUcu3Xo6DerUbyPzukhQwK9PbL",
+      "domain": ".hsforms.com",
+      "path": "/",
+      "expires": 1787359140.900604,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "q.QRJmoOzav4oNXTRpIvN2YDpZ04eHpl_ty0ylLUKbQ-1787357340.9831028-1.0.1.1-Shoxs1LIAh.wTrZfteQcTvWMAr121qXkMQzZ1aP47p7Pz6q4LbaS9TBmiq8R5jV4w1CLDzSE7Ybb_DUT6DttQe7_W_UN9vf31qr6ajc1IIPu5RJewvP7FPvjbgCzODmu",
+      "domain": ".hubspot.com",
+      "path": "/",
+      "expires": 1787359141.386106,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "xKfGNjGN0eIRy.aItMaebK8uLSBSGXkREhiaEpV3wp4-1787357341.4558384-1.0.1.1-aU6pLeKbVqOHbfUXGlAso9i2v_OYYyiaNIFxdu6BiJaLEd5jFydmWGCmmlBbH8bfzNINb9GdYgPIXEpB_zlTqlne4Vo8BKitK8z.QRXaDkv_ctQ2aIeLxVc0qdkstIGc",
+      "domain": ".hsappstatic.net",
+      "path": "/",
+      "expires": 1787359141.444066,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "messagesUtk",
+      "value": "6a53e816a93d4acaa82b935457777746",
+      "domain": ".stage-onebid.us.bci-tnlm.com",
+      "path": "/",
+      "expires": 1802909350,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "7e1aqRsOB.3c1qDnkNApUtvB_eh6OP4QAncA4YfRv38-1787357341.6906207-1.0.1.1-duNxESpJeQgfTQI7wmN7YEADcx8Se4NVhX0XHWB.eCvbY47gAwQrw.G8BJGAgSSynx0M7jl5_UaUeZz7RI9n4QpOA8tfckBWriyH3PtBy1CmOJavwDa.cfnLwYBJFmmj",
+      "domain": ".hubspotusercontent-na1.net",
+      "path": "/",
+      "expires": 1787359141.944261,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "accessToken",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMwOTQzMiwiZW1haWwiOiJ0eW9uYW5kYUBiY2ljZW50cmFsLmh1YmV4by5jb20iLCJmaXJzdE5hbWUiOiJUeW9uYW5kYSIsImxhc3ROYW1lIjoiR2FvdGFtYSIsInN1YiI6IjMwOTQzMiIsInNpZCI6ImktVl9VUWxkUW14clBWYVhqbmdPVyIsImlhdCI6MTc4NzM1NzM0OCwiZXhwIjoxNzg3MzU3NjQ4fQ.0UL29teX_iIVzSs_xAOpO9oC9FgSM7jBmns-NPmLDag",
+      "domain": "stage-onebid.us.bci-tnlm.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "refreshToken",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMwOTQzMiwiZW1haWwiOiJ0eW9uYW5kYUBiY2ljZW50cmFsLmh1YmV4by5jb20iLCJmaXJzdE5hbWUiOiJUeW9uYW5kYSIsImxhc3ROYW1lIjoiR2FvdGFtYSIsInN1YiI6IjMwOTQzMiIsInNpZCI6ImktVl9VUWxkUW14clBWYVhqbmdPVyIsInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzg3MzU3MzQ4LCJleHAiOjE3ODc0NDM3NDh9.SRV1ZkQfFbaEkW1cErf7nDzDx6qregriXR6SMWBoGlQ",
+      "domain": "stage-onebid.us.bci-tnlm.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ph_phc_pb2QUwQuAFKHGqUrUVsvqVZYemKof0A5foqZXYUoe9J_posthog",
+      "value": "%7B%22%24device_id%22%3A%2201a026cc-cb19-76c4-86d5-bdb3e1513a85%22%2C%22distinct_id%22%3A%22US-309432%22%2C%22%24epp%22%3Atrue%2C%22%24user_state%22%3A%22identified%22%7D",
+      "domain": ".bci-tnlm.com",
+      "path": "/",
+      "expires": 1818893350,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ]
+}

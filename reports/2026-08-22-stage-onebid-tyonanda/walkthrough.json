@@ -1,0 +1,2351 @@
+{
+  "target": "https://stage-onebid.us.bci-tnlm.com",
+  "started_at": "2026-08-22T00:26:35.094Z",
+  "finished_at": "2026-08-22T00:31:35.094Z",
+  "login_ok": true,
+  "modules": [
+    {
+      "slug": "01-login",
+      "name": "Authentication",
+      "routes": [
+        "https://stage-onebid.us.bci-tnlm.com/login",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      ],
+      "features": [
+        "Email + password sign-in, /login form (data-testid=login-form-submit-btn)",
+        "Backend auth: POST https://api-stage-portal.bidocean.com/api/v1/account/auth/sign-in (status 201)",
+        "Post-login landing: https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "Auth token delivery: JWT in Web Storage",
+        "Bearer token attached to XHRs: false"
+      ],
+      "scenarios": [
+        {
+          "id": "S-A1",
+          "desc": "Load /login and wait for SPA hydrate",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/form.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/form.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/login"
+          }
+        },
+        {
+          "id": "S-A2",
+          "desc": "Submit valid credentials; observe redirect",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/post-login.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/post-login.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "sign-in HTTP 201 → https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-A3",
+          "desc": "Inspect app-scope cookies for HttpOnly+Secure+SameSite",
+          "result": "finding",
+          "evidence": {
+            "path": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/cookies.json"
+          },
+          "observed": "appCookies=5 sessionLike=2 bad=2"
+        },
+        {
+          "id": "S-A4",
+          "desc": "Storage secret scan (localStorage+sessionStorage)",
+          "result": "finding",
+          "evidence": {
+            "path": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/storage.json"
+          },
+          "observed": "jwt=true aws=false"
+        }
+      ],
+      "findings": [
+        "V-01",
+        "V-02"
+      ],
+      "coverage": "Login only. Wrong-password / rate-limit / reset-token / 2FA-enrol deferred to HITL."
+    },
+    {
+      "slug": "02-dashboard",
+      "name": "Dashboard",
+      "routes": [
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+        "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      ],
+      "features": [
+        "3 section(s): dashboard-section-suggested, dashboard-section-tracked, dashboard-section-interested",
+        "Filters: keyword, location, sector, value",
+        "Empty-state links and slider (prev/next) controls"
+      ],
+      "scenarios": [
+        {
+          "id": "S-D1",
+          "desc": "Land on /main/dashboard after login",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/landed.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/landed.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          }
+        },
+        {
+          "id": "S-D2",
+          "desc": "Capture root response headers",
+          "result": "finding",
+          "evidence": {
+            "path": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/root-headers.json"
+          }
+        },
+        {
+          "id": "S-D3",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D4",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D5",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D6",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D7",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D8",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D9",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D10",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D11",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D12",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D13",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D14",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D15",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D16",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D17",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D18",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D19",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D20",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D21",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D22",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D23",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D24",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D25",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D26",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D27",
+          "desc": "Click tracker folder tracker-folder-btn-interested",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D28",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D29",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D30",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D31",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D32",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D33",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D34",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D35",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D36",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D37",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D38",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D39",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D40",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D41",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D42",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D43",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D44",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D45",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D46",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D47",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D48",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D49",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D50",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D51",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D52",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D53",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D54",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D55",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D56",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D57",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D58",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D59",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D60",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D61",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D62",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D63",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D64",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D65",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D66",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D67",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D68",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D69",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+          },
+          "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+        },
+        {
+          "id": "S-D70",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+        },
+        {
+          "id": "S-D71",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+        },
+        {
+          "id": "S-D72",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+        },
+        {
+          "id": "S-D73",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+        },
+        {
+          "id": "S-D74",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+        },
+        {
+          "id": "S-D75",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+        },
+        {
+          "id": "S-D76",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+        },
+        {
+          "id": "S-D77",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+        },
+        {
+          "id": "S-D78",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+        },
+        {
+          "id": "S-D79",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+        },
+        {
+          "id": "S-D80",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+        },
+        {
+          "id": "S-D81",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+        },
+        {
+          "id": "S-D82",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+        },
+        {
+          "id": "S-D83",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+        },
+        {
+          "id": "S-D84",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+        },
+        {
+          "id": "S-D85",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+        },
+        {
+          "id": "S-D86",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+        },
+        {
+          "id": "S-D87",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+        },
+        {
+          "id": "S-D88",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+        },
+        {
+          "id": "S-D89",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+        },
+        {
+          "id": "S-D90",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+        },
+        {
+          "id": "S-D91",
+          "desc": "Click tracker folder tracker-folder-btn-quoted",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+        },
+        {
+          "id": "S-D92",
+          "desc": "Click tracker folder tracker-folder-btn-won",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+        },
+        {
+          "id": "S-D93",
+          "desc": "Click tracker folder tracker-folder-btn-lost",
+          "result": "fail",
+          "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+        }
+      ],
+      "findings": [
+        "V-03"
+      ],
+      "coverage": "Read-only navigation + header capture. State-changing filter saves deferred to HITL."
+    },
+    {
+      "slug": "03-project-pipeline",
+      "name": "Project Pipeline",
+      "routes": [
+        "https://stage-onebid.us.bci-tnlm.com/main/project-pipeline"
+      ],
+      "features": [
+        "Pipeline tabs / folders: ",
+        "Kanban-style view of pursued/interested/quoted/won/lost projects"
+      ],
+      "scenarios": [
+        {
+          "id": "S-P1",
+          "desc": "Land on /main/project-pipeline",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/03-project-pipeline/landed.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/03-project-pipeline/landed.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/project-pipeline"
+          }
+        }
+      ],
+      "findings": [],
+      "coverage": "Read-only tab navigation. Award/reject/publish actions skipped by policy."
+    },
+    {
+      "slug": "04-search",
+      "name": "Search",
+      "routes": [
+        "https://stage-onebid.us.bci-tnlm.com/main/search"
+      ],
+      "features": [
+        "Full-text project search",
+        "Search fires 0 XHR(s) carrying the query keyword"
+      ],
+      "scenarios": [
+        {
+          "id": "S-S1",
+          "desc": "Land on /main/search",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/04-search/landed.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/04-search/landed.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/search"
+          }
+        },
+        {
+          "id": "S-S2",
+          "desc": "Type query \"refltest1787358606676\" and press Enter; observe reflection",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/04-search/after-query.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/04-search/after-query.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/search"
+          },
+          "observed": "XHRs w/ query in body: 0"
+        }
+      ],
+      "findings": [],
+      "coverage": "Read-only search query. Filter-save (state-changing) deferred to HITL."
+    },
+    {
+      "slug": "05-project-detail",
+      "name": "Project Detail",
+      "routes": [],
+      "features": [
+        "Individual project detail pages under /main/project/<numericId>"
+      ],
+      "scenarios": [],
+      "findings": [],
+      "coverage": "Read-only view of first 3 discovered project ids. Cross-tenant IDOR replay deferred to HITL."
+    },
+    {
+      "slug": "06-notifications",
+      "name": "Notifications",
+      "routes": [
+        "https://stage-onebid.us.bci-tnlm.com/main/notification"
+      ],
+      "features": [
+        "Topbar notification drawer / dropdown",
+        "8 rendered notification-related element(s)"
+      ],
+      "scenarios": [
+        {
+          "id": "S-N1",
+          "desc": "Click topbar-notification-btn",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/06-notifications/drawer-open.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/06-notifications/drawer-open.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/notification"
+          },
+          "observed": "url https://stage-onebid.us.bci-tnlm.com/main/dashboard → https://stage-onebid.us.bci-tnlm.com/main/notification"
+        },
+        {
+          "id": "S-N2",
+          "desc": "Count rendered notification items",
+          "result": "note",
+          "observed": "8 items"
+        }
+      ],
+      "findings": [],
+      "coverage": "Read-only drawer open. Mark-as-read (state-changing) skipped by policy."
+    },
+    {
+      "slug": "07-profile",
+      "name": "Profile",
+      "routes": [],
+      "features": [
+        "Menu items: TG | Settings | Bid Ocean Support | Logout"
+      ],
+      "scenarios": [
+        {
+          "id": "S-U1",
+          "desc": "Open profile menu",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/07-profile/menu-open.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/07-profile/menu-open.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/notification"
+          }
+        },
+        {
+          "id": "S-U2",
+          "desc": "Enumerate profile menu items (read-only)",
+          "result": "note",
+          "observed": "TG, Settings, Bid Ocean Support, Logout"
+        }
+      ],
+      "findings": [],
+      "coverage": "Menu open + non-destructive item enumeration. Password/email/2FA changes deferred to HITL."
+    },
+    {
+      "slug": "08-saved-searches",
+      "name": "Saved Searches",
+      "routes": [],
+      "features": [
+        "Saved searches: none rendered"
+      ],
+      "scenarios": [
+        {
+          "id": "S-SS1",
+          "desc": "Open saved-search selector",
+          "result": "pass",
+          "evidence": {
+            "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/08-saved-searches/select-open.png",
+            "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/08-saved-searches/select-open.html",
+            "url": "https://stage-onebid.us.bci-tnlm.com/main/search"
+          }
+        },
+        {
+          "id": "S-SS2",
+          "desc": "Enumerate saved search options",
+          "result": "note",
+          "observed": ""
+        }
+      ],
+      "findings": [],
+      "coverage": "Read-only list rendering. Delete-saved-search skipped by policy."
+    }
+  ],
+  "scenarios": [
+    {
+      "module": "01-login",
+      "id": "S-A1",
+      "desc": "Load /login and wait for SPA hydrate",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/form.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/form.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/login"
+      }
+    },
+    {
+      "module": "01-login",
+      "id": "S-A2",
+      "desc": "Submit valid credentials; observe redirect",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/post-login.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/post-login.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "sign-in HTTP 201 → https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "01-login",
+      "id": "S-A3",
+      "desc": "Inspect app-scope cookies for HttpOnly+Secure+SameSite",
+      "result": "finding",
+      "evidence": {
+        "path": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/cookies.json"
+      },
+      "observed": "appCookies=5 sessionLike=2 bad=2"
+    },
+    {
+      "module": "01-login",
+      "id": "S-A4",
+      "desc": "Storage secret scan (localStorage+sessionStorage)",
+      "result": "finding",
+      "evidence": {
+        "path": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/storage.json"
+      },
+      "observed": "jwt=true aws=false"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D1",
+      "desc": "Land on /main/dashboard after login",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/landed.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/landed.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      }
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D2",
+      "desc": "Capture root response headers",
+      "result": "finding",
+      "evidence": {
+        "path": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/root-headers.json"
+      }
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D3",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D4",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D5",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D6",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D7",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D8",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D9",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D10",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D11",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D12",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D13",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D14",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D15",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D16",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D17",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D18",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D19",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D20",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D21",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D22",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D23",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D24",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D25",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D26",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D27",
+      "desc": "Click tracker folder tracker-folder-btn-interested",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-interested.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D28",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D29",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D30",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D31",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D32",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D33",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D34",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D35",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D36",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D37",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D38",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D39",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D40",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D41",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D42",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D43",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D44",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D45",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D46",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D47",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D48",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D49",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D50",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D51",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D52",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D53",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D54",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D55",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D56",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D57",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D58",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D59",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D60",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D61",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D62",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D63",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D64",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D65",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D66",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D67",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-quoted.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D68",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-won.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D69",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/folder-tracker-folder-btn-lost.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+      },
+      "observed": "now at https://stage-onebid.us.bci-tnlm.com/main/dashboard"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D70",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D71",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D72",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D73",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D74",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D75",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D76",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D77",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D78",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D79",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D80",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D81",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D82",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D83",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D84",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D85",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D86",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D87",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D88",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D89",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D90",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D91",
+      "desc": "Click tracker folder tracker-folder-btn-quoted",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-quoted\"]')\u001b"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D92",
+      "desc": "Click tracker folder tracker-folder-btn-won",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-won\"]')\u001b[22"
+    },
+    {
+      "module": "02-dashboard",
+      "id": "S-D93",
+      "desc": "Click tracker folder tracker-folder-btn-lost",
+      "result": "fail",
+      "note": "page.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"tracker-folder-btn-lost\"]')\u001b[2"
+    },
+    {
+      "module": "03-project-pipeline",
+      "id": "S-P1",
+      "desc": "Land on /main/project-pipeline",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/03-project-pipeline/landed.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/03-project-pipeline/landed.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/project-pipeline"
+      }
+    },
+    {
+      "module": "04-search",
+      "id": "S-S1",
+      "desc": "Land on /main/search",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/04-search/landed.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/04-search/landed.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/search"
+      }
+    },
+    {
+      "module": "04-search",
+      "id": "S-S2",
+      "desc": "Type query \"refltest1787358606676\" and press Enter; observe reflection",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/04-search/after-query.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/04-search/after-query.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/search"
+      },
+      "observed": "XHRs w/ query in body: 0"
+    },
+    {
+      "module": "06-notifications",
+      "id": "S-N1",
+      "desc": "Click topbar-notification-btn",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/06-notifications/drawer-open.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/06-notifications/drawer-open.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/notification"
+      },
+      "observed": "url https://stage-onebid.us.bci-tnlm.com/main/dashboard → https://stage-onebid.us.bci-tnlm.com/main/notification"
+    },
+    {
+      "module": "06-notifications",
+      "id": "S-N2",
+      "desc": "Count rendered notification items",
+      "result": "note",
+      "observed": "8 items"
+    },
+    {
+      "module": "07-profile",
+      "id": "S-U1",
+      "desc": "Open profile menu",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/07-profile/menu-open.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/07-profile/menu-open.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/notification"
+      }
+    },
+    {
+      "module": "07-profile",
+      "id": "S-U2",
+      "desc": "Enumerate profile menu items (read-only)",
+      "result": "note",
+      "observed": "TG, Settings, Bid Ocean Support, Logout"
+    },
+    {
+      "module": "08-saved-searches",
+      "id": "S-SS1",
+      "desc": "Open saved-search selector",
+      "result": "pass",
+      "evidence": {
+        "screenshot": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/08-saved-searches/select-open.png",
+        "dom": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/08-saved-searches/select-open.html",
+        "url": "https://stage-onebid.us.bci-tnlm.com/main/search"
+      }
+    },
+    {
+      "module": "08-saved-searches",
+      "id": "S-SS2",
+      "desc": "Enumerate saved search options",
+      "result": "note",
+      "observed": ""
+    }
+  ],
+  "routes_visited": [
+    "https://stage-onebid.us.bci-tnlm.com/login",
+    "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+    "https://stage-onebid.us.bci-tnlm.com/main/project-pipeline",
+    "https://stage-onebid.us.bci-tnlm.com/main/search",
+    "https://stage-onebid.us.bci-tnlm.com/main/notification"
+  ],
+  "xhr_total": 139,
+  "xhr_scoped": 92,
+  "requests_total": 611,
+  "console_errors": 3,
+  "page_errors": 0
+}

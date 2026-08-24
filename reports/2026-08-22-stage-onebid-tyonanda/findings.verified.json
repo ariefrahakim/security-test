@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "generated_at": "2026-08-22T00:31:35.095Z",
+    "generator": "deep-walk-onebid-v2.js"
+  },
+  "findings": [
+    {
+      "id": "V-01",
+      "module": "01-login",
+      "sev": "MEDIUM",
+      "confidence": "verified",
+      "category": "A05:2021 Security Misconfiguration",
+      "cwe": "CWE-1004",
+      "title": "App session cookie missing hardening flags",
+      "evidence": "Cookies without HttpOnly+Secure+SameSite(Lax|Strict): accessToken@stage-onebid.us.bci-tnlm.com(httpOnly=false,secure=false,sameSite=Lax); refreshToken@stage-onebid.us.bci-tnlm.com(httpOnly=false,secure=false,sameSite=Lax)",
+      "evidence_path": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/cookies.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 4.6
+      },
+      "recommendation": "Set HttpOnly, Secure, SameSite=Lax on all auth/session cookies."
+    },
+    {
+      "id": "V-02",
+      "module": "01-login",
+      "sev": "MEDIUM",
+      "confidence": "verified",
+      "category": "A02:2021 Cryptographic Failures",
+      "cwe": "CWE-922",
+      "title": "JWT stored in Web Storage (localStorage/sessionStorage)",
+      "evidence": "JWT (three-segment base64url) matched in Web Storage after successful login. Any XSS → full session theft. See reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/storage.json",
+      "evidence_path": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/01-login/storage.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 5.4
+      },
+      "recommendation": "Deliver auth via HttpOnly+Secure+SameSite=Lax cookies. Do not persist bearer tokens in Web Storage."
+    },
+    {
+      "id": "V-03",
+      "module": "02-dashboard",
+      "sev": "LOW",
+      "confidence": "verified",
+      "category": "A05:2021 Security Misconfiguration",
+      "cwe": "CWE-1021",
+      "title": "No clickjacking protection (X-Frame-Options absent; CSP lacks frame-ancestors)",
+      "evidence": "GET https://stage-onebid.us.bci-tnlm.com/ headers: no X-Frame-Options and CSP without frame-ancestors. See reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/root-headers.json",
+      "evidence_path": "reports/2026-08-22-stage-onebid-tyonanda/evidence-deep/02-dashboard/root-headers.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "recommendation": "Add `frame-ancestors 'none'` to CSP (or X-Frame-Options: DENY) on all authenticated app responses."
+    }
+  ]
+}

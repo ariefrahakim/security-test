@@ -1,0 +1,55 @@
+{
+  "console": [
+    {
+      "ts": 1787358362904,
+      "type": "warning",
+      "text": "[quick-fetch] quickFetchScript was not included or running in Node.js environment. Falling back to stubbed implementation."
+    },
+    {
+      "ts": 1787358371856,
+      "type": "error",
+      "text": "Connecting to 'https://dwld-nlm.bcicentral.com/int-domains/hubexo-internal-domains.json' violates the following Content Security Policy directive: \"connect-src 'self' *.google.com *.hubapi.com *.hsappstatic.net *.usemessages.com *.hs-banner.com *.hsadspixel.net *.hscollectedforms.net *.hubspot.com *.hs-analytics.net *.hubspot.com *.hs-analytics.net *.staging.us.bci-tnlm.com *.demo.us.bci-tnlm.com *.ingest.sentry.io www.google-analytics.com ekr.zdassets.com bciasiahelp.zendesk.com *.arcgis.com ze"
+    },
+    {
+      "ts": 1787358371865,
+      "type": "warning",
+      "text": "[PostHog.js] You have already initialized PostHog! Re-initializing is a no-op"
+    },
+    {
+      "ts": 1787358372062,
+      "type": "warning",
+      "text": "[quick-fetch] quickFetchScript was not included or running in Node.js environment. Falling back to stubbed implementation."
+    },
+    {
+      "ts": 1787358592445,
+      "type": "warning",
+      "text": "[quick-fetch] quickFetchScript was not included or running in Node.js environment. Falling back to stubbed implementation."
+    },
+    {
+      "ts": 1787358599890,
+      "type": "warning",
+      "text": "[quick-fetch] quickFetchScript was not included or running in Node.js environment. Falling back to stubbed implementation."
+    },
+    {
+      "ts": 1787358669852,
+      "type": "warning",
+      "text": "[quick-fetch] quickFetchScript was not included or running in Node.js environment. Falling back to stubbed implementation."
+    },
+    {
+      "ts": 1787358670682,
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+      "ts": 1787358670684,
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 401 ()"
+    },
+    {
+      "ts": 1787358681422,
+      "type": "warning",
+      "text": "[quick-fetch] quickFetchScript was not included or running in Node.js environment. Falling back to stubbed implementation."
+    }
+  ],
+  "pageErrors": []
+}

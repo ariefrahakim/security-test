@@ -1,0 +1,21 @@
+HTTP/2 200 
+content-type: text/html
+content-length: 1144
+last-modified: Thu, 20 Aug 2026 09:36:24 GMT
+x-amz-server-side-encryption: AES256
+accept-ranges: bytes
+server: AWS Frontend
+date: Sat, 22 Aug 2026 00:03:18 GMT
+etag: "6f2dbe30e1c5da46e6279e223ccea55d"
+x-cache: Error from cloudfront
+via: 1.1 4843510c0b6664a808a022fd8ec75bde.cloudfront.net (CloudFront)
+x-amz-cf-pop: SIN2-P5
+x-amz-cf-id: UNinTLtNISDXe1_mJLakkfYGd50zbpyHa6fzQZEyPgF2bF708KEAYA==
+x-xss-protection: 1; mode=block
+referrer-policy: no-referrer
+content-security-policy: default-src 'self' *.bidocean.com; style-src 'self' fonts.googleapis.com js.arcgis.com 'unsafe-inline' 'unsafe-eval' *.hotjar.com 'unsafe-inline'; font-src 'self' fonts.gstatic.com js.arcgis.com *.hotjar.com *.intercomcdn.com data:; img-src 'self' google.com data: *.arcgis.com *.bcicentral.com *.hsforms.com *.hubspot.com *.hotjar.com *.intercomcdn.com *.intercomassets.com; connect-src 'self' *.google.com *.hubapi.com *.hsappstatic.net *.usemessages.com *.hs-banner.com *.hsadspixel.net *.hscollectedforms.net *.hubspot.com *.hs-analytics.net *.hubspot.com *.hs-analytics.net *.staging.us.bci-tnlm.com *.demo.us.bci-tnlm.com *.ingest.sentry.io www.google-analytics.com ekr.zdassets.com bciasiahelp.zendesk.com *.arcgis.com zendesk-eu.my.sentry.io *.hotjar.com *.hotjar.io wss://*.hotjar.com *.intercom.io *.intercomcdn.com wss://*.intercom.io *.bidocean.com *.i.posthog.com; worker-src 'self' blob: js.arcgis.com; object-src 'none'; script-src-elem 'self' 'unsafe-inline' *.licdn.com *.usemessages.com *.hs-banner.com *.hsadspixel.net *.hscollectedforms.net *.hubspot.com *.hs-analytics.net *.hs-scripts.com www.googletagmanager.com static.zdassets.com js.arcgis.com *.hotjar.com *.intercom.io *.intercomcdn.com *.cloudflareinsights.com *.bidocean.com *.i.posthog.com; script-src 'self' 'unsafe-eval' www.googletagmanager.com static.zdassets.com js.arcgis.com *.hotjar.com *.intercomcdn.com *.intercom.io *.intercomcdn.com *.cloudflareinsights.com *.bidocean.com *.i.posthog.com 'unsafe-inline'; base-uri 'self'; frame-src 'self' *.hubspot.com *.staging.us.bci-tnlm.com *.demo.us.bci-tnlm.com static.zdassets.com youtube-nocookie.com; media-src 'self' *.intercomcdn.com;
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000; includeSubDomains
+permissions-policy: accelerometer=(), autoplay=(), camera=(), ch-device-memory=(), ch-ua-arch=(), ch-ua-bitness=(), clipboard-read=(self), clipboard-write=(self), display-capture=(self), encrypted-media=(self), fullscreen=(self), geolocation=(self), gyroscope=(), hid=(), idle-detection=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-get=(self), screen-wake-lock=(), serial=(), usb=(), window-management=(), xr-spatial-tracking=()
+vary: Origin
+

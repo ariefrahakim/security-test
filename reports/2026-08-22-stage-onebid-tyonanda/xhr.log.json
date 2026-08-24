@@ -1,0 +1,1253 @@
+[
+  {
+    "ts": 1787358362394,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Flogin&utk=e99668384cbef523d1bc30523fd49bd9&__hstc=160009826.e99668384cbef523d1bc30523fd49bd9.1787358362044.1787358362044.1787358362044.1&__hssc=160009826.1.1787358362044",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 61
+  },
+  {
+    "ts": 1787358362428,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=71ef730738db4464abe842caeab61a5f&traceId=71ef730738db4464abe842caeab61a5f",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 3498
+  },
+  {
+    "ts": 1787358362599,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=e99668384cbef523d1bc30523fd49bd9",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 134
+  },
+  {
+    "ts": 1787358363015,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "status": 200,
+    "respCT": "text/plain;charset=UTF-8",
+    "hasBearer": false,
+    "bodyLen": 5
+  },
+  {
+    "ts": 1787358363259,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=71ef730738db4464abe842caeab61a5f&sessionId=AMOaWbKWsISFSri-uyLw2BXJ9wfrKhCkusbKGQjBL5GJwhSVUkG2JyOnq-kE89VvG7ehFbRauoPefGIxLjc4FFSkO5O2Zjb5nwDA61KCmqzA39nThh6X1rKILnq7v2IXZU7K_ICIGNUbnq7XRLOG2835LxSPNhT-fFZ-jlRYkd7jSUqZmJNSYcI",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 16
+  },
+  {
+    "ts": 1787358363279,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "status": 200,
+    "respCT": "text/plain; charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 0
+  },
+  {
+    "ts": 1787358367502,
+    "method": "POST",
+    "url": "https://forms.hscollectedforms.net/collected-forms/submit/form",
+    "status": 204,
+    "respCT": null,
+    "hasBearer": false,
+    "bodyLen": 0
+  },
+  {
+    "ts": 1787358369602,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/api/v1/account/auth/sign-in",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 0
+  },
+  {
+    "ts": 1787358371093,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "status": 200,
+    "respCT": "text/plain;charset=UTF-8",
+    "hasBearer": false,
+    "bodyLen": 5
+  },
+  {
+    "ts": 1787358371353,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=5e944f7f1c4ec235dae5fa0b1082d239",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 134
+  },
+  {
+    "ts": 1787358371383,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fdashboard&utk=5e944f7f1c4ec235dae5fa0b1082d239&__hstc=160009826.5e944f7f1c4ec235dae5fa0b1082d239.1787358371091.1787358371091.1787358371091.1&__hssc=160009826.1.1787358371091",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 61
+  },
+  {
+    "ts": 1787358371755,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=71ef730738db4464abe842caeab61a5f&traceId=71ef730738db4464abe842caeab61a5f",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 3507
+  },
+  {
+    "ts": 1787358372393,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=71ef730738db4464abe842caeab61a5f&sessionId=AMOaWbKLOyUOcXvMWcfvrX3k-ZSoRhRvBAvG6Ikk_Oh4w66L4383qXqh7lRGE3HhzgPnserpOYBD_OUJIEU_EWEd4AUJn4qJDi9H4Y5K8uAbeTHApm_UQiyMSPERvSFGWkDnopp8fqNufuLyi8WQUBxs_jZ73o4ToR8gX_pRbvVWdofJli_UeYw",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 2
+  },
+  {
+    "ts": 1787358372394,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=71ef730738db4464abe842caeab61a5f&sessionId=AMOaWbKLOyUOcXvMWcfvrX3k-ZSoRhRvBAvG6Ikk_Oh4w66L4383qXqh7lRGE3HhzgPnserpOYBD_OUJIEU_EWEd4AUJn4qJDi9H4Y5K8uAbeTHApm_UQiyMSPERvSFGWkDnopp8fqNufuLyi8WQUBxs_jZ73o4ToR8gX_pRbvVWdofJli_UeYw",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 16
+  },
+  {
+    "ts": 1787358372395,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "status": 200,
+    "respCT": "text/plain; charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 0
+  },
+  {
+    "ts": 1787358372452,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787358371872&ver=1.376.0&compression=base64",
+    "status": 200,
+    "respCT": "application/json",
+    "hasBearer": false,
+    "bodyLen": 125
+  },
+  {
+    "ts": 1787358373647,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/search/widgets/suggested-bids",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 5000
+  },
+  {
+    "ts": 1787358373836,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/search/widgets/stay-informed",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 5000
+  },
+  {
+    "ts": 1787358374210,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/posting-type",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 186
+  },
+  {
+    "ts": 1787358374236,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/folder",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 1939
+  },
+  {
+    "ts": 1787358374330,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/save-search-project?limit=10&offset=0&sortBy=name&orderBy=asc&mode=list",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 2508
+  },
+  {
+    "ts": 1787358374825,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/search/widgets/time-to-follow-up",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 149
+  },
+  {
+    "ts": 1787358379744,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/",
+    "status": 200,
+    "respCT": "text/html",
+    "hasBearer": false,
+    "bodyLen": 1144
+  },
+  {
+    "ts": 1787358381320,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358383400,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358384837,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358386026,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358387360,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358388591,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358390387,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358391648,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358392992,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358394619,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358395984,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358397796,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358399030,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358400218,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358402117,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358403632,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358405338,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358406608,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358407899,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358409159,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358410423,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358411723,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358413020,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358414310,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358415615,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358417319,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358420267,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358422437,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358424902,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358427416,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358430355,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358433325,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358436425,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358438251,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358440600,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358443258,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358445687,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358448097,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358450705,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358452834,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358455949,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358458241,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358460665,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358462684,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358464360,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358466638,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358468810,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358470875,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358473757,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358476345,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358478398,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358480912,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358483120,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358484699,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358486874,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358489733,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358491975,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358494956,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358498431,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358500285,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358503144,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358506055,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358507686,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358510320,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358513024,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358514975,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 164
+  },
+  {
+    "ts": 1787358517548,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 165
+  },
+  {
+    "ts": 1787358590813,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787358590621&ver=1.376.0&compression=base64",
+    "status": 200,
+    "respCT": "application/json",
+    "hasBearer": false,
+    "bodyLen": 125
+  },
+  {
+    "ts": 1787358591296,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "status": 200,
+    "respCT": "text/plain;charset=UTF-8",
+    "hasBearer": false,
+    "bodyLen": 5
+  },
+  {
+    "ts": 1787358591917,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fproject-pipeline&utk=3af41202f37e7307f3900b71ec8263ad&__hstc=160009826.3af41202f37e7307f3900b71ec8263ad.1787358591289.1787358591289.1787358591289.1&__hssc=160009826.1.1787358591289",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 61
+  },
+  {
+    "ts": 1787358591958,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=71ef730738db4464abe842caeab61a5f&traceId=71ef730738db4464abe842caeab61a5f",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 3514
+  },
+  {
+    "ts": 1787358592434,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=3af41202f37e7307f3900b71ec8263ad",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 134
+  },
+  {
+    "ts": 1787358592622,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/folder/lists",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 2559
+  },
+  {
+    "ts": 1787358592730,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "status": 200,
+    "respCT": "text/plain; charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 0
+  },
+  {
+    "ts": 1787358592758,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=71ef730738db4464abe842caeab61a5f&sessionId=AMOaWbLlPmf37fu3N8X2D_ZJo7q94Yql1IkHtIu4YIibBxfDLUtjmpcbTr0llkgCetXyn80hncIfLGlIj9zB_3q4vAt1aPoexs1kttDCYHYEgqsFRVXYtLR9ex_HLNo5uHPykdf09W4LAAAxOsIp6UHzbKxYmqFka8nQmZ6Ew9PnBGciV7aXLuo",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 2
+  },
+  {
+    "ts": 1787358592806,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=71ef730738db4464abe842caeab61a5f&sessionId=AMOaWbLlPmf37fu3N8X2D_ZJo7q94Yql1IkHtIu4YIibBxfDLUtjmpcbTr0llkgCetXyn80hncIfLGlIj9zB_3q4vAt1aPoexs1kttDCYHYEgqsFRVXYtLR9ex_HLNo5uHPykdf09W4LAAAxOsIp6UHzbKxYmqFka8nQmZ6Ew9PnBGciV7aXLuo",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 16
+  },
+  {
+    "ts": 1787358594063,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/find?filter={%22limit%22:25,%22offset%22:0,%22orderBy%22:%22desc%22,%22sortBy%22:%22modifiedAt%22,%22folderId%22:96486,%22ownerId%22:%22309432%22}",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 5000
+  },
+  {
+    "ts": 1787358593607,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/find?filter={%22limit%22:25,%22offset%22:0,%22orderBy%22:%22desc%22,%22sortBy%22:%22modifiedAt%22,%22folderId%22:96484,%22ownerId%22:%22309432%22}",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 5000
+  },
+  {
+    "ts": 1787358593642,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/find?filter={%22limit%22:25,%22offset%22:0,%22orderBy%22:%22desc%22,%22sortBy%22:%22modifiedAt%22,%22folderId%22:96487,%22ownerId%22:%22309432%22}",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 5000
+  },
+  {
+    "ts": 1787358594067,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/find?filter={%22limit%22:25,%22offset%22:0,%22orderBy%22:%22desc%22,%22sortBy%22:%22modifiedAt%22,%22folderId%22:96485,%22ownerId%22:%22309432%22}",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 5000
+  },
+  {
+    "ts": 1787358598962,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "status": 200,
+    "respCT": "text/plain;charset=UTF-8",
+    "hasBearer": false,
+    "bodyLen": 5
+  },
+  {
+    "ts": 1787358599217,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=e839b2de74877f5cce0718c397f4517a",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 134
+  },
+  {
+    "ts": 1787358599266,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fsearch&utk=e839b2de74877f5cce0718c397f4517a&__hstc=160009826.e839b2de74877f5cce0718c397f4517a.1787358598959.1787358598959.1787358598959.1&__hssc=160009826.1.1787358598959",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 61
+  },
+  {
+    "ts": 1787358599457,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787358599266&ver=1.376.0&compression=base64",
+    "status": 200,
+    "respCT": "application/json",
+    "hasBearer": false,
+    "bodyLen": 125
+  },
+  {
+    "ts": 1787358599589,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=71ef730738db4464abe842caeab61a5f&traceId=71ef730738db4464abe842caeab61a5f",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 3504
+  },
+  {
+    "ts": 1787358600188,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "status": 200,
+    "respCT": "text/plain; charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 0
+  },
+  {
+    "ts": 1787358600193,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=71ef730738db4464abe842caeab61a5f&sessionId=AMOaWbIFZd29jEXaBdnn5rp7TRdNDVx_QSftxLoU7x27bEihkcqwoiZUNJsphCGAYJb9y5EV4-0TdSeNZXEzi2N2Rl-t_DC0yb8ndcp0ULpVD7HtyL7k2S4DNkhhPm6hMXPAsyG-b_VtBFA9I_3vKTbtjcMlGdFaYmF8--2sJ4nCDY5JM9R62Qc",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 2
+  },
+  {
+    "ts": 1787358600207,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=71ef730738db4464abe842caeab61a5f&sessionId=AMOaWbIFZd29jEXaBdnn5rp7TRdNDVx_QSftxLoU7x27bEihkcqwoiZUNJsphCGAYJb9y5EV4-0TdSeNZXEzi2N2Rl-t_DC0yb8ndcp0ULpVD7HtyL7k2S4DNkhhPm6hMXPAsyG-b_VtBFA9I_3vKTbtjcMlGdFaYmF8--2sJ4nCDY5JM9R62Qc",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 16
+  },
+  {
+    "ts": 1787358601050,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/save-search-project?limit=10&offset=0&sortBy=name&orderBy=asc&mode=list",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 2508
+  },
+  {
+    "ts": 1787358601233,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/posting-type",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 187
+  },
+  {
+    "ts": 1787358602451,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/search/project",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 5000
+  },
+  {
+    "ts": 1787358603487,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/search/project",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 5000
+  },
+  {
+    "ts": 1787358669104,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fdashboard",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 61
+  },
+  {
+    "ts": 1787358669148,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 134
+  },
+  {
+    "ts": 1787358669439,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=71ef730738db4464abe842caeab61a5f&traceId=71ef730738db4464abe842caeab61a5f",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 3507
+  },
+  {
+    "ts": 1787358669802,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787358669104&ver=1.376.0&compression=base64",
+    "status": 200,
+    "respCT": "application/json",
+    "hasBearer": false,
+    "bodyLen": 125
+  },
+  {
+    "ts": 1787358669882,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "status": 200,
+    "respCT": "text/plain;charset=UTF-8",
+    "hasBearer": false,
+    "bodyLen": 5
+  },
+  {
+    "ts": 1787358670135,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "status": 200,
+    "respCT": "text/plain; charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 0
+  },
+  {
+    "ts": 1787358670154,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=71ef730738db4464abe842caeab61a5f&sessionId=AMOaWbKWC2OgemqPkq0cQgZO5H5IDkMNxNUATOK3HXFYsMZVajG91AqwB_IMd5BZCdnIPcKNAGOobB-uFEgbTW6x6Ct3bGxK3HxznllZI5JJPlMcYh0NVR0EDjQAcYy1xBWSbD9VdHE6UAuBV-0ntqDA9QgvtxOq8qQ0lKCQTtAR4yBeG6OzZFw",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 16
+  },
+  {
+    "ts": 1787358670682,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/save-search-project?limit=10&offset=0&sortBy=name&orderBy=asc&mode=list",
+    "status": 401,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 237
+  },
+  {
+    "ts": 1787358670683,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/posting-type",
+    "status": 401,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 178
+  },
+  {
+    "ts": 1787358670961,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=71ef730738db4464abe842caeab61a5f&sessionId=AMOaWbKWC2OgemqPkq0cQgZO5H5IDkMNxNUATOK3HXFYsMZVajG91AqwB_IMd5BZCdnIPcKNAGOobB-uFEgbTW6x6Ct3bGxK3HxznllZI5JJPlMcYh0NVR0EDjQAcYy1xBWSbD9VdHE6UAuBV-0ntqDA9QgvtxOq8qQ0lKCQTtAR4yBeG6OzZFw",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 2
+  },
+  {
+    "ts": 1787358671292,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/api/v1/account/auth/refresh-token",
+    "status": 201,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 802
+  },
+  {
+    "ts": 1787358672289,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/save-search-project?limit=10&offset=0&sortBy=name&orderBy=asc&mode=list",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 2508
+  },
+  {
+    "ts": 1787358672457,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/posting-type",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 186
+  },
+  {
+    "ts": 1787358677846,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/notification/list?limit=20&offset=0",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 5000
+  },
+  {
+    "ts": 1787358680447,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "status": 200,
+    "respCT": "text/plain;charset=UTF-8",
+    "hasBearer": false,
+    "bodyLen": 5
+  },
+  {
+    "ts": 1787358680747,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=8d85ea84384029c701acac5e85ab3831",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 134
+  },
+  {
+    "ts": 1787358680748,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fdashboard&utk=8d85ea84384029c701acac5e85ab3831&__hstc=160009826.8d85ea84384029c701acac5e85ab3831.1787358680439.1787358680439.1787358680439.1&__hssc=160009826.1.1787358680439",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 61
+  },
+  {
+    "ts": 1787358680934,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787358680747&ver=1.376.0&compression=base64",
+    "status": 200,
+    "respCT": "application/json",
+    "hasBearer": false,
+    "bodyLen": 125
+  },
+  {
+    "ts": 1787358681072,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=71ef730738db4464abe842caeab61a5f&traceId=71ef730738db4464abe842caeab61a5f",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 3507
+  },
+  {
+    "ts": 1787358681719,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=71ef730738db4464abe842caeab61a5f&sessionId=AMOaWbJy3_W17VifvkpyHZq9ve6Sy__DYeLKX-0K4PIq8wsXh0ZeNqV6pq77SrqIdg8i0bc-TniEa8ySk0bPYaP_tBmUZ_4txiQ6wWu8TSXOX9zUGW_gaewIfALUkp_7JB0Q4cSyleSiknKpu-1pKBNbCoZLsCabOWtdY3Zq4F1GVT1XrbtJlvQ",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 16
+  },
+  {
+    "ts": 1787358681720,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=71ef730738db4464abe842caeab61a5f&sessionId=AMOaWbJy3_W17VifvkpyHZq9ve6Sy__DYeLKX-0K4PIq8wsXh0ZeNqV6pq77SrqIdg8i0bc-TniEa8ySk0bPYaP_tBmUZ_4txiQ6wWu8TSXOX9zUGW_gaewIfALUkp_7JB0Q4cSyleSiknKpu-1pKBNbCoZLsCabOWtdY3Zq4F1GVT1XrbtJlvQ",
+    "status": 200,
+    "respCT": "application/json;charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 2
+  },
+  {
+    "ts": 1787358681738,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "status": 200,
+    "respCT": "text/plain; charset=utf-8",
+    "hasBearer": false,
+    "bodyLen": 0
+  },
+  {
+    "ts": 1787358686114,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/posting-type",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 187
+  },
+  {
+    "ts": 1787358686114,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/save-search-project?limit=10&offset=0&sortBy=name&orderBy=asc&mode=list",
+    "status": 200,
+    "respCT": "application/json; charset=utf-8",
+    "hasBearer": true,
+    "bodyLen": 2509
+  }
+]

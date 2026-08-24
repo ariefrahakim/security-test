@@ -1,0 +1,5 @@
+200  robots.txt
+200  sitemap.xml
+200  .well-known/security.txt
+200  humans.txt
+200  manifest.json

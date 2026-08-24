@@ -1,0 +1,49 @@
+{
+  "hypotheses": [
+    {
+      "id": "H-01",
+      "requires_hitl": true,
+      "title": "User enumeration via login error copy",
+      "based_on": [
+        "/login"
+      ],
+      "test_plan": "Send wrong-password for known email vs unknown email; compare error text / status / timing."
+    },
+    {
+      "id": "H-02",
+      "requires_hitl": true,
+      "title": "Login rate-limit bypass",
+      "based_on": [
+        "POST /api/v1/account/auth/sign-in"
+      ],
+      "test_plan": "50 wrong-password attempts within 60s; observe lockout / Retry-After header."
+    },
+    {
+      "id": "H-03",
+      "requires_hitl": true,
+      "title": "Password-reset token reuse / no expiry",
+      "based_on": [
+        "/forgot-password link on login page"
+      ],
+      "test_plan": "Request reset twice; attempt reuse of the first token after issuing the second."
+    },
+    {
+      "id": "H-04",
+      "requires_hitl": true,
+      "title": "JWT: alg=none or weak-secret acceptance",
+      "based_on": [
+        "JWT in localStorage"
+      ],
+      "test_plan": "Decode token; try alg=none and HS256 with common weak secrets against a protected endpoint."
+    },
+    {
+      "id": "H-05",
+      "requires_hitl": true,
+      "title": "2FA/MFA bypass on password step",
+      "based_on": [
+        "sign-in flow"
+      ],
+      "test_plan": "If 2FA offered, drop the challenge and hit the post-2FA endpoint directly with the interim token."
+    }
+  ]
+}

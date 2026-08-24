@@ -1,0 +1,22 @@
+{
+ "name": "Bid Ocean",
+ "icons": [
+  {
+   "src": "\/favicon.ico",
+   "sizes": "36x36",
+   "type": "image\/png",
+   "density": "0.75"
+  }
+ ],
+ "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.bcicentral.leadmanager",
+      "url": "https://play.google.com/store/apps/details?id=com.bcicentral.leadmanager"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://itunes.apple.com/id/app/bci-central-leadmanager/id1600188684"
+    }
+  ]
+}

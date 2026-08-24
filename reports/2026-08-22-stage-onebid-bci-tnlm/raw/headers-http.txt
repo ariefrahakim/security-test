@@ -1,0 +1,18 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sat, 22 Aug 2026 00:02:55 GMT
+Content-Type: text/html
+Content-Length: 167
+Connection: keep-alive
+Location: https://stage-onebid.us.bci-tnlm.com/
+X-Cache: Redirect from cloudfront
+Via: 1.1 846f87416e7c2cfc89a9a32bba454106.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN2-P5
+X-Amz-Cf-Id: F3r89OwJkH9M9uAXog3EMHVerdKHGF4ZDYqG-QkErA7cPz-muOW16A==
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer
+Content-Security-Policy: default-src 'self' *.bidocean.com; style-src 'self' fonts.googleapis.com js.arcgis.com 'unsafe-inline' 'unsafe-eval' *.hotjar.com 'unsafe-inline'; font-src 'self' fonts.gstatic.com js.arcgis.com *.hotjar.com *.intercomcdn.com data:; img-src 'self' google.com data: *.arcgis.com *.bcicentral.com *.hsforms.com *.hubspot.com *.hotjar.com *.intercomcdn.com *.intercomassets.com; connect-src 'self' *.google.com *.hubapi.com *.hsappstatic.net *.usemessages.com *.hs-banner.com *.hsadspixel.net *.hscollectedforms.net *.hubspot.com *.hs-analytics.net *.hubspot.com *.hs-analytics.net *.staging.us.bci-tnlm.com *.demo.us.bci-tnlm.com *.ingest.sentry.io www.google-analytics.com ekr.zdassets.com bciasiahelp.zendesk.com *.arcgis.com zendesk-eu.my.sentry.io *.hotjar.com *.hotjar.io wss://*.hotjar.com *.intercom.io *.intercomcdn.com wss://*.intercom.io *.bidocean.com *.i.posthog.com; worker-src 'self' blob: js.arcgis.com; object-src 'none'; script-src-elem 'self' 'unsafe-inline' *.licdn.com *.usemessages.com *.hs-banner.com *.hsadspixel.net *.hscollectedforms.net *.hubspot.com *.hs-analytics.net *.hs-scripts.com www.googletagmanager.com static.zdassets.com js.arcgis.com *.hotjar.com *.intercom.io *.intercomcdn.com *.cloudflareinsights.com *.bidocean.com *.i.posthog.com; script-src 'self' 'unsafe-eval' www.googletagmanager.com static.zdassets.com js.arcgis.com *.hotjar.com *.intercomcdn.com *.intercom.io *.intercomcdn.com *.cloudflareinsights.com *.bidocean.com *.i.posthog.com 'unsafe-inline'; base-uri 'self'; frame-src 'self' *.hubspot.com *.staging.us.bci-tnlm.com *.demo.us.bci-tnlm.com static.zdassets.com youtube-nocookie.com; media-src 'self' *.intercomcdn.com;
+X-Content-Type-Options: nosniff
+Permissions-Policy: accelerometer=(), autoplay=(), camera=(), ch-device-memory=(), ch-ua-arch=(), ch-ua-bitness=(), clipboard-read=(self), clipboard-write=(self), display-capture=(self), encrypted-media=(self), fullscreen=(self), geolocation=(self), gyroscope=(), hid=(), idle-detection=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-get=(self), screen-wake-lock=(), serial=(), usb=(), window-management=(), xr-spatial-tracking=()
+server: AWS Frontend
+Vary: Origin
+

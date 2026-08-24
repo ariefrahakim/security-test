@@ -1,0 +1,41 @@
+{
+  "total": 151,
+  "scoped": 80,
+  "withBearer": 78,
+  "idorShapedSample": [
+    {
+      "method": "GET",
+      "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project/5752707",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project/5695136",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project/5702381",
+      "status": 401
+    },
+    {
+      "method": "GET",
+      "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project/5702381",
+      "status": 200
+    }
+  ],
+  "err4xxSample": [
+    {
+      "method": "GET",
+      "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project/5702381",
+      "status": 401
+    }
+  ],
+  "err5xxSample": [],
+  "uncachedJsonSample": [
+    {
+      "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project/5702381",
+      "cc": null
+    }
+  ]
+}

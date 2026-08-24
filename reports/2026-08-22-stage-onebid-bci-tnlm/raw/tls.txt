@@ -1,0 +1,13 @@
+=== issuer / subject / dates ===
+issuer=C=US, O=Amazon, CN=Amazon RSA 2048 M01
+subject=CN=*.us.bci-tnlm.com
+notBefore=Aug 10 00:00:00 2026 GMT
+notAfter=Feb 23 23:59:59 2027 GMT
+X509v3 Subject Alternative Name: 
+    DNS:*.us.bci-tnlm.com, DNS:*.bidocean.com, DNS:*.staging.us.bci-tnlm.com
+
+=== version negotiation ===
+tls1: New, (NONE), Cipher is (NONE)
+tls1_1: New, (NONE), Cipher is (NONE)
+tls1_2: New, TLSv1.2, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+tls1_3: New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256

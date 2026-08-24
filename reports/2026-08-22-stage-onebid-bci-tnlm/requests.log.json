@@ -1,0 +1,5210 @@
+[
+  {
+    "ts": 1787357743436,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/login",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787357745104,
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357745104,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-C13ROxSa.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357745104,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-DikObkkV.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357745979,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-B9h3q8Mh.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357745979,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/auth-us-DXLDJboO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357745979,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/store-B3Y3Xjap.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357745979,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useTranslation-wJzaFeAQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357745979,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Button-U3VLWa-P.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357745979,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/routes-BIgTZT2O.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357745979,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/js.cookie-CV8iV66_.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357745979,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/customStorageIdb-GqWO3EqQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357745979,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/errorboundary-Czm0VpZW.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357745979,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-J8GeE7Zf.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357746745,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/login-CcVhdbj4.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357746745,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/onebid-logo-desc-BIwnSNzz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357746745,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/core-utils-C-d6RM97.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357747459,
+    "method": "GET",
+    "url": "https://js.hs-scripts.com/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357747459,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/onebid-logo-desc-jGQZ5OYD.svg",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357747468,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787357747468,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787357747469,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/icon-DDe2w4N1.ttf?yrstwa",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787357747521,
+    "method": "GET",
+    "url": "https://js.hscollectedforms.net/collectedforms.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357747521,
+    "method": "GET",
+    "url": "https://js.usemessages.com/conversations-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357747521,
+    "method": "GET",
+    "url": "https://js.hubspot.com/web-interactives-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357747521,
+    "method": "GET",
+    "url": "https://js.hs-analytics.net/analytics/1787357700000/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357747521,
+    "method": "GET",
+    "url": "https://js.hsadspixel.net/pixels.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357747521,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/6391927/banner.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357747665,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=05271098cb334d10b283b2fc78741865&traceId=05271098cb334d10b283b2fc78741865",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357747712,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Flogin",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787357747827,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787357747925,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=43905788978d3812a245e502c7dc48fd",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357747974,
+    "method": "GET",
+    "url": "https://perf-na1.hsforms.com/embed/v3/counters.gif?key=config-loaded-success&value=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357748228,
+    "method": "GET",
+    "url": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357748298,
+    "method": "GET",
+    "url": "https://app.hubspot.com/conversations-visitor/6391927/threads/utk/05271098cb334d10b283b2fc78741865?uuid=b520002009424951ada705f52a34cf54&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=&domain=stage-onebid.us.bci-tnlm.com&inApp53=false&messagesUtk=05271098cb334d10b283b2fc78741865&url=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Flogin&inline=false&isFullscreen=false&globalCookieOptOut=&isFirstVisitorSession=true&isAttachmentDisabled=false&isInitialInputFocusDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hideScrollToButton=true&isIOSMobile=false",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787357748745,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/stylesheets/hubspot-theme.stable.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357748745,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/bundles/hubspot-theme.stable.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357748745,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/head-dlb/static-1.5007/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357748745,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/sass/visitor.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357748745,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/hubspot-dlb/static-2.1882/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357748745,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/react-dlb/static-1.88/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357748745,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30510/bundles/visitor.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357748913,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/i18n-data-data-modern-locales-en-us.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357748913,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/ex/whisper-core.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357748915,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.9449/audio/notification.mp3",
+    "resourceType": "media"
+  },
+  {
+    "ts": 1787357748938,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/static-1.10104/whisper-core-entry.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357748960,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357748960,
+    "method": "POST",
+    "url": "https://app.hubspot.com/api/cartographer/v1/rhumb?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787357748960,
+    "method": "GET",
+    "url": "https://6391927.fs1.hubspotusercontent-na1.net/hub/6391927/hubfs/Yellow%20Hubexo%20Star%20with%20grey%20background.png?width=108&height=108",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357748960,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbL8pnDrWfmSNitI0M_9EhVStXiYqCq8wfd6am3xScLTepMnlneXP0kfxh58aSe_4dfQbOnC87K6yoO5ku0YcrjMn7_nojVWQhVZlnBK1nPLLq2hzVslj0dWy5e7PdEdcoiy3TyhdDPQXjDJrsq8H3YvrBvAhvqudsO7CdWI3OQTetb8K7g",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357751474,
+    "method": "GET",
+    "url": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-submit-event&count=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357751474,
+    "method": "GET",
+    "url": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-submit-schedule-event&count=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357751474,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/api/v1/account/auth/sign-in",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357752974,
+    "method": "POST",
+    "url": "https://forms.hscollectedforms.net/collected-forms/submit/form",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357753300,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/cartographer/v1/ipl",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787357755407,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787357755407,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/bid-ocean-logo-CxQkbMMC.svg",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357756826,
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357756827,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-C13ROxSa.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756827,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-DikObkkV.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357756836,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787357756836,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787357756836,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/icon-DDe2w4N1.ttf?yrstwa",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787357756846,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-B9h3q8Mh.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756846,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/auth-us-DXLDJboO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756846,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/store-B3Y3Xjap.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756846,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useTranslation-wJzaFeAQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756846,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Button-U3VLWa-P.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756846,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/routes-BIgTZT2O.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756847,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/js.cookie-CV8iV66_.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756847,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/customStorageIdb-GqWO3EqQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756847,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/errorboundary-Czm0VpZW.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756847,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-J8GeE7Zf.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-D-Y543YL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-B4pVXKMY.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/badges-DOmowkY9.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Avatar-vtSVaiN-.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useSlot-g-WRj9JV.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Chip-CQ_ghPcU.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/SkeletonLoader-hlVJTaEz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Skeleton-CdsCJXpy.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-DrEAdJol.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dividerClasses-D9E7qWeK.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/i18next-fSMGrDDu.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-CZEioali.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMDatepicker-D_mQB-7l.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-layout-theme-sGddTJmD.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Popper-kpos8DLH.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Slide-BltzmXrz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMLoader-CWtIHy35.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/module-avatar-BRUKBGPZ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756859,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/styles-P-6KUo5B.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756860,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-debounce-CnbU-_A4.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756860,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/main-content-BR06idCf.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756860,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/core-utils-C-d6RM97.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756860,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/posthog-CDTsIsM8.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756861,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Divider-Md3rF5aJ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756861,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-CrfRig2L.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756861,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-1f-rrE4U.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357756861,
+    "method": "GET",
+    "url": "https://js.hs-scripts.com/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756861,
+    "method": "GET",
+    "url": "https://js.hscollectedforms.net/collectedforms.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756861,
+    "method": "GET",
+    "url": "https://js.usemessages.com/conversations-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756861,
+    "method": "GET",
+    "url": "https://js.hubspot.com/web-interactives-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756862,
+    "method": "GET",
+    "url": "https://js.hs-analytics.net/analytics/1787357700000/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756862,
+    "method": "GET",
+    "url": "https://js.hsadspixel.net/pixels.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756862,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/6391927/banner.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357756866,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=05271098cb334d10b283b2fc78741865&traceId=05271098cb334d10b283b2fc78741865",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357756868,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357756878,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fdashboard&utk=c5ca45571588c78fe6fc5156fd8e2d99&__hstc=160009826.c5ca45571588c78fe6fc5156fd8e2d99.1787357756877.1787357756877.1787357756877.1&__hssc=160009826.1.1787357756877",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787357756879,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787357757149,
+    "method": "GET",
+    "url": "https://perf-na1.hsforms.com/embed/v3/counters.gif?key=config-loaded-success&value=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357757508,
+    "method": "GET",
+    "url": "https://app.hubspot.com/conversations-visitor/6391927/threads/utk/05271098cb334d10b283b2fc78741865?uuid=28066e4650bc449b8d14f0fb93a46a89&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=&domain=stage-onebid.us.bci-tnlm.com&inApp53=false&messagesUtk=05271098cb334d10b283b2fc78741865&url=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fdashboard&inline=false&isFullscreen=false&globalCookieOptOut=&isFirstVisitorSession=false&isAttachmentDisabled=false&isInitialInputFocusDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hideScrollToButton=true&isIOSMobile=false",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787357757607,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/DashboardUS-Bxv1xw5M.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757607,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-kHvg-FbA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757608,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/filter-bid-date-BJ2b-8dm.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757608,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/AccordionSummary-pLXa1gJM.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757608,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Collapse-ChIw-6hA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757608,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-BDBNaMi9.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757608,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/constants-D0PtETOL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757608,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/helpers-cRE_A5QO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757608,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/loader-row-FZ4EutDP.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757608,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/callSnackbar-CtIX-Oiz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757608,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/DialogTitle-Be1jWO00.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757617,
+    "method": "GET",
+    "url": "https://dwld-nlm.bcicentral.com/int-domains/hubexo-internal-domains.json",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357757617,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/array/phc_pb2QUwQuAFKHGqUrUVsvqVZYemKof0A5foqZXYUoe9J/config.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757627,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787357757626&ver=1.376.0&compression=base64",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787357757801,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/stylesheets/hubspot-theme.stable.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357757801,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/bundles/hubspot-theme.stable.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757801,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/head-dlb/static-1.5007/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757801,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/sass/visitor.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357757812,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/hubspot-dlb/static-2.1882/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757812,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/react-dlb/static-1.88/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757815,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30510/bundles/visitor.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757836,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/i18n-data-data-modern-locales-en-us.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757837,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.9449/audio/notification.mp3",
+    "resourceType": "media"
+  },
+  {
+    "ts": 1787357757844,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/ex/whisper-core.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757846,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/static-1.10104/whisper-core-entry.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357757852,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357757853,
+    "method": "POST",
+    "url": "https://app.hubspot.com/api/cartographer/v1/rhumb?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787357757853,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbJyLX30kBhLnAdHyp7sRLXMtZCm14XjUnk0T42BJa8zI3gV5uFjcWLR9YzBE9292oyh0AIwqd_EEYr89y0ird7MtKd8iPXf4ksqKyuXQ_lUz3SHiRiHy1gDDp-m5TO3U1fJZKXDu1V9Bdhv0P-cDurc47ilkiP8hJufgheqniYkmW6Sf5E",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357757853,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbJyLX30kBhLnAdHyp7sRLXMtZCm14XjUnk0T42BJa8zI3gV5uFjcWLR9YzBE9292oyh0AIwqd_EEYr89y0ird7MtKd8iPXf4ksqKyuXQ_lUz3SHiRiHy1gDDp-m5TO3U1fJZKXDu1V9Bdhv0P-cDurc47ilkiP8hJufgheqniYkmW6Sf5E",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357758020,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/static/surveys.js?v=1.376.0",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357758172,
+    "method": "GET",
+    "url": "https://6391927.fs1.hubspotusercontent-na1.net/hub/6391927/hubfs/Yellow%20Hubexo%20Star%20with%20grey%20background.png?width=108&height=108",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357758357,
+    "method": "GET",
+    "url": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357758357,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/posting-type",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357758357,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/save-search-project?limit=10&offset=0&sortBy=name&orderBy=asc&mode=list",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357758357,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/folder",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357758357,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/search/widgets/stay-informed",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357758357,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/search/widgets/suggested-bids",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357758358,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/illustration-dashboard-onebid-banner-DSKahOPT.webp",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357759945,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/search/widgets/time-to-follow-up",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357761101,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/illustration-dashboard-slider-DWAwIxg4.jpg",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357762512,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/cartographer/v1/ipl",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787357764382,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787357765933,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357767717,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357768156,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/metrics/v1/frontend/send",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787357769021,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357771160,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357772455,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357774766,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357776904,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357778726,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357780570,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357782039,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357783333,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357785031,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357787216,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357787867,
+    "method": "POST",
+    "url": "https://app.hubspot.com/api/cartographer/v1/performance?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787357788510,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357789809,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357791516,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357793695,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357795832,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357797132,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357798695,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357800187,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357801765,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357803891,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357805181,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357806755,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357808880,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357811035,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357813706,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357816905,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357817820,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/metrics/v1/frontend/custom/send?hs_static_app=conversations-visitor-ui&hs_static_app_version=static-1.30510&metrics_js_version=2.1882",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787357820076,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357822193,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357823512,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/cartographer/v1/ipl",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787357825898,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357829063,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357830667,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357833295,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357836006,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357838667,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357841828,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357844995,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357847627,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357850778,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357853423,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357855564,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357858741,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357861570,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357863655,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357866317,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357868976,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357871117,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357873789,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357876970,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357879096,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357881746,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/create",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357961117,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/main/project-pipeline",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787357962563,
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357962563,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-C13ROxSa.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962563,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-DikObkkV.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357962563,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787357962563,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787357962564,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/icon-DDe2w4N1.ttf?yrstwa",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787357962587,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-B9h3q8Mh.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962588,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/auth-us-DXLDJboO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962588,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/store-B3Y3Xjap.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962588,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useTranslation-wJzaFeAQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962588,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Button-U3VLWa-P.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962588,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/routes-BIgTZT2O.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962588,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/js.cookie-CV8iV66_.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962588,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/customStorageIdb-GqWO3EqQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962588,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/errorboundary-Czm0VpZW.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962588,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-J8GeE7Zf.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357962599,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-D-Y543YL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962599,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-B4pVXKMY.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962599,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/badges-DOmowkY9.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962599,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Avatar-vtSVaiN-.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962599,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useSlot-g-WRj9JV.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962599,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Chip-CQ_ghPcU.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962600,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/SkeletonLoader-hlVJTaEz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962600,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Skeleton-CdsCJXpy.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962600,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-DrEAdJol.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962600,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dividerClasses-D9E7qWeK.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962600,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/i18next-fSMGrDDu.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962600,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-CZEioali.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357962600,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMDatepicker-D_mQB-7l.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962600,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-layout-theme-sGddTJmD.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962600,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Popper-kpos8DLH.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962600,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Slide-BltzmXrz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962601,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMLoader-CWtIHy35.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962601,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/module-avatar-BRUKBGPZ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962601,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/styles-P-6KUo5B.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962601,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-debounce-CnbU-_A4.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962601,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/main-content-BR06idCf.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962601,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/core-utils-C-d6RM97.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962601,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/posthog-CDTsIsM8.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962601,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Divider-Md3rF5aJ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962601,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-CrfRig2L.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962601,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-1f-rrE4U.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357962602,
+    "method": "GET",
+    "url": "https://js.hs-scripts.com/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/ProjectTrackerUS-C-TKkRhp.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/empty-project-DdOzut7i.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-BDBNaMi9.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/constants-D0PtETOL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-_FWmv6J1.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/callSnackbar-CtIX-Oiz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/helpers-cRE_A5QO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/loader-row-FZ4EutDP.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/ProjectTrackerUS-DdCvhxjm.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357962889,
+    "method": "GET",
+    "url": "https://js.usemessages.com/conversations-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962889,
+    "method": "GET",
+    "url": "https://js.hs-analytics.net/analytics/1787357700000/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962889,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/6391927/banner.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962889,
+    "method": "GET",
+    "url": "https://js.hscollectedforms.net/collectedforms.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962889,
+    "method": "GET",
+    "url": "https://js.hsadspixel.net/pixels.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962889,
+    "method": "GET",
+    "url": "https://js.hubspot.com/web-interactives-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962894,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787357962926,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=1d6d3f3b819e94a564599815285e3436",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357962940,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/array/phc_pb2QUwQuAFKHGqUrUVsvqVZYemKof0A5foqZXYUoe9J/config.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357962942,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787357962941&ver=1.376.0&compression=base64",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787357962944,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=05271098cb334d10b283b2fc78741865&traceId=05271098cb334d10b283b2fc78741865",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357962945,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/static/surveys.js?v=1.376.0",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357963184,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fproject-pipeline&utk=1d6d3f3b819e94a564599815285e3436&__hstc=160009826.1d6d3f3b819e94a564599815285e3436.1787357962891.1787357962891.1787357962891.1&__hssc=160009826.1.1787357962891",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787357963357,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/folder/lists",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357963458,
+    "method": "GET",
+    "url": "https://perf-na1.hsforms.com/embed/v3/counters.gif?key=config-loaded-success&value=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357963577,
+    "method": "GET",
+    "url": "https://app.hubspot.com/conversations-visitor/6391927/threads/utk/05271098cb334d10b283b2fc78741865?uuid=a59e8c05f8a24746af56d8e360038608&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=&domain=stage-onebid.us.bci-tnlm.com&inApp53=false&messagesUtk=05271098cb334d10b283b2fc78741865&url=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fproject-pipeline&inline=false&isFullscreen=false&globalCookieOptOut=&isFirstVisitorSession=false&isAttachmentDisabled=false&isInitialInputFocusDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hideScrollToButton=true&isIOSMobile=false",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787357964095,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/stylesheets/hubspot-theme.stable.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357964095,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/bundles/hubspot-theme.stable.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357964096,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/head-dlb/static-1.5007/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357964096,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/sass/visitor.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357964096,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/hubspot-dlb/static-2.1882/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357964096,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/react-dlb/static-1.88/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357964096,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30510/bundles/visitor.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357964127,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/i18n-data-data-modern-locales-en-us.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357964128,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.9449/audio/notification.mp3",
+    "resourceType": "media"
+  },
+  {
+    "ts": 1787357964134,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/ex/whisper-core.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357964143,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357964143,
+    "method": "POST",
+    "url": "https://app.hubspot.com/api/cartographer/v1/rhumb?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787357964144,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbKR1uqkQRJFy55dvAwzb5pXJmAvV_mJGXJifUr0UFvaUQhC0xjzigQyt87qbWr-C-7mbmHZPH1y2YTMcfIJVLNfe2qDMKSfCYDlOoR8le4Vca9WUuK16bn9FVXdeIb_AhxFsTBmgxoUOqTlfqtQ3T66Bskx5ZRRbwYsPwnTLInqCCMKNtg",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357964144,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbKR1uqkQRJFy55dvAwzb5pXJmAvV_mJGXJifUr0UFvaUQhC0xjzigQyt87qbWr-C-7mbmHZPH1y2YTMcfIJVLNfe2qDMKSfCYDlOoR8le4Vca9WUuK16bn9FVXdeIb_AhxFsTBmgxoUOqTlfqtQ3T66Bskx5ZRRbwYsPwnTLInqCCMKNtg",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357964148,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/static-1.10104/whisper-core-entry.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357964521,
+    "method": "GET",
+    "url": "https://6391927.fs1.hubspotusercontent-na1.net/hub/6391927/hubfs/Yellow%20Hubexo%20Star%20with%20grey%20background.png?width=108&height=108",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357964933,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/find?filter={%22limit%22:25,%22offset%22:0,%22orderBy%22:%22desc%22,%22sortBy%22:%22modifiedAt%22,%22folderId%22:96484,%22ownerId%22:%22309432%22}",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357964933,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/find?filter={%22limit%22:25,%22offset%22:0,%22orderBy%22:%22desc%22,%22sortBy%22:%22modifiedAt%22,%22folderId%22:96485,%22ownerId%22:%22309432%22}",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357964933,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/find?filter={%22limit%22:25,%22offset%22:0,%22orderBy%22:%22desc%22,%22sortBy%22:%22modifiedAt%22,%22folderId%22:96486,%22ownerId%22:%22309432%22}",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357964933,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project-pipeline/detail/find?filter={%22limit%22:25,%22offset%22:0,%22orderBy%22:%22desc%22,%22sortBy%22:%22modifiedAt%22,%22folderId%22:96487,%22ownerId%22:%22309432%22}",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357968578,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/cartographer/v1/ipl",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787357970028,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/main/search",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787357971433,
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357971433,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-C13ROxSa.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971433,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-DikObkkV.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357971439,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787357971440,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787357971440,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/icon-DDe2w4N1.ttf?yrstwa",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787357971443,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-B9h3q8Mh.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971443,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/auth-us-DXLDJboO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971443,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/store-B3Y3Xjap.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971443,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useTranslation-wJzaFeAQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971443,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Button-U3VLWa-P.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971443,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/routes-BIgTZT2O.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971443,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/js.cookie-CV8iV66_.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971443,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/customStorageIdb-GqWO3EqQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971443,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/errorboundary-Czm0VpZW.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971444,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-J8GeE7Zf.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357971453,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-D-Y543YL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971453,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-B4pVXKMY.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971454,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/badges-DOmowkY9.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971454,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Avatar-vtSVaiN-.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971454,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useSlot-g-WRj9JV.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971454,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Chip-CQ_ghPcU.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971454,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/SkeletonLoader-hlVJTaEz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971454,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Skeleton-CdsCJXpy.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971454,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-DrEAdJol.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971454,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dividerClasses-D9E7qWeK.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971454,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/i18next-fSMGrDDu.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971454,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-CZEioali.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357971455,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMDatepicker-D_mQB-7l.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971455,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-layout-theme-sGddTJmD.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971456,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Popper-kpos8DLH.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971456,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Slide-BltzmXrz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971457,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMLoader-CWtIHy35.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971457,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/module-avatar-BRUKBGPZ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971457,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/styles-P-6KUo5B.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971457,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-debounce-CnbU-_A4.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971457,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/main-content-BR06idCf.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971457,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/core-utils-C-d6RM97.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971457,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/posthog-CDTsIsM8.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971457,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Divider-Md3rF5aJ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971457,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-CrfRig2L.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971457,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-1f-rrE4U.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357971457,
+    "method": "GET",
+    "url": "https://js.hs-scripts.com/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971463,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/project-fndy2X2x.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971463,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/empty-project-DdOzut7i.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971463,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-kHvg-FbA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971463,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/filter-bid-date-BJ2b-8dm.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971463,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/AccordionSummary-pLXa1gJM.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971463,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Collapse-ChIw-6hA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/highlightWords-DuOfJJdd.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/constants-D0PtETOL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-_FWmv6J1.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/callSnackbar-CtIX-Oiz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/helpers-cRE_A5QO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/loader-row-FZ4EutDP.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/DialogTitle-Be1jWO00.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-BPORHqzB.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971467,
+    "method": "GET",
+    "url": "https://js.usemessages.com/conversations-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971468,
+    "method": "GET",
+    "url": "https://js.hs-analytics.net/analytics/1787357700000/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971468,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/6391927/banner.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971468,
+    "method": "GET",
+    "url": "https://js.hscollectedforms.net/collectedforms.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971468,
+    "method": "GET",
+    "url": "https://js.hsadspixel.net/pixels.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971468,
+    "method": "GET",
+    "url": "https://js.hubspot.com/web-interactives-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971469,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=05271098cb334d10b283b2fc78741865&traceId=05271098cb334d10b283b2fc78741865",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357971471,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787357971484,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=16848ce352c37ba043d6fd55be4d2680",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357971501,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fsearch&utk=16848ce352c37ba043d6fd55be4d2680&__hstc=160009826.16848ce352c37ba043d6fd55be4d2680.1787357971470.1787357971470.1787357971470.1&__hssc=160009826.1.1787357971470",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787357971769,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/array/phc_pb2QUwQuAFKHGqUrUVsvqVZYemKof0A5foqZXYUoe9J/config.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357971771,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787357971770&ver=1.376.0&compression=base64",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787357971771,
+    "method": "GET",
+    "url": "https://perf-na1.hsforms.com/embed/v3/counters.gif?key=config-loaded-success&value=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357971772,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/static/surveys.js?v=1.376.0",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357972098,
+    "method": "GET",
+    "url": "https://app.hubspot.com/conversations-visitor/6391927/threads/utk/05271098cb334d10b283b2fc78741865?uuid=7cc515cf5aab41a6bf0bcf3c8520f335&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=&domain=stage-onebid.us.bci-tnlm.com&inApp53=false&messagesUtk=05271098cb334d10b283b2fc78741865&url=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fsearch&inline=false&isFullscreen=false&globalCookieOptOut=&isFirstVisitorSession=false&isAttachmentDisabled=false&isInitialInputFocusDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hideScrollToButton=true&isIOSMobile=false",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787357972372,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/posting-type",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357972372,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/save-search-project?limit=10&offset=0&sortBy=name&orderBy=asc&mode=list",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357972372,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/search/project",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357972380,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/stylesheets/hubspot-theme.stable.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357972380,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/bundles/hubspot-theme.stable.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357972380,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/head-dlb/static-1.5007/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357972380,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/sass/visitor.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787357972386,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/hubspot-dlb/static-2.1882/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357972386,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/react-dlb/static-1.88/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357972386,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30510/bundles/visitor.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357972395,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/i18n-data-data-modern-locales-en-us.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357972397,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.9449/audio/notification.mp3",
+    "resourceType": "media"
+  },
+  {
+    "ts": 1787357972402,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/ex/whisper-core.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357972409,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357972409,
+    "method": "POST",
+    "url": "https://app.hubspot.com/api/cartographer/v1/rhumb?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787357972409,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbLq5DfUHpTc8Wcfk64p_uZiWI_dXwMyjg3eZNFsqI8yMN3VBnFnhEdbYMORd6TqLEQo_mNsn_Xtmtfcx3P_B5lklBRme43YPyznRHUCcW9wPCJwmjXgKGr0OQ-9KMC7zH9AOehVyB-Azc6kK8NfdIjSL7b7tVnEbm37zoV6gr5TJI2f9JQ",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357972409,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbLq5DfUHpTc8Wcfk64p_uZiWI_dXwMyjg3eZNFsqI8yMN3VBnFnhEdbYMORd6TqLEQo_mNsn_Xtmtfcx3P_B5lklBRme43YPyznRHUCcW9wPCJwmjXgKGr0OQ-9KMC7zH9AOehVyB-Azc6kK8NfdIjSL7b7tVnEbm37zoV6gr5TJI2f9JQ",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357972415,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/static-1.10104/whisper-core-entry.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787357972723,
+    "method": "GET",
+    "url": "https://6391927.fs1.hubspotusercontent-na1.net/hub/6391927/hubfs/Yellow%20Hubexo%20Star%20with%20grey%20background.png?width=108&height=108",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787357973747,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/search/project",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787357977105,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/cartographer/v1/ipl",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787357982717,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/metrics/v1/frontend/send",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358002420,
+    "method": "POST",
+    "url": "https://app.hubspot.com/api/cartographer/v1/performance?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358032389,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/metrics/v1/frontend/custom/send?hs_static_app=conversations-visitor-ui&hs_static_app_version=static-1.30510&metrics_js_version=2.1882",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358038103,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/cartographer/v1/ipl",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358040002,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/main/project/5752707",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787358041509,
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358041509,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-C13ROxSa.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041509,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-DikObkkV.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358041519,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358041519,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358041519,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/icon-DDe2w4N1.ttf?yrstwa",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358041521,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-B9h3q8Mh.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041521,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/auth-us-DXLDJboO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041521,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/store-B3Y3Xjap.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041521,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useTranslation-wJzaFeAQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041521,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Button-U3VLWa-P.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041521,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/routes-BIgTZT2O.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041522,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/js.cookie-CV8iV66_.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041522,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/customStorageIdb-GqWO3EqQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041522,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/errorboundary-Czm0VpZW.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041522,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-J8GeE7Zf.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358041531,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-D-Y543YL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041531,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-B4pVXKMY.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041531,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/badges-DOmowkY9.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041531,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Avatar-vtSVaiN-.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041531,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useSlot-g-WRj9JV.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041532,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Chip-CQ_ghPcU.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041532,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/SkeletonLoader-hlVJTaEz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041532,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Skeleton-CdsCJXpy.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041532,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-DrEAdJol.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041532,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dividerClasses-D9E7qWeK.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041532,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/i18next-fSMGrDDu.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041532,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-CZEioali.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358041532,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMDatepicker-D_mQB-7l.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041532,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-layout-theme-sGddTJmD.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041532,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Popper-kpos8DLH.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041533,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Slide-BltzmXrz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041533,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMLoader-CWtIHy35.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041533,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/module-avatar-BRUKBGPZ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041533,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/styles-P-6KUo5B.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041533,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-debounce-CnbU-_A4.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041533,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/main-content-BR06idCf.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041533,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/core-utils-C-d6RM97.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041533,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/posthog-CDTsIsM8.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041533,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Divider-Md3rF5aJ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041533,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-CrfRig2L.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041533,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-1f-rrE4U.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358041533,
+    "method": "GET",
+    "url": "https://js.hs-scripts.com/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041539,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/ProjectUS-kfWdaa_V.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041539,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-kHvg-FbA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041539,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/highlightWords-DuOfJJdd.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041540,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/constants-D0PtETOL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041540,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-_FWmv6J1.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041540,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/callSnackbar-CtIX-Oiz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041540,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/helpers-cRE_A5QO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041540,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/maskingText-DfIUrH0y.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041540,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Collapse-ChIw-6hA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041540,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Grid-BEaeEOCr.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041540,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-BPORHqzB.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041540,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/ProjectUS-Cr8Bbm5p.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358041542,
+    "method": "GET",
+    "url": "https://js.usemessages.com/conversations-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041543,
+    "method": "GET",
+    "url": "https://js.hs-analytics.net/analytics/1787357700000/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041543,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/6391927/banner.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041543,
+    "method": "GET",
+    "url": "https://js.hscollectedforms.net/collectedforms.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041543,
+    "method": "GET",
+    "url": "https://js.hsadspixel.net/pixels.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041543,
+    "method": "GET",
+    "url": "https://js.hubspot.com/web-interactives-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041545,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=05271098cb334d10b283b2fc78741865&traceId=05271098cb334d10b283b2fc78741865",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358041557,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=4dc8d7a7776ac581de930f62a46ad261",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358041576,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fproject%2F5752707&utk=4dc8d7a7776ac581de930f62a46ad261&__hstc=160009826.4dc8d7a7776ac581de930f62a46ad261.1787358041546.1787358041546.1787358041546.1&__hssc=160009826.1.1787358041546",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358041849,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/array/phc_pb2QUwQuAFKHGqUrUVsvqVZYemKof0A5foqZXYUoe9J/config.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358041850,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787358041849&ver=1.376.0&compression=base64",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358041850,
+    "method": "GET",
+    "url": "https://perf-na1.hsforms.com/embed/v3/counters.gif?key=config-loaded-success&value=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358041851,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/static/surveys.js?v=1.376.0",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358042170,
+    "method": "GET",
+    "url": "https://app.hubspot.com/conversations-visitor/6391927/threads/utk/05271098cb334d10b283b2fc78741865?uuid=262c2eb4a8bb41c4882eda3ddfb29805&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=&domain=stage-onebid.us.bci-tnlm.com&inApp53=false&messagesUtk=05271098cb334d10b283b2fc78741865&url=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fproject%2F5752707&inline=false&isFullscreen=false&globalCookieOptOut=&isFirstVisitorSession=false&isAttachmentDisabled=false&isInitialInputFocusDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hideScrollToButton=true&isIOSMobile=false",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787358042243,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project/5752707",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358042487,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/stylesheets/hubspot-theme.stable.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358042487,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/bundles/hubspot-theme.stable.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358042487,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/head-dlb/static-1.5007/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358042487,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/sass/visitor.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358042488,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/hubspot-dlb/static-2.1882/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358042488,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/react-dlb/static-1.88/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358042488,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30510/bundles/visitor.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358042506,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/i18n-data-data-modern-locales-en-us.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358042508,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.9449/audio/notification.mp3",
+    "resourceType": "media"
+  },
+  {
+    "ts": 1787358042516,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/ex/whisper-core.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358042525,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358042525,
+    "method": "POST",
+    "url": "https://app.hubspot.com/api/cartographer/v1/rhumb?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358042525,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbKszdvgKHzE4ikguA31ks4-IkwSpZWovO_UvCcpOg16gjboM3OJm3CfQxI1f7pDOKrjt0Rijd6tUnevpz7p-81o7kIgMnYIrWag_QRkefU9Y08VJQtUjwvqf1TdBoKAN4w97RFStXozYjEEnQt-hXvvDFz2R_PP2pNaQ0B_y0E2lvoB2ow",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358042525,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbKszdvgKHzE4ikguA31ks4-IkwSpZWovO_UvCcpOg16gjboM3OJm3CfQxI1f7pDOKrjt0Rijd6tUnevpz7p-81o7kIgMnYIrWag_QRkefU9Y08VJQtUjwvqf1TdBoKAN4w97RFStXozYjEEnQt-hXvvDFz2R_PP2pNaQ0B_y0E2lvoB2ow",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358042529,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/static-1.10104/whisper-core-entry.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358042533,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358042850,
+    "method": "GET",
+    "url": "https://6391927.fs1.hubspotusercontent-na1.net/hub/6391927/hubfs/Yellow%20Hubexo%20Star%20with%20grey%20background.png?width=108&height=108",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358043872,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358047172,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/cartographer/v1/ipl",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358051746,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/main/project/5695136",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787358052852,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/metrics/v1/frontend/send",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358053105,
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358053105,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-C13ROxSa.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053105,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-DikObkkV.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358053115,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358053115,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358053115,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358053115,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/icon-DDe2w4N1.ttf?yrstwa",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358053117,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-B9h3q8Mh.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053118,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/auth-us-DXLDJboO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053118,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/store-B3Y3Xjap.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053118,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useTranslation-wJzaFeAQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053118,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Button-U3VLWa-P.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053118,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/routes-BIgTZT2O.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053118,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/js.cookie-CV8iV66_.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053118,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/customStorageIdb-GqWO3EqQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053118,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/errorboundary-Czm0VpZW.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053119,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-J8GeE7Zf.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358053127,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-D-Y543YL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053127,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-B4pVXKMY.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053128,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/badges-DOmowkY9.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053128,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Avatar-vtSVaiN-.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053128,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useSlot-g-WRj9JV.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053129,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Chip-CQ_ghPcU.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053129,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/SkeletonLoader-hlVJTaEz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053130,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Skeleton-CdsCJXpy.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053130,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-DrEAdJol.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053130,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dividerClasses-D9E7qWeK.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053130,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/i18next-fSMGrDDu.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053130,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-CZEioali.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358053130,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMDatepicker-D_mQB-7l.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053130,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-layout-theme-sGddTJmD.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053130,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Popper-kpos8DLH.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053130,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Slide-BltzmXrz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053131,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMLoader-CWtIHy35.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053131,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/module-avatar-BRUKBGPZ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053131,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/styles-P-6KUo5B.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053131,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-debounce-CnbU-_A4.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053131,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/main-content-BR06idCf.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053131,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/core-utils-C-d6RM97.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053131,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/posthog-CDTsIsM8.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053131,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Divider-Md3rF5aJ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053131,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-CrfRig2L.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053131,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-1f-rrE4U.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358053131,
+    "method": "GET",
+    "url": "https://js.hs-scripts.com/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053139,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/ProjectUS-kfWdaa_V.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053139,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-kHvg-FbA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053139,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/highlightWords-DuOfJJdd.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053139,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/constants-D0PtETOL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053139,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-_FWmv6J1.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053139,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/callSnackbar-CtIX-Oiz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053140,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/helpers-cRE_A5QO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053140,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/maskingText-DfIUrH0y.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053140,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Collapse-ChIw-6hA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053140,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Grid-BEaeEOCr.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053140,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-BPORHqzB.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053140,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/ProjectUS-Cr8Bbm5p.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358053402,
+    "method": "GET",
+    "url": "https://js.usemessages.com/conversations-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053402,
+    "method": "GET",
+    "url": "https://js.hs-analytics.net/analytics/1787358000000/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053402,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/6391927/banner.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053402,
+    "method": "GET",
+    "url": "https://js.hscollectedforms.net/collectedforms.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053402,
+    "method": "GET",
+    "url": "https://js.hsadspixel.net/pixels.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053402,
+    "method": "GET",
+    "url": "https://js.hubspot.com/web-interactives-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053405,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=05271098cb334d10b283b2fc78741865&traceId=05271098cb334d10b283b2fc78741865",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358053406,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358053422,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fproject%2F5695136",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358053427,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358053443,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/array/phc_pb2QUwQuAFKHGqUrUVsvqVZYemKof0A5foqZXYUoe9J/config.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053443,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project/5695136",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358053445,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787358053444&ver=1.376.0&compression=base64",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358053447,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/static/surveys.js?v=1.376.0",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358053688,
+    "method": "GET",
+    "url": "https://perf-na1.hsforms.com/embed/v3/counters.gif?key=config-loaded-success&value=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358054019,
+    "method": "GET",
+    "url": "https://app.hubspot.com/conversations-visitor/6391927/threads/utk/05271098cb334d10b283b2fc78741865?uuid=ada1cdfaf8e9459cbebc2ce1c50d7bbd&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=&domain=stage-onebid.us.bci-tnlm.com&inApp53=false&messagesUtk=05271098cb334d10b283b2fc78741865&url=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fproject%2F5695136&inline=false&isFullscreen=false&globalCookieOptOut=&isFirstVisitorSession=false&isAttachmentDisabled=false&isInitialInputFocusDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hideScrollToButton=true&isIOSMobile=false",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787358054413,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/stylesheets/hubspot-theme.stable.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358054413,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/bundles/hubspot-theme.stable.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358054414,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/head-dlb/static-1.5007/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358054414,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/sass/visitor.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358054414,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/hubspot-dlb/static-2.1882/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358054414,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/react-dlb/static-1.88/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358054414,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30510/bundles/visitor.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358054432,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/i18n-data-data-modern-locales-en-us.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358054433,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.9449/audio/notification.mp3",
+    "resourceType": "media"
+  },
+  {
+    "ts": 1787358054439,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/ex/whisper-core.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358054441,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/static-1.10104/whisper-core-entry.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358054448,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358054448,
+    "method": "POST",
+    "url": "https://app.hubspot.com/api/cartographer/v1/rhumb?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358054448,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbLm59ESfSILrr2wCgKY1VAaZvPmtRA9pZF_-wrZpd347PfdqRy1Zswlie5kQiS-JPRs88ET2-MyXIF_jibT6ovvQ9V9ctnQVh4IEXAt3h6O7aiiDle45yyG4dsbunNM2PecrazLBtCjgGIPyR1wPaXIEj0xqYrt3gbdfF9FP-Q9Vj0CP9I",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358054448,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbLm59ESfSILrr2wCgKY1VAaZvPmtRA9pZF_-wrZpd347PfdqRy1Zswlie5kQiS-JPRs88ET2-MyXIF_jibT6ovvQ9V9ctnQVh4IEXAt3h6O7aiiDle45yyG4dsbunNM2PecrazLBtCjgGIPyR1wPaXIEj0xqYrt3gbdfF9FP-Q9Vj0CP9I",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358054737,
+    "method": "GET",
+    "url": "https://6391927.fs1.hubspotusercontent-na1.net/hub/6391927/hubfs/Yellow%20Hubexo%20Star%20with%20grey%20background.png?width=108&height=108",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358059020,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/cartographer/v1/ipl",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358062948,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/main/project/5702381",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787358064446,
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358064447,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-C13ROxSa.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064447,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-DikObkkV.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358064453,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358064454,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358064454,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358064454,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/icon-DDe2w4N1.ttf?yrstwa",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358064455,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-B9h3q8Mh.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064456,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/auth-us-DXLDJboO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064456,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/store-B3Y3Xjap.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064456,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useTranslation-wJzaFeAQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064456,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Button-U3VLWa-P.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064456,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/routes-BIgTZT2O.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064456,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/js.cookie-CV8iV66_.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064456,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/customStorageIdb-GqWO3EqQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064456,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/errorboundary-Czm0VpZW.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064456,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-J8GeE7Zf.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358064464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-D-Y543YL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-B4pVXKMY.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/badges-DOmowkY9.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Avatar-vtSVaiN-.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useSlot-g-WRj9JV.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Chip-CQ_ghPcU.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/SkeletonLoader-hlVJTaEz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064464,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Skeleton-CdsCJXpy.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064465,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-DrEAdJol.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064465,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dividerClasses-D9E7qWeK.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/i18next-fSMGrDDu.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-CZEioali.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMDatepicker-D_mQB-7l.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-layout-theme-sGddTJmD.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Popper-kpos8DLH.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Slide-BltzmXrz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMLoader-CWtIHy35.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/module-avatar-BRUKBGPZ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/styles-P-6KUo5B.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-debounce-CnbU-_A4.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/main-content-BR06idCf.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/core-utils-C-d6RM97.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/posthog-CDTsIsM8.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Divider-Md3rF5aJ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-CrfRig2L.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-1f-rrE4U.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358064466,
+    "method": "GET",
+    "url": "https://js.hs-scripts.com/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064472,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/ProjectUS-kfWdaa_V.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064472,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-kHvg-FbA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064472,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/highlightWords-DuOfJJdd.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064472,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/constants-D0PtETOL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064472,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-_FWmv6J1.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064472,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/callSnackbar-CtIX-Oiz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064472,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/helpers-cRE_A5QO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064472,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/maskingText-DfIUrH0y.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064472,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Collapse-ChIw-6hA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064472,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Grid-BEaeEOCr.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064472,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-BPORHqzB.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064472,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/ProjectUS-Cr8Bbm5p.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358064481,
+    "method": "GET",
+    "url": "https://js.usemessages.com/conversations-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064482,
+    "method": "GET",
+    "url": "https://js.hs-analytics.net/analytics/1787358000000/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064482,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/6391927/banner.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064482,
+    "method": "GET",
+    "url": "https://js.hscollectedforms.net/collectedforms.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064482,
+    "method": "GET",
+    "url": "https://js.hsadspixel.net/pixels.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064482,
+    "method": "GET",
+    "url": "https://js.hubspot.com/web-interactives-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064483,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=05271098cb334d10b283b2fc78741865&traceId=05271098cb334d10b283b2fc78741865",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358064485,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358064517,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=71c96f03f2a604b70642c28e77257090",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358064517,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fproject%2F5702381&utk=71c96f03f2a604b70642c28e77257090&__hstc=160009826.71c96f03f2a604b70642c28e77257090.1787358064484.1787358064484.1787358064484.1&__hssc=160009826.1.1787358064484",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358064778,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/array/phc_pb2QUwQuAFKHGqUrUVsvqVZYemKof0A5foqZXYUoe9J/config.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358064778,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project/5702381",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358064780,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787358064779&ver=1.376.0&compression=base64",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358064784,
+    "method": "GET",
+    "url": "https://perf-na1.hsforms.com/embed/v3/counters.gif?key=config-loaded-success&value=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358065140,
+    "method": "GET",
+    "url": "https://app.hubspot.com/conversations-visitor/6391927/threads/utk/05271098cb334d10b283b2fc78741865?uuid=c6aebc7625114fa6add8b3c2c27acf28&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=&domain=stage-onebid.us.bci-tnlm.com&inApp53=false&messagesUtk=05271098cb334d10b283b2fc78741865&url=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fproject%2F5702381&inline=false&isFullscreen=false&globalCookieOptOut=&isFirstVisitorSession=false&isAttachmentDisabled=false&isInitialInputFocusDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hideScrollToButton=true&isIOSMobile=false",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787358065464,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/static/surveys.js?v=1.376.0",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358065467,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/stylesheets/hubspot-theme.stable.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358065467,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/bundles/hubspot-theme.stable.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358065467,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/head-dlb/static-1.5007/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358065467,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/sass/visitor.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358065467,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/hubspot-dlb/static-2.1882/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358065467,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/react-dlb/static-1.88/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358065467,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30510/bundles/visitor.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358065485,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/i18n-data-data-modern-locales-en-us.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358065486,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.9449/audio/notification.mp3",
+    "resourceType": "media"
+  },
+  {
+    "ts": 1787358065492,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/ex/whisper-core.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358065494,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/static-1.10104/whisper-core-entry.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358065500,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358065501,
+    "method": "POST",
+    "url": "https://app.hubspot.com/api/cartographer/v1/rhumb?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358065501,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbIaFYw1TJ6TNvGfwpNQ2lBuFLhMPJ0JV7pnKL1pyieLwHm5YTyY4O-jSHDoN9V-1iTIq8ZsTWFGtwtvRyUjgD4d0QcUII33KFGzb_kvWYjw5hcqd1Ft_Ag_pBx20GIQTPmHlQR1v0ybolg4qj54CNiBM8F73wsEMOhfS0xqnPZuKJhW4FA",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358065501,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbIaFYw1TJ6TNvGfwpNQ2lBuFLhMPJ0JV7pnKL1pyieLwHm5YTyY4O-jSHDoN9V-1iTIq8ZsTWFGtwtvRyUjgD4d0QcUII33KFGzb_kvWYjw5hcqd1Ft_Ag_pBx20GIQTPmHlQR1v0ybolg4qj54CNiBM8F73wsEMOhfS0xqnPZuKJhW4FA",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358065781,
+    "method": "GET",
+    "url": "https://6391927.fs1.hubspotusercontent-na1.net/hub/6391927/hubfs/Yellow%20Hubexo%20Star%20with%20grey%20background.png?width=108&height=108",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358066183,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/api/v1/account/auth/refresh-token",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358067215,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/project/5702381",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358070143,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/cartographer/v1/ipl",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358075589,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787358075595,
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358075596,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-C13ROxSa.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075596,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-DikObkkV.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358075601,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358075601,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358075602,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358075602,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/icon-DDe2w4N1.ttf?yrstwa",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358075604,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-B9h3q8Mh.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075604,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/auth-us-DXLDJboO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075604,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/store-B3Y3Xjap.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075604,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useTranslation-wJzaFeAQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075604,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Button-U3VLWa-P.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075604,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/routes-BIgTZT2O.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075604,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/js.cookie-CV8iV66_.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075604,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/customStorageIdb-GqWO3EqQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075604,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/errorboundary-Czm0VpZW.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075604,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-J8GeE7Zf.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358075611,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-D-Y543YL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075612,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-B4pVXKMY.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075613,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/badges-DOmowkY9.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075613,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Avatar-vtSVaiN-.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075613,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useSlot-g-WRj9JV.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075613,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Chip-CQ_ghPcU.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075613,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/SkeletonLoader-hlVJTaEz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075613,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Skeleton-CdsCJXpy.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075613,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-DrEAdJol.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075613,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dividerClasses-D9E7qWeK.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075613,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/i18next-fSMGrDDu.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075613,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-CZEioali.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMDatepicker-D_mQB-7l.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-layout-theme-sGddTJmD.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Popper-kpos8DLH.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Slide-BltzmXrz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMLoader-CWtIHy35.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/module-avatar-BRUKBGPZ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/styles-P-6KUo5B.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-debounce-CnbU-_A4.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/main-content-BR06idCf.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/core-utils-C-d6RM97.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/posthog-CDTsIsM8.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Divider-Md3rF5aJ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-CrfRig2L.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-1f-rrE4U.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358075614,
+    "method": "GET",
+    "url": "https://js.hs-scripts.com/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075618,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/DashboardUS-Bxv1xw5M.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075618,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-kHvg-FbA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075618,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/filter-bid-date-BJ2b-8dm.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075618,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/AccordionSummary-pLXa1gJM.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075618,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Collapse-ChIw-6hA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075618,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-BDBNaMi9.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075618,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/constants-D0PtETOL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075618,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/helpers-cRE_A5QO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075618,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/loader-row-FZ4EutDP.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075618,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/callSnackbar-CtIX-Oiz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075618,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/DialogTitle-Be1jWO00.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075631,
+    "method": "GET",
+    "url": "https://js.usemessages.com/conversations-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075632,
+    "method": "GET",
+    "url": "https://js.hs-analytics.net/analytics/1787358000000/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075632,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/6391927/banner.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075632,
+    "method": "GET",
+    "url": "https://js.hscollectedforms.net/collectedforms.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075632,
+    "method": "GET",
+    "url": "https://js.hsadspixel.net/pixels.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075632,
+    "method": "GET",
+    "url": "https://js.hubspot.com/web-interactives-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075633,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=05271098cb334d10b283b2fc78741865&traceId=05271098cb334d10b283b2fc78741865",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358075634,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358075642,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fdashboard&utk=09a4cb020bfee74d4ec96bee3447ebf9&__hstc=160009826.09a4cb020bfee74d4ec96bee3447ebf9.1787358075634.1787358075634.1787358075634.1&__hssc=160009826.1.1787358075634",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358075663,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=09a4cb020bfee74d4ec96bee3447ebf9",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358075911,
+    "method": "GET",
+    "url": "https://perf-na1.hsforms.com/embed/v3/counters.gif?key=config-loaded-success&value=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358075932,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/array/phc_pb2QUwQuAFKHGqUrUVsvqVZYemKof0A5foqZXYUoe9J/config.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358075932,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/posting-type",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358075932,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/save-search-project?limit=10&offset=0&sortBy=name&orderBy=asc&mode=list",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358075932,
+    "method": "GET",
+    "url": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358075934,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/illustration-dashboard-onebid-banner-DSKahOPT.webp",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358075936,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787358075935&ver=1.376.0&compression=base64",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358075943,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/static/surveys.js?v=1.376.0",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358076258,
+    "method": "GET",
+    "url": "https://app.hubspot.com/conversations-visitor/6391927/threads/utk/05271098cb334d10b283b2fc78741865?uuid=dd7fdace2cfa40b6bfe5f539c11bf16d&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=&domain=stage-onebid.us.bci-tnlm.com&inApp53=false&messagesUtk=05271098cb334d10b283b2fc78741865&url=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fdashboard&inline=false&isFullscreen=false&globalCookieOptOut=&isFirstVisitorSession=false&isAttachmentDisabled=false&isInitialInputFocusDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hideScrollToButton=true&isIOSMobile=false",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787358076594,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/stylesheets/hubspot-theme.stable.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358076594,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/bundles/hubspot-theme.stable.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358076594,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/head-dlb/static-1.5007/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358076594,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/sass/visitor.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358076600,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/hubspot-dlb/static-2.1882/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358076600,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/react-dlb/static-1.88/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358076600,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30510/bundles/visitor.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358076610,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/i18n-data-data-modern-locales-en-us.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358076611,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.9449/audio/notification.mp3",
+    "resourceType": "media"
+  },
+  {
+    "ts": 1787358076616,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/ex/whisper-core.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358076618,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/static-1.10104/whisper-core-entry.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358076624,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358076624,
+    "method": "POST",
+    "url": "https://app.hubspot.com/api/cartographer/v1/rhumb?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358076624,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbLFmVq7kAuOekkGFhH-GR78rJCOr4-FYw1o6rkjVtfugy6E9dMZzP6lctjZVEx5_ahL_YnqEN1cN1Ilat7KSXh7tz91pViDswyAMThbnk98q-KRzwrUsQ3SvtOlh9vSr_1rVr-TnYh3snJMsRaiy4bbe6KOjtXAtP3mZtHQQ6DsIH_ZzN8",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358076624,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbLFmVq7kAuOekkGFhH-GR78rJCOr4-FYw1o6rkjVtfugy6E9dMZzP6lctjZVEx5_ahL_YnqEN1cN1Ilat7KSXh7tz91pViDswyAMThbnk98q-KRzwrUsQ3SvtOlh9vSr_1rVr-TnYh3snJMsRaiy4bbe6KOjtXAtP3mZtHQQ6DsIH_ZzN8",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358076904,
+    "method": "GET",
+    "url": "https://6391927.fs1.hubspotusercontent-na1.net/hub/6391927/hubfs/Yellow%20Hubexo%20Star%20with%20grey%20background.png?width=108&height=108",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358079747,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/NotificationsUS-CFoGBnlA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358081043,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/notification/list?limit=20&offset=0",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358081261,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/cartographer/v1/ipl",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358082786,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/notification/content?emailId=22a84d27-c946-4482-a5c0-9b92dda603ae&module=SaveSearchDaily",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358083292,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/saved-search-daily-sisltLbj.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358083292,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/template-layout-CwOwuAQH.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358083292,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-BPORHqzB.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085610,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/main/dashboard",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787358085617,
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358085617,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-C13ROxSa.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085617,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/index-DikObkkV.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358085623,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358085623,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358085624,
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtammT.ttf",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358085624,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/icon-DDe2w4N1.ttf?yrstwa",
+    "resourceType": "font"
+  },
+  {
+    "ts": 1787358085625,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-B9h3q8Mh.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085625,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/auth-us-DXLDJboO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085625,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/store-B3Y3Xjap.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085625,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useTranslation-wJzaFeAQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085625,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Button-U3VLWa-P.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085625,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/routes-BIgTZT2O.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085626,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/js.cookie-CV8iV66_.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085626,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/customStorageIdb-GqWO3EqQ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085626,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/errorboundary-Czm0VpZW.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085626,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/app-J8GeE7Zf.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358085633,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-D-Y543YL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085633,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-B4pVXKMY.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085633,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/badges-DOmowkY9.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085633,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Avatar-vtSVaiN-.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085634,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/useSlot-g-WRj9JV.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085634,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Chip-CQ_ghPcU.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085634,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/SkeletonLoader-hlVJTaEz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085634,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Skeleton-CdsCJXpy.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085634,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-DrEAdJol.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085634,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dividerClasses-D9E7qWeK.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085634,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/i18next-fSMGrDDu.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085634,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMSelect-CZEioali.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358085634,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMDatepicker-D_mQB-7l.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085634,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-layout-theme-sGddTJmD.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Popper-kpos8DLH.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Slide-BltzmXrz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/TNLMLoader-CWtIHy35.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/module-avatar-BRUKBGPZ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/styles-P-6KUo5B.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/use-debounce-CnbU-_A4.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/main-content-BR06idCf.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/core-utils-C-d6RM97.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/posthog-CDTsIsM8.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Divider-Md3rF5aJ.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-CrfRig2L.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-1f-rrE4U.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358085635,
+    "method": "GET",
+    "url": "https://js.hs-scripts.com/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085640,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/DashboardUS-Bxv1xw5M.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085640,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-kHvg-FbA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085640,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/filter-bid-date-BJ2b-8dm.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085640,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/AccordionSummary-pLXa1gJM.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085640,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/Collapse-ChIw-6hA.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085640,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/layout-BDBNaMi9.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085640,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/constants-D0PtETOL.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085640,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/helpers-cRE_A5QO.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085640,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/loader-row-FZ4EutDP.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085640,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/callSnackbar-CtIX-Oiz.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085640,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/DialogTitle-Be1jWO00.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085651,
+    "method": "GET",
+    "url": "https://js.usemessages.com/conversations-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085652,
+    "method": "GET",
+    "url": "https://js.hs-analytics.net/analytics/1787358000000/6391927.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085652,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/6391927/banner.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085652,
+    "method": "GET",
+    "url": "https://js.hscollectedforms.net/collectedforms.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085652,
+    "method": "GET",
+    "url": "https://js.hsadspixel.net/pixels.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085652,
+    "method": "GET",
+    "url": "https://js.hubspot.com/web-interactives-embed.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085653,
+    "method": "GET",
+    "url": "https://api.hubspot.com/livechat-public/v1/message/public?portalId=6391927&conversations-embed=static-1.28065&mobile=false&messagesUtk=05271098cb334d10b283b2fc78741865&traceId=05271098cb334d10b283b2fc78741865",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358085654,
+    "method": "GET",
+    "url": "https://js.hs-banner.com/v2/cf-location",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358085680,
+    "method": "GET",
+    "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=6391927&currentUrl=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fdashboard&utk=993904a6bee935bf2da207fdb3b42993&__hstc=160009826.993904a6bee935bf2da207fdb3b42993.1787358085654.1787358085654.1787358085654.1&__hssc=160009826.1.1787358085654",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358085684,
+    "method": "GET",
+    "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6391927&utk=993904a6bee935bf2da207fdb3b42993",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358085956,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/array/phc_pb2QUwQuAFKHGqUrUVsvqVZYemKof0A5foqZXYUoe9J/config.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358085956,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/posting-type",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358085956,
+    "method": "GET",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/save-search-project?limit=10&offset=0&sortBy=name&orderBy=asc&mode=list",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358085957,
+    "method": "GET",
+    "url": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358085959,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/illustration-dashboard-onebid-banner-DSKahOPT.webp",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358085960,
+    "method": "POST",
+    "url": "https://eu.i.posthog.com/flags/?v=2&ip=0&_=1787358085959&ver=1.376.0&compression=base64",
+    "resourceType": "fetch"
+  },
+  {
+    "ts": 1787358086009,
+    "method": "GET",
+    "url": "https://perf-na1.hsforms.com/embed/v3/counters.gif?key=config-loaded-success&value=1",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358086009,
+    "method": "GET",
+    "url": "https://eu-assets.i.posthog.com/static/surveys.js?v=1.376.0",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358086265,
+    "method": "GET",
+    "url": "https://app.hubspot.com/conversations-visitor/6391927/threads/utk/05271098cb334d10b283b2fc78741865?uuid=d32f6ed89bb745a08b7ca0bfd7a248c9&mobile=false&mobileSafari=false&hideWelcomeMessage=false&hstc=&domain=stage-onebid.us.bci-tnlm.com&inApp53=false&messagesUtk=05271098cb334d10b283b2fc78741865&url=https%3A%2F%2Fstage-onebid.us.bci-tnlm.com%2Fmain%2Fdashboard&inline=false&isFullscreen=false&globalCookieOptOut=&isFirstVisitorSession=false&isAttachmentDisabled=false&isInitialInputFocusDisabled=false&enableWidgetCookieBanner=false&isInCMS=false&hideScrollToButton=true&isIOSMobile=false",
+    "resourceType": "document"
+  },
+  {
+    "ts": 1787358086661,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/stylesheets/hubspot-theme.stable.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358086661,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/trellis-theming-assets/static-1.483/bundles/hubspot-theme.stable.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358086661,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/head-dlb/static-1.5007/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358086661,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/sass/visitor.css",
+    "resourceType": "stylesheet"
+  },
+  {
+    "ts": 1787358086662,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/hubspot-dlb/static-2.1882/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358086662,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/react-dlb/static-1.88/bundle.production.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358086662,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30510/bundles/visitor.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358086675,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.30506/i18n-data-data-modern-locales-en-us.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358086676,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/conversations-visitor-ui/static-1.9449/audio/notification.mp3",
+    "resourceType": "media"
+  },
+  {
+    "ts": 1787358086680,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/ex/whisper-core.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358086682,
+    "method": "GET",
+    "url": "https://static.hsappstatic.net/whisper-core/static-1.10104/whisper-core-entry.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358086687,
+    "method": "POST",
+    "url": "https://exceptions.hubspot.com/frontend/observability/page-tracking/store/?sentry_version=7&sentry_client=raven-js%2F3.19.1&deployable=conversations-visitor-ui",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358086687,
+    "method": "POST",
+    "url": "https://app.hubspot.com/api/cartographer/v1/rhumb?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358086687,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/feedback/survey/CSAT/1?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbKEcxfIyjA2p_TcioL_NSj36xzrZAsUy2TO-i_nubMFg1x_aDT-VfvAIK1u9-vzQQC3aQqcdxaDnTvpiPjG7jKzQd8sAuqBBUCVRpmaCRyy5HcebpO7UQWgHiaB1xwZOmPr6admxJWw9zBwHm45S50x5UyTb4zsnbPPOSl5buwXox0F9SY",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358086687,
+    "method": "GET",
+    "url": "https://app.hubspot.com/api/livechat-public/v1/thread/visitor/recent?hs_static_app=conversations-visitor-ui&hs_static_app_version=1.30510&conversations-visitor-ui=static-1.30510&traceId=05271098cb334d10b283b2fc78741865&sessionId=AMOaWbKEcxfIyjA2p_TcioL_NSj36xzrZAsUy2TO-i_nubMFg1x_aDT-VfvAIK1u9-vzQQC3aQqcdxaDnTvpiPjG7jKzQd8sAuqBBUCVRpmaCRyy5HcebpO7UQWgHiaB1xwZOmPr6admxJWw9zBwHm45S50x5UyTb4zsnbPPOSl5buwXox0F9SY",
+    "resourceType": "xhr"
+  },
+  {
+    "ts": 1787358086980,
+    "method": "GET",
+    "url": "https://6391927.fs1.hubspotusercontent-na1.net/hub/6391927/hubfs/Yellow%20Hubexo%20Star%20with%20grey%20background.png?width=108&height=108",
+    "resourceType": "image"
+  },
+  {
+    "ts": 1787358091269,
+    "method": "POST",
+    "url": "https://metrics-fe-na1.hubspot.com/cartographer/v1/ipl",
+    "resourceType": "ping"
+  },
+  {
+    "ts": 1787358092402,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/project-fndy2X2x.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358092402,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/empty-project-DdOzut7i.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358092402,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/highlightWords-DuOfJJdd.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358092402,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/queries-_FWmv6J1.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358092402,
+    "method": "GET",
+    "url": "https://stage-onebid.us.bci-tnlm.com/assets/dist-BPORHqzB.js",
+    "resourceType": "script"
+  },
+  {
+    "ts": 1787358092720,
+    "method": "POST",
+    "url": "https://api-stage-portal.bidocean.com/us/api/v1/search/project",
+    "resourceType": "xhr"
+  }
+]

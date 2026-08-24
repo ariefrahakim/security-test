@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Project opportunities and company insights"
+    />
+    <!-- Make Search engine not crawl our website -->
+    <meta name="robots" content="noindex" />
+    
+    <link rel="assetlinks.json file" href="/.well-known/assetlinks.json" />
+    <link rel="apple-app-site-association file" href="/.well-known/apple-app-site-association" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <title>Bid Ocean | A Hubexo Product</title>
+    <script type="module" crossorigin src="/assets/index-C13ROxSa.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DikObkkV.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

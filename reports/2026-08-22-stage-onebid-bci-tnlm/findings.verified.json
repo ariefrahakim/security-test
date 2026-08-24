@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "generated_at": "2026-08-22T00:21:33.458Z",
+    "generator": "deep-walk-onebid-v2.js (orchestrator-triaged)",
+    "notes": "V-01 upgraded HIGH after inspecting cookie flags (secure=false AND httpOnly=false on accessToken/refreshToken). V-04 added for double-token-storage anti-pattern."
+  },
+  "findings": [
+    {
+      "id": "V-01",
+      "module": "01-login",
+      "sev": "HIGH",
+      "confidence": "verified",
+      "category": "A05:2021 Security Misconfiguration",
+      "cwe": "CWE-1004",
+      "owasp": "A05:2021",
+      "title": "Bearer/refresh tokens delivered in non-HttpOnly, non-Secure cookies",
+      "evidence": "Cookies `accessToken` and `refreshToken` set on stage-onebid.us.bci-tnlm.com with httpOnly=false, secure=false, sameSite=Lax. Because httpOnly is false, any XSS on the origin can exfiltrate the bearer JWT via document.cookie. Because secure is false, the cookie will be sent over HTTP if HSTS is ever bypassed (e.g. new browser, private mode before HSTS pinned). Raw evidence: /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-22-stage-onebid-bci-tnlm/evidence-deep/01-login/cookies.json",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-22-stage-onebid-bci-tnlm/evidence-deep/01-login/cookies.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 6.9,
+        "note": "Impact score chained: XSS-then-cookie-theft, no direct impact without XSS foothold."
+      },
+      "chain_of_attack": "1) Attacker lands a reflected/stored XSS anywhere on stage-onebid.us.bci-tnlm.com (CSP has unsafe-inline+unsafe-eval on script-src, so escaping to script execution is trivial once injection lands). 2) Payload reads document.cookie → captures accessToken/refreshToken. 3) Attacker replays the bearer against api-stage-portal.bidocean.com/api/v1/*, taking over the victim's session. MITRE ATT&CK T1539 Steal Web Session Cookie.",
+      "recommendation": "Set accessToken and refreshToken cookies with HttpOnly=true, Secure=true, SameSite=Lax (or Strict for the refresh token). If the SPA needs to include the bearer manually, keep the access token in memory only and put the refresh token in an HttpOnly+Secure cookie scoped to the refresh endpoint path.",
+      "fix_snippet": "// server-side (Express example)\nres.cookie('accessToken', jwt, {\n  httpOnly: true,\n  secure: true,\n  sameSite: 'lax',\n  path: '/',\n  maxAge: 15 * 60 * 1000,\n});\nres.cookie('refreshToken', refresh, {\n  httpOnly: true,\n  secure: true,\n  sameSite: 'strict',\n  path: '/api/v1/account/auth/refresh',\n  maxAge: 30 * 24 * 60 * 60 * 1000,\n});",
+      "detection_rule": "Alert when Set-Cookie for `accessToken` or `refreshToken` lacks HttpOnly or Secure attributes on any auth response.",
+      "retest": "curl -sI https://stage-onebid.us.bci-tnlm.com/  # after fix, log in via the app; verify Set-Cookie: accessToken=...; HttpOnly; Secure; SameSite=Lax"
+    },
+    {
+      "id": "V-02",
+      "module": "01-login",
+      "sev": "MEDIUM",
+      "confidence": "verified",
+      "category": "A02:2021 Cryptographic Failures",
+      "cwe": "CWE-922",
+      "owasp": "A02:2021",
+      "title": "JWT persisted in localStorage under key `auth-storage`",
+      "evidence": "localStorage['auth-storage'] contains a base64url-encoded JWT (three-segment eyJ… pattern) after successful login. localStorage is readable by any script on the origin — CSP allows 'unsafe-inline' 'unsafe-eval' on script-src, so XSS impact is unmitigated. Raw evidence: /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-22-stage-onebid-bci-tnlm/evidence-deep/01-login/storage.json",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-22-stage-onebid-bci-tnlm/evidence-deep/01-login/storage.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 5.4
+      },
+      "chain_of_attack": "Any XSS → `localStorage.getItem('auth-storage')` → bearer JWT → API takeover. See V-01 chain; this is a second exfil path when the token lives in both cookie and localStorage (V-04).",
+      "recommendation": "Do not persist bearer JWTs in Web Storage. Hold access token in memory (JS closure or React state); persist only the refresh token, and only in an HttpOnly+Secure cookie.",
+      "detection_rule": "Static grep in CI for `localStorage.setItem\\((['\"])(auth|access|refresh|token|jwt)` in the frontend bundle.",
+      "retest": "After fix: log in, open DevTools → Application → Local Storage → verify no key named `auth-storage` (or that its value is opaque and non-token-shaped)."
+    },
+    {
+      "id": "V-04",
+      "module": "01-login",
+      "sev": "MEDIUM",
+      "confidence": "verified",
+      "category": "A04:2021 Insecure Design",
+      "cwe": "CWE-1004",
+      "owasp": "A04:2021",
+      "title": "Auth token stored in BOTH cookie and localStorage (double-storage anti-pattern)",
+      "evidence": "The same session credential is persisted in two locations: (a) Cookie `accessToken` on stage-onebid.us.bci-tnlm.com (V-01), (b) localStorage key `auth-storage` (V-02). This doubles the exfiltration surface and makes any session-revocation logic likely inconsistent (cookie cleared but localStorage stale, or vice versa). Confirmed in same evidence bundle.",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-22-stage-onebid-bci-tnlm/evidence-deep/01-login/cookies.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 3.1
+      },
+      "chain_of_attack": "Compounds V-01/V-02: an attacker with either XSS foothold OR a cookie-jar leak has two independent paths to the token. Logout logic that clears only one store leaves the other valid until natural expiry.",
+      "recommendation": "Single-source-of-truth for session state. Recommended pattern: refresh token in HttpOnly+Secure+SameSite=Strict cookie; access token in memory only. Delete localStorage['auth-storage'] on logout AND clear cookies.",
+      "retest": "Log in; inspect cookies + localStorage — only one location should contain the credential."
+    },
+    {
+      "id": "V-05",
+      "module": "02-dashboard",
+      "sev": "MEDIUM",
+      "confidence": "verified",
+      "category": "A05:2021 Security Misconfiguration",
+      "cwe": "CWE-693",
+      "owasp": "A05:2021",
+      "title": "CSP script-src allows 'unsafe-inline' and 'unsafe-eval'",
+      "evidence": "CSP header (see raw/headers-root.txt) includes: `script-src 'self' 'unsafe-eval' ... 'unsafe-inline'` and `script-src-elem 'self' 'unsafe-inline' ...`. Both defeat the primary purpose of CSP as an XSS mitigation. Combined with V-01/V-02 (bearer tokens JS-readable), a single injection point escalates to session takeover.",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-22-stage-onebid-bci-tnlm/raw/headers-root.txt",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 4.6
+      },
+      "chain_of_attack": "Any HTML-injection sink in the SPA (search reflection, project-detail free-text) → because CSP allows unsafe-inline+unsafe-eval, the payload executes → chains into V-01/V-02 for full session theft.",
+      "recommendation": "Remove 'unsafe-inline' by adopting nonces or hashes; remove 'unsafe-eval' unless a specific dep (arcgis?) requires it — then narrow to that vendor via a separate policy scope. Ship a Report-Only CSP first to inventory violations.",
+      "fix_snippet": "content-security-policy-report-only: default-src 'self'; script-src 'self' 'nonce-{{RUNTIME_NONCE}}' *.bidocean.com; ...; report-uri /csp-report",
+      "retest": "curl -sI https://stage-onebid.us.bci-tnlm.com/ | grep -i content-security-policy | grep -Eo \"'unsafe-(inline|eval)'\"  # should return nothing after fix"
+    },
+    {
+      "id": "V-03",
+      "module": "02-dashboard",
+      "sev": "LOW",
+      "confidence": "verified",
+      "category": "A05:2021 Security Misconfiguration",
+      "cwe": "CWE-1021",
+      "owasp": "A05:2021",
+      "title": "No clickjacking protection (X-Frame-Options absent; CSP lacks frame-ancestors)",
+      "evidence": "GET https://stage-onebid.us.bci-tnlm.com/ response headers: X-Frame-Options is absent; CSP is present but does not include a frame-ancestors directive. See /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-22-stage-onebid-bci-tnlm/evidence-deep/02-dashboard/root-headers.json and /Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-22-stage-onebid-bci-tnlm/raw/headers-root.txt",
+      "evidence_path": "/Users/ariefrahman/Documents/Arief/automation/playwright/hubexo org/sec-test/security-test/reports/2026-08-22-stage-onebid-bci-tnlm/evidence-deep/02-dashboard/root-headers.json",
+      "cvss4": {
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "score": 2.3
+      },
+      "chain_of_attack": "Attacker iframes /main/dashboard on an attacker-controlled page → UI-redresses actions that the victim executes with hover-invisible overlay. Low practical impact for this app (limited state-changing UI accessible in one click), but standard hardening.",
+      "recommendation": "Append `frame-ancestors 'none'` to CSP (or add X-Frame-Options: DENY at CloudFront). Same policy on both the marketing HTML at S3 and the app shell.",
+      "fix_snippet": "# CloudFront response headers policy\ncontent-security-policy: default-src 'self' *.bidocean.com; ...; frame-ancestors 'none'; ...",
+      "retest": "curl -sI https://stage-onebid.us.bci-tnlm.com/ | grep -Ei 'x-frame-options|frame-ancestors'"
+    }
+  ]
+}

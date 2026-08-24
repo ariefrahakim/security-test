@@ -1,0 +1,85 @@
+{
+  "hypotheses": [
+    {
+      "id": "H-01",
+      "requires_hitl": true,
+      "title": "User enumeration via login error copy",
+      "based_on": [
+        "/login"
+      ],
+      "test_plan": "Send wrong-password for known email vs unknown email; compare error text / status / timing."
+    },
+    {
+      "id": "H-02",
+      "requires_hitl": true,
+      "title": "Login rate-limit bypass",
+      "based_on": [
+        "POST /api/v1/account/auth/sign-in"
+      ],
+      "test_plan": "50 wrong-password attempts within 60s; observe lockout / Retry-After header."
+    },
+    {
+      "id": "H-03",
+      "requires_hitl": true,
+      "title": "Password-reset token reuse / no expiry",
+      "based_on": [
+        "/forgot-password link on login page"
+      ],
+      "test_plan": "Request reset twice; attempt reuse of the first token after issuing the second."
+    },
+    {
+      "id": "H-04",
+      "requires_hitl": true,
+      "title": "JWT: alg=none or weak-secret acceptance",
+      "based_on": [
+        "JWT in localStorage"
+      ],
+      "test_plan": "Decode token; try alg=none and HS256 with common weak secrets against a protected endpoint."
+    },
+    {
+      "id": "H-05",
+      "requires_hitl": true,
+      "title": "2FA/MFA bypass on password step",
+      "based_on": [
+        "sign-in flow"
+      ],
+      "test_plan": "If 2FA offered, drop the challenge and hit the post-2FA endpoint directly with the interim token."
+    },
+    {
+      "id": "H-06",
+      "requires_hitl": true,
+      "title": "IDOR: project detail id 5752707 (numeric)",
+      "based_on": [
+        "https://stage-onebid.us.bci-tnlm.com/main/project/5752707"
+      ],
+      "test_plan": "GET /main/project/5752707 with a second-tenant token; also try id 5752706 and a random 9-digit id; expect 403/404 not 200."
+    },
+    {
+      "id": "H-07",
+      "requires_hitl": true,
+      "title": "IDOR: project detail id 5695136 (numeric)",
+      "based_on": [
+        "https://stage-onebid.us.bci-tnlm.com/main/project/5695136"
+      ],
+      "test_plan": "GET /main/project/5695136 with a second-tenant token; also try id 5695135 and a random 9-digit id; expect 403/404 not 200."
+    },
+    {
+      "id": "H-08",
+      "requires_hitl": true,
+      "title": "IDOR: project detail id 5702381 (numeric)",
+      "based_on": [
+        "https://stage-onebid.us.bci-tnlm.com/main/project/5702381"
+      ],
+      "test_plan": "GET /main/project/5702381 with a second-tenant token; also try id 5702380 and a random 9-digit id; expect 403/404 not 200."
+    },
+    {
+      "id": "H-09",
+      "requires_hitl": true,
+      "title": "IDOR candidate: GET /us/api/v1/main/project/:id",
+      "based_on": [
+        "https://api-stage-portal.bidocean.com/us/api/v1/main/project/5752707"
+      ],
+      "test_plan": "Replay with a token from a second authorized tenant; also mutate the id to unknown values; expect 403/404 not 200."
+    }
+  ]
+}

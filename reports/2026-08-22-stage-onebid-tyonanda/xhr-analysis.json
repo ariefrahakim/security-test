@@ -1,0 +1,29 @@
+{
+  "total": 139,
+  "scoped": 92,
+  "withBearer": 90,
+  "idorShapedSample": [],
+  "err4xxSample": [
+    {
+      "method": "GET",
+      "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/save-search-project?limit=10&offset=0&sortBy=name&orderBy=asc&mode=list",
+      "status": 401
+    },
+    {
+      "method": "GET",
+      "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/posting-type",
+      "status": 401
+    }
+  ],
+  "err5xxSample": [],
+  "uncachedJsonSample": [
+    {
+      "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/save-search-project?limit=10&offset=0&sortBy=name&orderBy=asc&mode=list",
+      "cc": null
+    },
+    {
+      "url": "https://api-stage-portal.bidocean.com/us/api/v1/main/posting-type",
+      "cc": null
+    }
+  ]
+}
